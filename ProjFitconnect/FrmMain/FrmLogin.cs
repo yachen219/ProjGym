@@ -26,13 +26,15 @@ namespace ProjGym
         int loginTimes = 0;
         //宣告一個資料型別為Dlogin、名稱為afterLogin的事件
         public event Dlogin afterLogin;
+        public tIdentity auth { get; set; }
         public FrmLogin()
         {
             InitializeComponent();
             //將[登入失敗提示]設為空字串(讓畫面上看不到)
 
-            SetRoundButton(btn_Cancel, 40);
-            SetRoundButton(btn_Login, 40);
+            SetRoundButton(btn_Cancel, 55);
+            SetRoundButton(btn_Login, 55);
+            SetRoundButton(btn_Register, 55);
 
             lbl_ErrorLogin.Text = string.Empty;
         }
@@ -200,7 +202,7 @@ namespace ProjGym
             db.SaveChanges();
             MessageBox.Show("註冊教練成功，請使用電話/信箱 + 密碼登入\n" + "若要開課，請等待管理員審核");
         }
-
+        /*
         private void savedata_admin(FrmNewAdminRegister frm)
         {
             //產生[gym資料庫實體]
@@ -224,12 +226,7 @@ namespace ProjGym
             db.SaveChanges();
             MessageBox.Show("新增管理員完成");
         }
-
-        /*
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("若有任何問題，請撥打02-22443651。");
-        }
         */
+       
     }
 }

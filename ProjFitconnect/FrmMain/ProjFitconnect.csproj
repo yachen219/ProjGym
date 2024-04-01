@@ -64,20 +64,20 @@
     <Compile Include="CRoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DB.Context.cs">
+    <Compile Include="DBGym.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.Context.tt</DependentUpon>
+      <DependentUpon>DBGym.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB.cs">
+    <Compile Include="DBGym.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB.Designer.cs">
+    <Compile Include="DBGym.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.edmx</DependentUpon>
+      <DependentUpon>DBGym.edmx</DependentUpon>
     </Compile>
     <Compile Include="FrmClassUpdate.cs">
       <SubType>Form</SubType>
@@ -160,64 +160,70 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclasses.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_limit_details.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_reserve.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_schedule.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_sort_table.cs">
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_sort_有氧.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_sort_訓練.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tclass_status_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tcoach_expert.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tcoach_info_id.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tfield.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tfield_reserve.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tgender_Table.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tIdentity.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tidentity_role_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
+    </Compile>
+    <Compile Include="times_detail.cs">
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tmember_follow.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tmember_rate_class.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tmember_status_details.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="tregion_table.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <Compile Include="ttimes_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBGym.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CoachBox.resx">
       <DependentUpon>CoachBox.cs</DependentUpon>
@@ -271,12 +277,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="DB.edmx">
+    <EntityDeploy Include="DBGym.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBGym.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DB.edmx.diagram">
-      <DependentUpon>DB.edmx</DependentUpon>
+    <None Include="DBGym.edmx.diagram">
+      <DependentUpon>DBGym.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -293,16 +299,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DB.Context.cs</LastGenOutput>
-      <DependentUpon>DB.edmx</DependentUpon>
-    </Content>
-    <Content Include="DB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\gymm.jpg" />
     <None Include="Resources\gym4.jpg" />
     <None Include="Resources\gym3.jpg" />
@@ -311,6 +307,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBGym.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBGym.edmx</DependentUpon>
+      <LastGenOutput>DBGym.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DBGym.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBGym.edmx</DependentUpon>
+      <LastGenOutput>DBGym.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

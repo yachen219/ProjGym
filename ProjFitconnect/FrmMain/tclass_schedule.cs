@@ -37,6 +37,7 @@ namespace FrmMain
         public virtual tclasses tclasses { get; set; }
         public virtual tfield tfield { get; set; }
         public virtual tIdentity tIdentity { get; set; }
+        public virtual times_detail times_detail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tmember_rate_class> tmember_rate_class { get; set; }
         public virtual ttimes_detail ttimes_detail { get; set; }
