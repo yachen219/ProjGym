@@ -96,11 +96,7 @@ namespace ProjGym
             cbTime.Items.Clear();
             var times = from t in gym.ttimes_detail select t;
             times.ToList().ForEach(t => { cbTime.Items.Add(t.time_name); });
-            //var times = gym.times_detail.Select(t => t.times).Distinct();
-            //foreach (var time in times)
-            //{
-            //    cbTime.Items.Add(time);
-            //}
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
