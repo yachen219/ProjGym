@@ -33,6 +33,7 @@ namespace mid_Coonect
                 _clAss.class_photo = _imagepath;
                 return _clAss;
 
+
             }
             set
             {

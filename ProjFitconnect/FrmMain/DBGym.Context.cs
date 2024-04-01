@@ -29,7 +29,6 @@ namespace FrmMain
         public virtual DbSet<tclass_limit_details> tclass_limit_details { get; set; }
         public virtual DbSet<tclass_reserve> tclass_reserve { get; set; }
         public virtual DbSet<tclass_schedule> tclass_schedule { get; set; }
-        public virtual DbSet<tclass_sort_table> tclass_sort_table { get; set; }
         public virtual DbSet<tclass_sort_有氧> tclass_sort_有氧 { get; set; }
         public virtual DbSet<tclass_sort_訓練> tclass_sort_訓練 { get; set; }
         public virtual DbSet<tclass_status_detail> tclass_status_detail { get; set; }
@@ -41,7 +40,6 @@ namespace FrmMain
         public virtual DbSet<tgender_Table> tgender_Table { get; set; }
         public virtual DbSet<tIdentity> tIdentity { get; set; }
         public virtual DbSet<tidentity_role_detail> tidentity_role_detail { get; set; }
-        public virtual DbSet<times_detail> times_detail { get; set; }
         public virtual DbSet<tmember_follow> tmember_follow { get; set; }
         public virtual DbSet<tmember_rate_class> tmember_rate_class { get; set; }
         public virtual DbSet<tmember_status_details> tmember_status_details { get; set; }
