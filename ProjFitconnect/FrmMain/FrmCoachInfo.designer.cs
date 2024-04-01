@@ -44,7 +44,7 @@
             // roundPictureBox1
             // 
             this.roundPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("roundPictureBox1.Image")));
-            this.roundPictureBox1.Location = new System.Drawing.Point(96, 79);
+            this.roundPictureBox1.Location = new System.Drawing.Point(504, 73);
             this.roundPictureBox1.Name = "roundPictureBox1";
             this.roundPictureBox1.Size = new System.Drawing.Size(182, 183);
             this.roundPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -55,9 +55,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label1.Location = new System.Drawing.Point(380, 95);
+            this.label1.Location = new System.Drawing.Point(105, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
+            this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "教練姓名";
             // 
@@ -66,9 +66,9 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("微軟正黑體", 24.2243F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelName.ForeColor = System.Drawing.Color.NavajoWhite;
-            this.labelName.Location = new System.Drawing.Point(580, 74);
+            this.labelName.Location = new System.Drawing.Point(289, 73);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(104, 46);
+            this.labelName.Size = new System.Drawing.Size(95, 42);
             this.labelName.TabIndex = 3;
             this.labelName.Text = "label";
             // 
@@ -76,9 +76,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label3.Location = new System.Drawing.Point(396, 165);
+            this.label3.Location = new System.Drawing.Point(119, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 20);
+            this.label3.Size = new System.Drawing.Size(36, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "性別";
             // 
@@ -87,9 +87,9 @@
             this.labelGender.AutoSize = true;
             this.labelGender.Font = new System.Drawing.Font("微軟正黑體", 12.11215F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelGender.ForeColor = System.Drawing.Color.Lime;
-            this.labelGender.Location = new System.Drawing.Point(580, 165);
+            this.labelGender.Location = new System.Drawing.Point(292, 164);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(51, 23);
+            this.labelGender.Size = new System.Drawing.Size(48, 22);
             this.labelGender.TabIndex = 5;
             this.labelGender.Text = "label";
             // 
@@ -97,9 +97,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label2.Location = new System.Drawing.Point(380, 320);
+            this.label2.Location = new System.Drawing.Point(105, 252);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(64, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "開授課程";
             // 
@@ -108,9 +108,9 @@
             this.labelClass.AutoSize = true;
             this.labelClass.Font = new System.Drawing.Font("微軟正黑體", 16.14953F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelClass.ForeColor = System.Drawing.Color.NavajoWhite;
-            this.labelClass.Location = new System.Drawing.Point(580, 317);
+            this.labelClass.Location = new System.Drawing.Point(292, 246);
             this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(71, 31);
+            this.labelClass.Size = new System.Drawing.Size(63, 28);
             this.labelClass.TabIndex = 5;
             this.labelClass.Text = "label";
             // 
@@ -118,26 +118,25 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label4.Location = new System.Drawing.Point(380, 245);
+            this.label4.Location = new System.Drawing.Point(105, 331);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.Size = new System.Drawing.Size(64, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "專業證照";
             // 
             // labelLicense
             // 
-            this.labelLicense.AutoSize = true;
             this.labelLicense.Font = new System.Drawing.Font("微軟正黑體", 16.14953F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelLicense.ForeColor = System.Drawing.Color.NavajoWhite;
-            this.labelLicense.Location = new System.Drawing.Point(580, 245);
+            this.labelLicense.Location = new System.Drawing.Point(291, 322);
             this.labelLicense.Name = "labelLicense";
-            this.labelLicense.Size = new System.Drawing.Size(71, 31);
+            this.labelLicense.Size = new System.Drawing.Size(379, 147);
             this.labelLicense.TabIndex = 5;
             this.labelLicense.Text = "label";
             // 
             // FrmCoachInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(796, 487);
