@@ -20,10 +20,16 @@ namespace ProjGym
         {
             InitializeComponent();
             splitContainer1.SplitterWidth = 3;
-            //OpenLoginForm();
+            //OpenLoginForm(); 
 
         }
-
+        private void closeCurrentForm()
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
+        }
         private void OpenLoginForm()
         {
             FrmLogin loginForm = new FrmLogin();
@@ -78,13 +84,7 @@ namespace ProjGym
                 $"信箱: {m.e_mail}";
         }
 
-        private void closeCurrentForm()
-        {
-            if (this.ActiveMdiChild != null)
-            {
-                this.ActiveMdiChild.Close();
-            }
-        }
+        
 
         private void 常見問題ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -98,13 +98,73 @@ namespace ProjGym
 
         private void FrmHomePage_Load_1(object sender, EventArgs e)
         {
-            this.Visible = false;
+            this.Visible = false; 
+            MainLog();
+
+            Label lblWelcome = new Label();
+
+            Label label3 = new Label();
+            label3.Text = "歡迎 " + this.member.name + " 登入";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
+            label3.ForeColor = Color.Blue;
+            label3.AutoSize = true; // 啟用自動調整大小
+            label3.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
+
+            int x = (splitContainer1.Panel2.Width - label3.Width) / 2;
+            int y = (splitContainer1.Panel2.Height - label3.Height) / 2;
+            label3.Location = new Point(x, y);
+
+            this.splitContainer1.Panel2.Controls.Add(label3);
+
+            this.Text = "歡迎 ~" + this.member.name + " 登入";
+
+        }
+
+        private void MainLog()
+        {
+            lbl_Info.Text = string.Empty;
             FrmLogin frmLogin = new FrmLogin();
-            frmLogin.ShowDialog();
             frmLogin.afterLogin += this.showinfo;
+            frmLogin.ShowDialog();
             if (frmLogin.isOK != DialogResult.OK) return;
             this.Visible = true;
-            lbl_Info.Text = string.Empty;
+        }
+
+        private void 新增管理者ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNewAdminRegister frm = new FrmNewAdminRegister();
+            frm.savedata += FrmAdmin_register;
+            //將[新增會員資料]表單顯示出來
+            frm.ShowDialog();
+            //如果[新增會員資料]表單的result屬性為DialogResult.No
+            if (frm.result == DialogResult.No)
+                //將程式控制權回傳(在此案例中，程式控制權會從[新增會員資料]表單回傳給[登入頁面]表單)
+                return;
+        }
+
+        private void FrmAdmin_register(FrmNewAdminRegister frm)
+        {
+            //產生[gym資料庫實體]
+            gymEntities db = new gymEntities();
+            //產生[Identity]表單物件
+            tIdentity admin = new tIdentity();
+            //設定新會員資料(名稱、身分ID、性別ID、電話、地址、生日、電郵、密碼、照片檔案名稱)
+            int admin_count = db.tIdentity.Count(x => x.role_id.Equals(3)) + 1;
+            admin.role_id = 3;
+            admin.name = $"Admin {admin_count}";
+            admin.phone = frm.phone;
+            admin.e_mail = "x";
+            admin.password = frm.password;
+            admin.photo = "x";
+            admin.birthday = DateTime.Now;
+            admin.address = "x";
+            admin.gender_id = 3;
+            //將新會員資料新增至[gym資料庫實體]
+            db.tIdentity.Add(admin);
+            //存回資料庫
+            db.SaveChanges();
+            MessageBox.Show("新增管理員完成");
         }
     }
 }

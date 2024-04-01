@@ -46,6 +46,17 @@
           <Property Name="class_status_id" Type="int" Nullable="false" />
           <Property Name="class_payment" Type="money" Nullable="false" />
         </EntityType>
+        <EntityType Name="tclass_sort_table">
+          <Key>
+            <PropertyRef Name="class_sort_id" />
+          </Key>
+          <Property Name="class_sort_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="class_sort_1" Type="int" Nullable="false" />
+          <Property Name="class_sort_2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="class_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="class_sort_photo" Type="nvarchar(max)" />
+          <Property Name="class_sort_status" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="tclass_sort_有氧">
           <Key>
             <PropertyRef Name="class_sort1_id" />
@@ -144,6 +155,14 @@
           </Key>
           <Property Name="role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="role_describe" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="times_detail">
+          <Key>
+            <PropertyRef Name="time_id" />
+          </Key>
+          <Property Name="time_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="times" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="weekday" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="tmember_follow">
           <Key>
@@ -257,6 +276,18 @@
             </Principal>
             <Dependent Role="tclass_schedule">
               <PropertyRef Name="coach_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_class_schedule_times_detail">
+          <End Role="times_detail" Type="Self.times_detail" Multiplicity="1" />
+          <End Role="tclass_schedule" Type="Self.tclass_schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="times_detail">
+              <PropertyRef Name="time_id" />
+            </Principal>
+            <Dependent Role="tclass_schedule">
+              <PropertyRef Name="course_time_id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -457,6 +488,7 @@
           <EntitySet Name="tclass_limit_details" EntityType="Self.tclass_limit_details" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tclass_reserve" EntityType="Self.tclass_reserve" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tclass_schedule" EntityType="Self.tclass_schedule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tclass_sort_table" EntityType="Self.tclass_sort_table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tclass_sort_有氧" EntityType="Self.tclass_sort_有氧" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tclass_sort_訓練" EntityType="Self.tclass_sort_訓練" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tclass_status_detail" EntityType="Self.tclass_status_detail" Schema="dbo" store:Type="Tables" />
@@ -468,6 +500,7 @@
           <EntitySet Name="tgender_Table" EntityType="Self.tgender_Table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tIdentity" EntityType="Self.tIdentity" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tidentity_role_detail" EntityType="Self.tidentity_role_detail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="times_detail" EntityType="Self.times_detail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tmember_follow" EntityType="Self.tmember_follow" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tmember_rate_class" EntityType="Self.tmember_rate_class" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tmember_status_details" EntityType="Self.tmember_status_details" Schema="dbo" store:Type="Tables" />
@@ -495,6 +528,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_class_schedule_Identity" Association="Self.FK_class_schedule_Identity">
             <End Role="tIdentity" EntitySet="tIdentity" />
+            <End Role="tclass_schedule" EntitySet="tclass_schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_class_schedule_times_detail" Association="Self.FK_class_schedule_times_detail">
+            <End Role="times_detail" EntitySet="times_detail" />
             <End Role="tclass_schedule" EntitySet="tclass_schedule" />
           </AssociationSet>
           <AssociationSet Name="FK_classes_class_limit_details" Association="Self.FK_classes_class_limit_details">
@@ -615,8 +652,20 @@
           <NavigationProperty Name="tclasses" Relationship="Self.FK_class_schedule_classes" FromRole="tclass_schedule" ToRole="tclasses" />
           <NavigationProperty Name="tfield" Relationship="Self.FK_class_schedule_field" FromRole="tclass_schedule" ToRole="tfield" />
           <NavigationProperty Name="tIdentity" Relationship="Self.FK_class_schedule_Identity" FromRole="tclass_schedule" ToRole="tIdentity" />
+          <NavigationProperty Name="times_detail" Relationship="Self.FK_class_schedule_times_detail" FromRole="tclass_schedule" ToRole="times_detail" />
           <NavigationProperty Name="tmember_rate_class" Relationship="Self.FK_member_rate_class_class_schedule" FromRole="tclass_schedule" ToRole="tmember_rate_class" />
           <NavigationProperty Name="ttimes_detail" Relationship="Self.FK_tclass_schedule_ttimes_detail" FromRole="tclass_schedule" ToRole="ttimes_detail" />
+        </EntityType>
+        <EntityType Name="tclass_sort_table">
+          <Key>
+            <PropertyRef Name="class_sort_id" />
+          </Key>
+          <Property Name="class_sort_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="class_sort_1" Type="Int32" Nullable="false" />
+          <Property Name="class_sort_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="class_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="class_sort_photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="class_sort_status" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="tclass_sort_有氧">
           <Key>
@@ -743,6 +792,15 @@
           <Property Name="role_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="role_describe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="tIdentity" Relationship="Self.FK_Identity_identity_role_detail1" FromRole="tidentity_role_detail" ToRole="tIdentity" />
+        </EntityType>
+        <EntityType Name="times_detail">
+          <Key>
+            <PropertyRef Name="time_id" />
+          </Key>
+          <Property Name="time_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="times" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="weekday" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tclass_schedule" Relationship="Self.FK_class_schedule_times_detail" FromRole="times_detail" ToRole="tclass_schedule" />
         </EntityType>
         <EntityType Name="tmember_follow">
           <Key>
@@ -875,6 +933,18 @@
             </Principal>
             <Dependent Role="tclass_schedule">
               <PropertyRef Name="coach_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_class_schedule_times_detail">
+          <End Role="times_detail" Type="Self.times_detail" Multiplicity="1" />
+          <End Role="tclass_schedule" Type="Self.tclass_schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="times_detail">
+              <PropertyRef Name="time_id" />
+            </Principal>
+            <Dependent Role="tclass_schedule">
+              <PropertyRef Name="course_time_id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1063,6 +1133,7 @@
           <EntitySet Name="tclass_limit_details" EntityType="Self.tclass_limit_details" />
           <EntitySet Name="tclass_reserve" EntityType="Self.tclass_reserve" />
           <EntitySet Name="tclass_schedule" EntityType="Self.tclass_schedule" />
+          <EntitySet Name="tclass_sort_table" EntityType="Self.tclass_sort_table" />
           <EntitySet Name="tclass_sort_有氧" EntityType="Self.tclass_sort_有氧" />
           <EntitySet Name="tclass_sort_訓練" EntityType="Self.tclass_sort_訓練" />
           <EntitySet Name="tclass_status_detail" EntityType="Self.tclass_status_detail" />
@@ -1074,6 +1145,7 @@
           <EntitySet Name="tgender_Table" EntityType="Self.tgender_Table" />
           <EntitySet Name="tIdentity" EntityType="Self.tIdentity" />
           <EntitySet Name="tidentity_role_detail" EntityType="Self.tidentity_role_detail" />
+          <EntitySet Name="times_detail" EntityType="Self.times_detail" />
           <EntitySet Name="tmember_follow" EntityType="Self.tmember_follow" />
           <EntitySet Name="tmember_rate_class" EntityType="Self.tmember_rate_class" />
           <EntitySet Name="tmember_status_details" EntityType="Self.tmember_status_details" />
@@ -1105,6 +1177,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_class_schedule_Identity" Association="Self.FK_class_schedule_Identity">
             <End Role="tIdentity" EntitySet="tIdentity" />
+            <End Role="tclass_schedule" EntitySet="tclass_schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_class_schedule_times_detail" Association="Self.FK_class_schedule_times_detail">
+            <End Role="times_detail" EntitySet="times_detail" />
             <End Role="tclass_schedule" EntitySet="tclass_schedule" />
           </AssociationSet>
           <AssociationSet Name="FK_member_rate_class_class_schedule" Association="Self.FK_member_rate_class_class_schedule">
@@ -1219,6 +1295,18 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tclass_sort_table">
+            <EntityTypeMapping TypeName="gymModel.tclass_sort_table">
+              <MappingFragment StoreEntitySet="tclass_sort_table">
+                <ScalarProperty Name="class_sort_id" ColumnName="class_sort_id" />
+                <ScalarProperty Name="class_sort_1" ColumnName="class_sort_1" />
+                <ScalarProperty Name="class_sort_2" ColumnName="class_sort_2" />
+                <ScalarProperty Name="class_name" ColumnName="class_name" />
+                <ScalarProperty Name="class_sort_photo" ColumnName="class_sort_photo" />
+                <ScalarProperty Name="class_sort_status" ColumnName="class_sort_status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tclass_sort_有氧">
             <EntityTypeMapping TypeName="gymModel.tclass_sort_有氧">
               <MappingFragment StoreEntitySet="tclass_sort_有氧">
@@ -1326,6 +1414,15 @@
               <MappingFragment StoreEntitySet="tidentity_role_detail">
                 <ScalarProperty Name="role_Id" ColumnName="role_Id" />
                 <ScalarProperty Name="role_describe" ColumnName="role_describe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="times_detail">
+            <EntityTypeMapping TypeName="gymModel.times_detail">
+              <MappingFragment StoreEntitySet="times_detail">
+                <ScalarProperty Name="time_id" ColumnName="time_id" />
+                <ScalarProperty Name="times" ColumnName="times" />
+                <ScalarProperty Name="weekday" ColumnName="weekday" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

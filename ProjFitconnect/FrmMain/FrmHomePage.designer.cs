@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHomePage));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbl_Info = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -67,8 +69,6 @@
             this.教練審核ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.付款資訊ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增管理者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -100,15 +100,39 @@
             this.splitContainer1.SplitterDistance = 164;
             this.splitContainer1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.Location = new System.Drawing.Point(755, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 26);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "最懂你的健身媒合平台";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(789, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 31);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "FitConnect";
+            // 
             // lbl_Info
             // 
             this.lbl_Info.AutoSize = true;
-            this.lbl_Info.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_Info.BackColor = System.Drawing.Color.AliceBlue;
             this.lbl_Info.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_Info.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Info.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_Info.Location = new System.Drawing.Point(0, 0);
             this.lbl_Info.Name = "lbl_Info";
-            this.lbl_Info.Size = new System.Drawing.Size(53, 26);
+            this.lbl_Info.Size = new System.Drawing.Size(41, 21);
             this.lbl_Info.TabIndex = 4;
             this.lbl_Info.Text = "Info";
             // 
@@ -397,30 +421,7 @@
             this.新增管理者ToolStripMenuItem.Name = "新增管理者ToolStripMenuItem";
             this.新增管理者ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.新增管理者ToolStripMenuItem.Text = "新增管理者";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(789, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 31);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "FitConnect";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(755, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 26);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "最懂你的健身媒合平台";
+            this.新增管理者ToolStripMenuItem.Click += new System.EventHandler(this.新增管理者ToolStripMenuItem_Click);
             // 
             // FrmHomePage
             // 
