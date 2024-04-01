@@ -128,6 +128,7 @@ namespace ProjGym
             fAQ.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(fAQ);
             fAQ.Show();
+
         }
     }
 

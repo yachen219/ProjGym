@@ -67,6 +67,8 @@
             this.教練審核ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.付款資訊ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增管理者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -84,6 +86,8 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel1.BackgroundImage")));
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.lbl_Info);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
             this.splitContainer1.Panel1.Controls.Add(this.menuStrip1);
@@ -189,13 +193,13 @@
             // 預約體驗ToolStripMenuItem
             // 
             this.預約體驗ToolStripMenuItem.Name = "預約體驗ToolStripMenuItem";
-            this.預約體驗ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.預約體驗ToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
             this.預約體驗ToolStripMenuItem.Text = "預約體驗";
             // 
             // 常見問題ToolStripMenuItem
             // 
             this.常見問題ToolStripMenuItem.Name = "常見問題ToolStripMenuItem";
-            this.常見問題ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.常見問題ToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
             this.常見問題ToolStripMenuItem.Text = "常見問題";
             this.常見問題ToolStripMenuItem.Click += new System.EventHandler(this.常見問題ToolStripMenuItem_Click);
             // 
@@ -220,19 +224,19 @@
             // 課程介紹ToolStripMenuItem
             // 
             this.課程介紹ToolStripMenuItem.Name = "課程介紹ToolStripMenuItem";
-            this.課程介紹ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.課程介紹ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.課程介紹ToolStripMenuItem.Text = "課程介紹";
             // 
             // 以教練搜尋ToolStripMenuItem
             // 
             this.以教練搜尋ToolStripMenuItem.Name = "以教練搜尋ToolStripMenuItem";
-            this.以教練搜尋ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.以教練搜尋ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.以教練搜尋ToolStripMenuItem.Text = "以教練搜尋";
             // 
             // 訓練課程ToolStripMenuItem
             // 
             this.訓練課程ToolStripMenuItem.Name = "訓練課程ToolStripMenuItem";
-            this.訓練課程ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.訓練課程ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.訓練課程ToolStripMenuItem.Text = "訓練課程";
             // 
             // 找商品ToolStripMenuItem
@@ -249,19 +253,19 @@
             // 商城ToolStripMenuItem
             // 
             this.商城ToolStripMenuItem.Name = "商城ToolStripMenuItem";
-            this.商城ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.商城ToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
             this.商城ToolStripMenuItem.Text = "商城";
             // 
             // 保健食品ToolStripMenuItem
             // 
             this.保健食品ToolStripMenuItem.Name = "保健食品ToolStripMenuItem";
-            this.保健食品ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.保健食品ToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
             this.保健食品ToolStripMenuItem.Text = "保健食品";
             // 
             // 運動器材ToolStripMenuItem
             // 
             this.運動器材ToolStripMenuItem.Name = "運動器材ToolStripMenuItem";
-            this.運動器材ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.運動器材ToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
             this.運動器材ToolStripMenuItem.Text = "運動器材";
             // 
             // 會員中心ToolStripMenuItem
@@ -367,32 +371,56 @@
             // 會員資訊ToolStripMenuItem
             // 
             this.會員資訊ToolStripMenuItem.Name = "會員資訊ToolStripMenuItem";
-            this.會員資訊ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.會員資訊ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.會員資訊ToolStripMenuItem.Text = "會員資訊";
             // 
             // 開課審核ToolStripMenuItem
             // 
             this.開課審核ToolStripMenuItem.Name = "開課審核ToolStripMenuItem";
-            this.開課審核ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.開課審核ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.開課審核ToolStripMenuItem.Text = "開課審核";
             // 
             // 教練審核ToolStripMenuItem
             // 
             this.教練審核ToolStripMenuItem.Name = "教練審核ToolStripMenuItem";
-            this.教練審核ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.教練審核ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.教練審核ToolStripMenuItem.Text = "教練審核";
             // 
             // 付款資訊ToolStripMenuItem
             // 
             this.付款資訊ToolStripMenuItem.Name = "付款資訊ToolStripMenuItem";
-            this.付款資訊ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.付款資訊ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.付款資訊ToolStripMenuItem.Text = "付款資訊";
             // 
             // 新增管理者ToolStripMenuItem
             // 
             this.新增管理者ToolStripMenuItem.Name = "新增管理者ToolStripMenuItem";
-            this.新增管理者ToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.新增管理者ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.新增管理者ToolStripMenuItem.Text = "新增管理者";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(789, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 31);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "FitConnect";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.Location = new System.Drawing.Point(755, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 26);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "最懂你的健身媒合平台";
             // 
             // FrmHomePage
             // 
@@ -456,5 +484,7 @@
         private System.Windows.Forms.ToolStripMenuItem 預約體驗ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 常見問題ToolStripMenuItem;
         private System.Windows.Forms.Label lbl_Info;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
