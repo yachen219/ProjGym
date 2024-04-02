@@ -13,8 +13,8 @@ namespace ProjGym
 {
     public partial class FrmHomePage : Form
     {
-        public tIdentity admin { get; set; }
-        public tIdentity member { get; set; }
+        public tIdentity identity { get; set; }
+        Label lblWelcome;
 
         public FrmHomePage()
         {
@@ -47,12 +47,9 @@ namespace ProjGym
 
         private void 首頁ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.splitContainer1.Panel2.Controls.Clear();
-            Frm_首頁 mm = new Frm_首頁();
-            mm.TopLevel = false;
-            mm.FormBorderStyle =FormBorderStyle.None;
-            this.splitContainer1.Panel2.Controls.Add( mm );
-            mm.Show();
+            showmain();
+            
+            
         }
 
         private void 修改會員資料ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,19 +69,79 @@ namespace ProjGym
 
         private void showinfo(tIdentity m)
         {
-            this.member = m;
-            lbl_Info.Visible = true;
-            gymEntities db = new gymEntities();
-            tgender_Table g = db.tgender_Table.FirstOrDefault(x => x.gender_id == m.gender_id);
-            this.lbl_Info.Text = $"會員名稱: {m.name}\r\n" +
-                $"生日: {m.birthday.ToString("yyyy/MM/dd")}\r\n" +
-                $"性別: {g.gender_text}\r\n" +
-                $"電話: {m.phone}\r\n" +
-                $"地址: {m.address}\r\n" +
-                $"信箱: {m.e_mail}";
+            this.identity = m;
+            lbl_Info.Visible = false;
+
+            if (m.role_id == 1)
+                info_member(m);
+            if (m.role_id == 2)
+                info_coach(m);
+            if (m.role_id == 3)
+                info_admin(m);
         }
 
-        
+        private void info_member(tIdentity m)
+        {
+            this.教練中心ToolStripMenuItem.Visible = false;
+            this.管理者中心ToolStripMenuItem.Visible = false;
+
+            Label lblWelcome = new Label();
+            lblWelcome.Text = "歡迎，會員 " + m.name + " 登入";
+            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
+            lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
+            lblWelcome.ForeColor = Color.Blue;
+            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
+
+            int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
+            int y = (splitContainer1.Panel2.Height - lblWelcome.Height) / 2;
+            lblWelcome.Location = new Point(x, y);
+
+            this.splitContainer1.Panel2.Controls.Add(lblWelcome);
+
+            this.Text = "歡迎登入 ： " + m.name;
+        }
+
+        private void info_coach(tIdentity m)
+        {
+            this.會員中心ToolStripMenuItem.Visible = false;
+            this.管理者中心ToolStripMenuItem.Visible = false;
+
+            lblWelcome = new Label();
+            lblWelcome.Text = "歡迎，教練 " + m.name + " 登入";
+            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
+            lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
+            lblWelcome.ForeColor = Color.Blue;
+            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
+
+            int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
+            int y = (splitContainer1.Panel2.Height - lblWelcome.Height) / 2;
+            lblWelcome.Location = new Point(x, y);
+
+            this.splitContainer1.Panel2.Controls.Add(lblWelcome);
+
+            this.Text = "歡迎登入 ： " + m.name;
+        }
+
+        private void info_admin(tIdentity m)
+        {
+            Label lblWelcome = new Label();
+            lblWelcome.Text = "歡迎登入： " + m.name;
+            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
+            lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
+            lblWelcome.ForeColor = Color.Blue;
+            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
+
+            int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
+            int y = (splitContainer1.Panel2.Height - lblWelcome.Height) / 2;
+            lblWelcome.Location = new Point(x, y);
+
+            this.splitContainer1.Panel2.Controls.Add(lblWelcome);
+
+            this.Text = "歡迎登入 ： " + m.name;
+        }
 
         private void 常見問題ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -100,29 +157,12 @@ namespace ProjGym
         {
             this.Visible = false; 
             MainLog();
-
-            Label lblWelcome = new Label();
-
-            Label label3 = new Label();
-            label3.Text = "歡迎 " + this.member.name + " 登入";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            label3.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
-            label3.ForeColor = Color.Blue;
-            label3.AutoSize = true; // 啟用自動調整大小
-            label3.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
-
-            int x = (splitContainer1.Panel2.Width - label3.Width) / 2;
-            int y = (splitContainer1.Panel2.Height - label3.Height) / 2;
-            label3.Location = new Point(x, y);
-
-            this.splitContainer1.Panel2.Controls.Add(label3);
-
-            this.Text = "歡迎 ~" + this.member.name + " 登入";
-
+            showinfo(this.identity);
         }
 
         private void MainLog()
         {
+            //this.splitContainer1.Panel2.Controls.Clear();
             lbl_Info.Text = string.Empty;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.afterLogin += this.showinfo;
@@ -165,6 +205,40 @@ namespace ProjGym
             //存回資料庫
             db.SaveChanges();
             MessageBox.Show("新增管理員完成");
+        }
+
+        private void 會員登出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            logoutevent();
+            MainLog();
+        }
+
+        private void 帳號登出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            logoutevent();
+            MainLog();
+        }
+
+        private void logoutevent()
+        {
+            DialogResult Logout = MessageBox.Show("確定要登出？", "", MessageBoxButtons.OKCancel);
+            if (Logout == DialogResult.Yes)
+            {
+                this.identity = null;
+                this.lblWelcome = null;
+                showmain();
+                return;
+            }   
+        }
+
+        private void showmain()
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            Frm_首頁 mm = new Frm_首頁();
+            mm.TopLevel = false;
+            mm.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(mm);
+            mm.Show();
         }
     }
 }
