@@ -67,7 +67,7 @@ namespace ProjGym
             this.splitContainer1.Panel2.Controls.Add(editMemberRegister);
             editMemberRegister.StartPosition = FormStartPosition.CenterParent;
             editMemberRegister.MdiParent = this;
-            MessageBox.Show("" +member.id);
+            MessageBox.Show("" +identity.id);
             editMemberRegister.Show();
  
         }
@@ -244,6 +244,26 @@ namespace ProjGym
             mm.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(mm);
             mm.Show();
+        }
+
+        private void 已預約課程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmClassReserved f = new FrmClassReserved();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 找教練ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmFindCoach f = new FrmFindCoach();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
         }
     }
 }
