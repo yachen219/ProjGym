@@ -19,11 +19,6 @@ namespace FrmMain
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ProjGym.FrmMain());
-            //Application.Run(new FrmFindCoach());
-            //Application.Run(new ProjGym.FrmHomePage());
-            //Application.Run(new FrmNewAdminRegister());
-            //Application.Run(new FrmNewCoachRegister());
             Application.Run(new FrmHomePage());
         }
     }
