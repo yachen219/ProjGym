@@ -1,4 +1,5 @@
-﻿using ProjGym;
+﻿using Gym;
+using ProjGym;
 using Revised_V1._1;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,8 @@ namespace FrmMain
             //Application.Run(new ProjGym.FrmHomePage());
             //Application.Run(new FrmNewAdminRegister());
             //Application.Run(new FrmNewCoachRegister());
-            Application.Run(new FrmOpenClass());
+            //Application.Run(new FrmOpenClass());
+            Application.Run(new FrmField());
         }
     }
 }
