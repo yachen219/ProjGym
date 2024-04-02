@@ -117,7 +117,7 @@
             this.labelIDTitle.AutoSize = true;
             this.labelIDTitle.Location = new System.Drawing.Point(442, 50);
             this.labelIDTitle.Name = "labelIDTitle";
-            this.labelIDTitle.Size = new System.Drawing.Size(30, 23);
+            this.labelIDTitle.Size = new System.Drawing.Size(26, 19);
             this.labelIDTitle.TabIndex = 8;
             this.labelIDTitle.Text = "ID";
             // 
@@ -127,7 +127,7 @@
             this.lbID.ForeColor = System.Drawing.Color.Crimson;
             this.lbID.Location = new System.Drawing.Point(521, 50);
             this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(30, 23);
+            this.lbID.Size = new System.Drawing.Size(26, 19);
             this.lbID.TabIndex = 9;
             this.lbID.Text = "ID";
             // 
@@ -136,7 +136,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(425, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 23);
+            this.label2.Size = new System.Drawing.Size(73, 19);
             this.label2.TabIndex = 10;
             this.label2.Text = "Sort1_ID";
             // 
@@ -148,7 +148,7 @@
             "2"});
             this.comboBox1.Location = new System.Drawing.Point(525, 117);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(63, 31);
+            this.comboBox1.Size = new System.Drawing.Size(63, 26);
             this.comboBox1.TabIndex = 11;
             this.comboBox1.Text = "--";
             // 
@@ -157,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(691, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 23);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 10;
             this.label3.Text = "Sort2_ID";
             // 
@@ -173,7 +173,7 @@
             "6"});
             this.comboBox2.Location = new System.Drawing.Point(791, 117);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(63, 31);
+            this.comboBox2.Size = new System.Drawing.Size(63, 26);
             this.comboBox2.TabIndex = 11;
             this.comboBox2.Text = "--";
             // 
@@ -182,7 +182,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(399, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 23);
+            this.label4.Size = new System.Drawing.Size(92, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Class Name";
             // 
@@ -190,7 +190,7 @@
             // 
             this.txtClassName.Location = new System.Drawing.Point(525, 245);
             this.txtClassName.Name = "txtClassName";
-            this.txtClassName.Size = new System.Drawing.Size(472, 31);
+            this.txtClassName.Size = new System.Drawing.Size(472, 27);
             this.txtClassName.TabIndex = 13;
             // 
             // txtIntroduction
@@ -206,7 +206,7 @@
             this.labelIntroduction.AutoSize = true;
             this.labelIntroduction.Location = new System.Drawing.Point(399, 309);
             this.labelIntroduction.Name = "labelIntroduction";
-            this.labelIntroduction.Size = new System.Drawing.Size(120, 23);
+            this.labelIntroduction.Size = new System.Drawing.Size(101, 19);
             this.labelIntroduction.TabIndex = 14;
             this.labelIntroduction.Text = "Introduction";
             // 
@@ -220,7 +220,7 @@
             "無限制"});
             this.comboBox3.Location = new System.Drawing.Point(525, 178);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(63, 31);
+            this.comboBox3.Size = new System.Drawing.Size(63, 26);
             this.comboBox3.TabIndex = 17;
             this.comboBox3.Text = "--";
             // 
@@ -229,7 +229,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(442, 181);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 23);
+            this.label6.Size = new System.Drawing.Size(45, 19);
             this.label6.TabIndex = 16;
             this.label6.Text = "Limit";
             // 
@@ -244,7 +244,6 @@
             this.button4.TabIndex = 18;
             this.button4.Text = ">>|";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Visible = false;
             // 
             // button3
             // 
@@ -257,7 +256,6 @@
             this.button3.TabIndex = 19;
             this.button3.Text = ">";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
             // 
             // button5
             // 
@@ -269,7 +267,6 @@
             this.button5.TabIndex = 20;
             this.button5.Text = "<";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Visible = false;
             // 
             // button6
             // 
@@ -297,7 +294,7 @@
             // 
             // FrmClassUpdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(1100, 690);

@@ -55,14 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoachBox.cs">
+    <Compile Include="tool\CourseBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CoachBox.designer.cs">
-      <DependentUpon>CoachBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CRoundPictureBox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="tool\CourseBox.designer.cs">
+      <DependentUpon>CourseBox.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -79,104 +76,43 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
     </Compile>
+
     <Compile Include="FieldBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FieldBox.Designer.cs">
       <DependentUpon>FieldBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmClassUpdate.cs">
+
+    <Compile Include="FrmAdmin_ClassUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmClassUpdate.designer.cs">
-      <DependentUpon>FrmClassUpdate.cs</DependentUpon>
+    <Compile Include="FrmAdmin_ClassUpdate.designer.cs">
+      <DependentUpon>FrmAdmin_ClassUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCoachInfo.cs">
+    <Compile Include="FrmCoach_AddNewCourse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCoachInfo.designer.cs">
-      <DependentUpon>FrmCoachInfo.cs</DependentUpon>
+    <Compile Include="FrmCoach_AddNewCourse.designer.cs">
+      <DependentUpon>FrmCoach_AddNewCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCoachScheduleEdit.cs">
+    <Compile Include="FrmMember_ClassList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCoachScheduleEdit.designer.cs">
-      <DependentUpon>FrmCoachScheduleEdit.cs</DependentUpon>
+    <Compile Include="FrmMember_ClassList.designer.cs">
+      <DependentUpon>FrmMember_ClassList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEditMemberRegister.cs">
+    <Compile Include="FrmMember_CourseReservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEditMemberRegister.designer.cs">
-      <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
+    <Compile Include="FrmMember_CourseReservation.designer.cs">
+      <DependentUpon>FrmMember_CourseReservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFAQ.cs">
+    <Compile Include="FrmNewExpert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFAQ.designer.cs">
-      <DependentUpon>FrmFAQ.cs</DependentUpon>
+    <Compile Include="FrmNewExpert.Designer.cs">
+      <DependentUpon>FrmNewExpert.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmField.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmField.Designer.cs">
-      <DependentUpon>FrmField.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFindCoach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFindCoach.designer.cs">
-      <DependentUpon>FrmFindCoach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmHomePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmHomePage.designer.cs">
-      <DependentUpon>FrmHomePage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLogin.designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMain.designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmNewAdminRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNewAdminRegister.designer.cs">
-      <DependentUpon>FrmNewAdminRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmNewCoachRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNewCoachRegister.designer.cs">
-      <DependentUpon>FrmNewCoachRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmNewMemberRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNewMemberRegister.designer.cs">
-      <DependentUpon>FrmNewMemberRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmOpenClass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmOpenClass.designer.cs">
-      <DependentUpon>FrmOpenClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_首頁.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_首頁.designer.cs">
-      <DependentUpon>Frm_首頁.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
@@ -231,17 +167,207 @@
     <Compile Include="tmember_status_details.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="tool\CoachBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tool\CoachBox.designer.cs">
+      <DependentUpon>CoachBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tool\CRoundPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmClassReserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClassReserved.Designer.cs">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
+
+    </Compile>
+    <Compile Include="FrmClassUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClassUpdate.designer.cs">
+      <DependentUpon>FrmClassUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCoachInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCoachInfo.designer.cs">
+      <DependentUpon>FrmCoachInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCoachScheduleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCoachScheduleView.designer.cs">
+      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditMemberRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditMemberRegister.designer.cs">
+      <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFAQ.designer.cs">
+      <DependentUpon>FrmFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmField.Designer.cs">
+      <DependentUpon>FrmField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFindCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFindCoach.designer.cs">
+      <DependentUpon>FrmFindCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHomePage.designer.cs">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmNewAdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmNewAdminRegister.designer.cs">
+      <DependentUpon>FrmNewAdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmNewCoachRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmNewCoachRegister.designer.cs">
+      <DependentUpon>FrmNewCoachRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmNewMemberRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmNewMemberRegister.designer.cs">
+      <DependentUpon>FrmNewMemberRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenClass.designer.cs">
+      <DependentUpon>FrmOpenClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_首頁.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_首頁.designer.cs">
+      <DependentUpon>Frm_首頁.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclasses.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_limit_details.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_reserve.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_schedule.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_sort_有氧.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_sort_訓練.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_status_detail.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tcoach_expert.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tcoach_info_id.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tfield.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tfield_reserve.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tgender_Table.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tIdentity.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tidentity_role_detail.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_follow.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_rate_class.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_status_details.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+
+    <Compile Include="tool\reservebox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tool\reservebox.Designer.cs">
+      <DependentUpon>reservebox.cs</DependentUpon>
+
+    </Compile>
     <Compile Include="tregion_table.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
     <Compile Include="ttimes_detail.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CoachBox.resx">
+    <EmbeddedResource Include="tool\CourseBox.resx">
+      <DependentUpon>CourseBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin_ClassUpdate.resx">
+      <DependentUpon>FrmAdmin_ClassUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCoach_AddNewCourse.resx">
+      <DependentUpon>FrmCoach_AddNewCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMember_ClassList.resx">
+      <DependentUpon>FrmMember_ClassList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMember_CourseReservation.resx">
+      <DependentUpon>FrmMember_CourseReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tool\CoachBox.resx">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="FieldBox.resx">
       <DependentUpon>FieldBox.cs</DependentUpon>
+
+    <EmbeddedResource Include="FrmClassReserved.resx">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClassUpdate.resx">
       <DependentUpon>FrmClassUpdate.cs</DependentUpon>
@@ -249,8 +375,8 @@
     <EmbeddedResource Include="FrmCoachInfo.resx">
       <DependentUpon>FrmCoachInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCoachScheduleEdit.resx">
-      <DependentUpon>FrmCoachScheduleEdit.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCoachScheduleView.resx">
+      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditMemberRegister.resx">
       <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
@@ -267,19 +393,19 @@
     <EmbeddedResource Include="FrmHomePage.resx">
       <DependentUpon>FrmHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewAdminRegister.resx">
+    <EmbeddedResource Include="Login\FrmNewAdminRegister.resx">
       <DependentUpon>FrmNewAdminRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewCoachRegister.resx">
+    <EmbeddedResource Include="Login\FrmNewCoachRegister.resx">
       <DependentUpon>FrmNewCoachRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewMemberRegister.resx">
+    <EmbeddedResource Include="Login\FrmNewMemberRegister.resx">
       <DependentUpon>FrmNewMemberRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOpenClass.resx">
@@ -298,6 +424,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+
+    <EmbeddedResource Include="tool\reservebox.resx">
+      <DependentUpon>reservebox.cs</DependentUpon>
+    </EmbeddedResource>
+
     <EntityDeploy Include="DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DB.Designer.cs</LastGenOutput>

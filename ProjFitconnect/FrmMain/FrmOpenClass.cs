@@ -18,13 +18,16 @@ namespace ProjGym
 
     public partial class FrmOpenClass : Form
     {
+        private FrmMain m;
         private DialogResult _isOk;
         private tclass_schedule _schedule;
+
         private int _classid;
         private int _fieldid;
         private int _timeid;
         private tfield _field;
         private string _Field_photo ="";
+
 
         public tclass_schedule schedule
         {
@@ -38,7 +41,7 @@ namespace ProjGym
                 gymEntities gym = new gymEntities();
                 tclasses c = gym.tclasses.FirstOrDefault(x => x.class_name == this.cbClassName.Text);
                 _schedule.class_id = c.class_id;
-                _schedule.coach_id = 1;
+                _schedule.coach_id = m.member.id;
                 tfield f = gym.tfield.FirstOrDefault(x => x.field_name == this.cbField.Text);
                 _schedule.field_id = f.field_id;
                 _schedule.course_date = this.dateTimePicker1.Value;
@@ -89,9 +92,10 @@ namespace ProjGym
             }
         }
 
-        public FrmOpenClass()
+        public FrmOpenClass(FrmMain m)
         {
             InitializeComponent();
+            this.m = m;
         }
 
         private void FrmOpenClass_Load(object sender, EventArgs e)
