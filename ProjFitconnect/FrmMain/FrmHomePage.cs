@@ -241,5 +241,11 @@ namespace ProjGym
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
+
+        private void 預約體驗ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frmfreetrial f = new Frmfreetrial();
+            f.Show();
+        }
     }
 }

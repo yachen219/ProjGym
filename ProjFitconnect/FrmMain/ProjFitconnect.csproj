@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frmfreetrial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmfreetrial.designer.cs">
+      <DependentUpon>Frmfreetrial.cs</DependentUpon>
+    </Compile>
     <Compile Include="tool\CourseBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -273,6 +279,9 @@
     <Compile Include="ttimes_detail.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Frmfreetrial.resx">
+      <DependentUpon>Frmfreetrial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tool\CourseBox.resx">
       <DependentUpon>CourseBox.cs</DependentUpon>
     </EmbeddedResource>
