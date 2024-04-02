@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -40,30 +39,11 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1029, 658);
-            this.splitContainer1.SplitterDistance = 30;
-            this.splitContainer1.SplitterWidth = 6;
-            this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
             // 
@@ -87,7 +67,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.flowLayoutPanel1);
-            this.splitContainer2.Size = new System.Drawing.Size(1029, 622);
+            this.splitContainer2.Size = new System.Drawing.Size(1029, 658);
             this.splitContainer2.SplitterDistance = 226;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
@@ -98,7 +78,7 @@
             this.checkBox7.Location = new System.Drawing.Point(61, 236);
             this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(53, 21);
+            this.checkBox7.Size = new System.Drawing.Size(58, 23);
             this.checkBox7.TabIndex = 8;
             this.checkBox7.Text = "更多";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -110,7 +90,7 @@
             this.checkBox6.Location = new System.Drawing.Point(61, 18);
             this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(53, 21);
+            this.checkBox6.Size = new System.Drawing.Size(58, 23);
             this.checkBox6.TabIndex = 7;
             this.checkBox6.Text = "所有";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -130,7 +110,7 @@
             this.checkBox5.Location = new System.Drawing.Point(61, 204);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(53, 21);
+            this.checkBox5.Size = new System.Drawing.Size(58, 23);
             this.checkBox5.TabIndex = 5;
             this.checkBox5.Text = "無氧";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -142,7 +122,7 @@
             this.checkBox4.Location = new System.Drawing.Point(61, 173);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(53, 21);
+            this.checkBox4.Size = new System.Drawing.Size(58, 23);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "有氧";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -163,7 +143,7 @@
             this.checkBox3.Location = new System.Drawing.Point(61, 114);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(53, 21);
+            this.checkBox3.Size = new System.Drawing.Size(58, 23);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "其他";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -175,7 +155,7 @@
             this.checkBox2.Location = new System.Drawing.Point(61, 80);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(53, 21);
+            this.checkBox2.Size = new System.Drawing.Size(58, 23);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "女性";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -187,7 +167,7 @@
             this.checkBox1.Location = new System.Drawing.Point(61, 47);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(53, 21);
+            this.checkBox1.Size = new System.Drawing.Size(58, 23);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "男性";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -200,16 +180,16 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(798, 622);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(798, 658);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // FrmFindCoach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1029, 658);
-            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.splitContainer2);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmFindCoach";
@@ -217,9 +197,6 @@
             this.Text = "尋找教練";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmFindCoach_Load);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -231,8 +208,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox3;
