@@ -155,10 +155,10 @@
             this.關於我們ToolStripMenuItem,
             this.管理者中心ToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 118);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 139);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1382, 57);
+            this.menuStrip1.Size = new System.Drawing.Size(1382, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
