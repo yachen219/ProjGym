@@ -21,8 +21,6 @@ namespace ProjGym
         {
             InitializeComponent();
             splitContainer1.SplitterWidth = 3;
-            //OpenLoginForm(); 
-
         }
         private void closeCurrentForm()
         {
@@ -31,36 +29,18 @@ namespace ProjGym
                 this.ActiveMdiChild.Close();
             }
         }
-        private void OpenLoginForm()
-        {
-            FrmLogin loginForm = new FrmLogin();
-            if (loginForm.ShowDialog() == DialogResult.OK)
-            {
-                FrmMain courseForm = new FrmMain();
-                courseForm.MdiParent = this;
-                courseForm.Show();
-            }
-            else
-            {
-                Application.Exit(); // 如果取消登入，關閉應用程式
-            }
-        } 
 
         private void 首頁ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showmain();
-            
-            
         }
 
         private void 修改會員資料ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             closeCurrentForm();
-            //todo:0
             lbl_Info.Visible = false;
             this.splitContainer1.Panel2.Controls.Clear();
             FrmEditMemberRegister editMemberRegister = new FrmEditMemberRegister();
-            //mdiparent???
             editMemberRegister.afterEdit += this.showinfo;
             editMemberRegister.TopLevel = false;
             editMemberRegister.FormBorderStyle = FormBorderStyle.None;
@@ -75,7 +55,6 @@ namespace ProjGym
         private void showinfo(tIdentity m)
         {
             this.identity = m;
-            lbl_Info.Visible = false;
 
             if (m.role_id == 1)
                 info_member(m);
@@ -87,6 +66,7 @@ namespace ProjGym
 
         private void info_member(tIdentity m)
         {
+            this.會員中心ToolStripMenuItem.Visible = true;
             this.教練中心ToolStripMenuItem.Visible = false;
             this.管理者中心ToolStripMenuItem.Visible = false;
 
@@ -95,7 +75,7 @@ namespace ProjGym
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
             lblWelcome.ForeColor = Color.Blue;
-            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.AutoSize = true;
             lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
 
             int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
@@ -110,6 +90,7 @@ namespace ProjGym
         private void info_coach(tIdentity m)
         {
             this.會員中心ToolStripMenuItem.Visible = false;
+            this.教練中心ToolStripMenuItem.Visible = true;
             this.管理者中心ToolStripMenuItem.Visible = false;
 
             lblWelcome = new Label();
@@ -117,7 +98,7 @@ namespace ProjGym
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
             lblWelcome.ForeColor = Color.Blue;
-            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.AutoSize = true;
             lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
 
             int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
@@ -136,7 +117,7 @@ namespace ProjGym
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
             lblWelcome.ForeColor = Color.Blue;
-            lblWelcome.AutoSize = true; // 啟用自動調整大小
+            lblWelcome.AutoSize = true;
             lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
 
             int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
@@ -167,8 +148,7 @@ namespace ProjGym
 
         private void MainLog()
         {
-            //this.splitContainer1.Panel2.Controls.Clear();
-            lbl_Info.Text = string.Empty;
+            //lbl_Info.Text = string.Empty;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.afterLogin += this.showinfo;
             frmLogin.ShowDialog();
@@ -180,21 +160,16 @@ namespace ProjGym
         {
             FrmNewAdminRegister frm = new FrmNewAdminRegister();
             frm.savedata += FrmAdmin_register;
-            //將[新增會員資料]表單顯示出來
             frm.ShowDialog();
-            //如果[新增會員資料]表單的result屬性為DialogResult.No
             if (frm.result == DialogResult.No)
-                //將程式控制權回傳(在此案例中，程式控制權會從[新增會員資料]表單回傳給[登入頁面]表單)
                 return;
         }
 
         private void FrmAdmin_register(FrmNewAdminRegister frm)
         {
-            //產生[gym資料庫實體]
             gymEntities db = new gymEntities();
-            //產生[Identity]表單物件
             tIdentity admin = new tIdentity();
-            //設定新會員資料(名稱、身分ID、性別ID、電話、地址、生日、電郵、密碼、照片檔案名稱)
+
             int admin_count = db.tIdentity.Count(x => x.role_id.Equals(3)) + 1;
             admin.role_id = 3;
             admin.name = $"Admin {admin_count}";
@@ -205,35 +180,31 @@ namespace ProjGym
             admin.birthday = DateTime.Now;
             admin.address = "x";
             admin.gender_id = 3;
-            //將新會員資料新增至[gym資料庫實體]
             db.tIdentity.Add(admin);
-            //存回資料庫
             db.SaveChanges();
+
             MessageBox.Show("新增管理員完成");
         }
 
         private void 會員登出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             logoutevent();
-            MainLog();
         }
 
         private void 帳號登出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             logoutevent();
-            MainLog();
         }
 
         private void logoutevent()
         {
             DialogResult Logout = MessageBox.Show("確定要登出？", "", MessageBoxButtons.OKCancel);
-            if (Logout == DialogResult.Yes)
-            {
-                this.identity = null;
-                this.lblWelcome = null;
-                showmain();
+            if (Logout != DialogResult.OK)
                 return;
-            }   
+            this.identity = null;
+            this.lblWelcome = null;
+            showmain();
+            MainLog();
         }
 
         private void showmain()
