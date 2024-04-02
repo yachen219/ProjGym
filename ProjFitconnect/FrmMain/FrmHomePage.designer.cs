@@ -166,9 +166,9 @@
             this.關於我們ToolStripMenuItem,
             this.管理者中心ToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 141);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 120);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1382, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1382, 57);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -372,6 +372,7 @@
             this.yOUTUBEToolStripMenuItem.Name = "yOUTUBEToolStripMenuItem";
             this.yOUTUBEToolStripMenuItem.Size = new System.Drawing.Size(221, 32);
             this.yOUTUBEToolStripMenuItem.Text = "YOUTUBE";
+            this.yOUTUBEToolStripMenuItem.Click += new System.EventHandler(this.yOUTUBEToolStripMenuItem_Click);
             // 
             // 管理者中心ToolStripMenuItem
             // 

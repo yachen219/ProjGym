@@ -295,6 +295,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="tool\reservebox.resx">
+      <DependentUpon>reservebox.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Db.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Db.Designer.cs</LastGenOutput>

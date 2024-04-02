@@ -265,5 +265,10 @@ namespace ProjGym
             this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();
         }
+
+        private void yOUTUBEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
     }
 }
