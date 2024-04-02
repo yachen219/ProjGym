@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace ProjGym
 {
-    public partial class FrmCoachScheduleEdit : Form
+    public partial class FrmCoachScheduleView : Form
     {
         
-        public FrmCoachScheduleEdit()
+        public FrmCoachScheduleView()
         {
             InitializeComponent();
         }

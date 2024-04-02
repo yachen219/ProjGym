@@ -91,11 +91,11 @@
     <Compile Include="FrmCoachInfo.designer.cs">
       <DependentUpon>FrmCoachInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCoachScheduleEdit.cs">
+    <Compile Include="FrmCoachScheduleView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCoachScheduleEdit.designer.cs">
-      <DependentUpon>FrmCoachScheduleEdit.cs</DependentUpon>
+    <Compile Include="FrmCoachScheduleView.designer.cs">
+      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditMemberRegister.cs">
       <SubType>Form</SubType>
@@ -234,8 +234,8 @@
     <EmbeddedResource Include="FrmCoachInfo.resx">
       <DependentUpon>FrmCoachInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCoachScheduleEdit.resx">
-      <DependentUpon>FrmCoachScheduleEdit.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCoachScheduleView.resx">
+      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditMemberRegister.resx">
       <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
