@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="tool\CourseBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tool\CourseBox.designer.cs">
+      <DependentUpon>CourseBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +75,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin_ClassUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin_ClassUpdate.designer.cs">
+      <DependentUpon>FrmAdmin_ClassUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCoach_AddNewCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCoach_AddNewCourse.designer.cs">
+      <DependentUpon>FrmCoach_AddNewCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMember_ClassList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMember_ClassList.designer.cs">
+      <DependentUpon>FrmMember_ClassList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMember_CourseReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMember_CourseReservation.designer.cs">
+      <DependentUpon>FrmMember_CourseReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmNewExpert.cs">
       <SubType>Form</SubType>
@@ -243,6 +273,21 @@
     <Compile Include="ttimes_detail.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tool\CourseBox.resx">
+      <DependentUpon>CourseBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin_ClassUpdate.resx">
+      <DependentUpon>FrmAdmin_ClassUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCoach_AddNewCourse.resx">
+      <DependentUpon>FrmCoach_AddNewCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMember_ClassList.resx">
+      <DependentUpon>FrmMember_ClassList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMember_CourseReservation.resx">
+      <DependentUpon>FrmMember_CourseReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tool\CoachBox.resx">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </EmbeddedResource>

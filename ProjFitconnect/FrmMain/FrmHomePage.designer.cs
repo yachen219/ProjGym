@@ -95,7 +95,7 @@
             this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.splitContainer1.Size = new System.Drawing.Size(1185, 740);
-            this.splitContainer1.SplitterDistance = 163;
+            this.splitContainer1.SplitterDistance = 162;
             this.splitContainer1.TabIndex = 0;
             // 
             // label2
@@ -161,7 +161,7 @@
             this.關於我們ToolStripMenuItem,
             this.管理者中心ToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 103);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 102);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1185, 60);
