@@ -1,4 +1,5 @@
 ﻿using FrmMain;
+using Revised_V1._1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,16 +56,20 @@ namespace ProjGym
         private void 修改會員資料ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             closeCurrentForm();
-
+            //todo:0
             lbl_Info.Visible = false;
-
+            this.splitContainer1.Panel2.Controls.Clear();
             FrmEditMemberRegister editMemberRegister = new FrmEditMemberRegister();
-
+            //mdiparent???
             editMemberRegister.afterEdit += this.showinfo;
-
+            editMemberRegister.TopLevel = false;
+            editMemberRegister.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(editMemberRegister);
             editMemberRegister.StartPosition = FormStartPosition.CenterParent;
             editMemberRegister.MdiParent = this;
+            MessageBox.Show("" +identity.id);
             editMemberRegister.Show();
+ 
         }
 
         private void showinfo(tIdentity m)
@@ -239,6 +244,26 @@ namespace ProjGym
             mm.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(mm);
             mm.Show();
+        }
+
+        private void 已預約課程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmClassReserved f = new FrmClassReserved();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 找教練ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmFindCoach f = new FrmFindCoach();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
         }
     }
 }

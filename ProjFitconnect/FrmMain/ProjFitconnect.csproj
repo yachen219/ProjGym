@@ -55,29 +55,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoachBox.cs">
+    <Compile Include="dbGYM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbGYM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbGYM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbGYM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbGYM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclasses.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_limit_details.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_reserve.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_schedule.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_sort_有氧.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_sort_訓練.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass_status_detail.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tcoach_expert.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tcoach_info_id.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tfield.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tfield_reserve.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tgender_Table.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tIdentity.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tidentity_role_detail.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_follow.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_rate_class.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmember_status_details.cs">
+      <DependentUpon>dbGYM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tool\CoachBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CoachBox.designer.cs">
+    <Compile Include="tool\CoachBox.designer.cs">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRoundPictureBox.cs">
+    <Compile Include="tool\CRoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.Context.tt</DependentUpon>
+    <Compile Include="FrmClassReserved.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.edmx</DependentUpon>
+    <Compile Include="FrmClassReserved.Designer.cs">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmClassUpdate.cs">
       <SubType>Form</SubType>
@@ -165,68 +225,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+    <Compile Include="tool\reservebox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="tclasses.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_limit_details.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_reserve.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_schedule.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_sort_有氧.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_sort_訓練.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tclass_status_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tcoach_expert.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tcoach_info_id.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tfield.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tfield_reserve.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tgender_Table.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tIdentity.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tidentity_role_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tmember_follow.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tmember_rate_class.cs">
-      <DependentUpon>DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tmember_status_details.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+    <Compile Include="tool\reservebox.Designer.cs">
+      <DependentUpon>reservebox.cs</DependentUpon>
     </Compile>
     <Compile Include="tregion_table.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>dbGYM.tt</DependentUpon>
     </Compile>
     <Compile Include="ttimes_detail.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>dbGYM.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CoachBox.resx">
+    <EmbeddedResource Include="tool\CoachBox.resx">
       <DependentUpon>CoachBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClassReserved.resx">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClassUpdate.resx">
       <DependentUpon>FrmClassUpdate.cs</DependentUpon>
@@ -280,12 +295,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="DB.edmx">
+    <EntityDeploy Include="dbGYM.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbGYM.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DB.edmx.diagram">
-      <DependentUpon>DB.edmx</DependentUpon>
+    <None Include="dbGYM.edmx.diagram">
+      <DependentUpon>dbGYM.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -312,15 +327,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB.Context.tt">
+    <Content Include="dbGYM.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.Context.cs</LastGenOutput>
+      <DependentUpon>dbGYM.edmx</DependentUpon>
+      <LastGenOutput>dbGYM.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DB.tt">
+    <Content Include="dbGYM.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.cs</LastGenOutput>
+      <DependentUpon>dbGYM.edmx</DependentUpon>
+      <LastGenOutput>dbGYM.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
