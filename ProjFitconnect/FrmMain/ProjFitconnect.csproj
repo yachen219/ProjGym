@@ -55,13 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoachBox.cs">
+    <Compile Include="tool\CoachBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CoachBox.designer.cs">
+    <Compile Include="tool\CoachBox.designer.cs">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRoundPictureBox.cs">
+    <Compile Include="tool\CRoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="dbGym.Context.cs">
@@ -78,6 +78,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbGym.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClassReserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClassReserved.Designer.cs">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmClassUpdate.cs">
       <SubType>Form</SubType>
@@ -165,6 +171,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tool\reservebox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tool\reservebox.Designer.cs">
+      <DependentUpon>reservebox.cs</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>dbGym.tt</DependentUpon>
     </Compile>
@@ -225,8 +237,11 @@
     <Compile Include="ttimes_detail.cs">
       <DependentUpon>dbGym.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CoachBox.resx">
+    <EmbeddedResource Include="tool\CoachBox.resx">
       <DependentUpon>CoachBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClassReserved.resx">
+      <DependentUpon>FrmClassReserved.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClassUpdate.resx">
       <DependentUpon>FrmClassUpdate.cs</DependentUpon>
@@ -280,6 +295,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="tool\reservebox.resx">
+      <DependentUpon>reservebox.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="dbGym.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dbGym.Designer.cs</LastGenOutput>

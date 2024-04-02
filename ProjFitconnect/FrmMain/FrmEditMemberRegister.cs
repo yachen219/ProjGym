@@ -43,7 +43,8 @@ namespace ProjGym
             //利用[編輯會員資料]表單的MdiParent屬性取得[主程式表單]
             //利用[主程式表單]的member屬性取得[登入者]資料
             //取得[登入者]資料中唯一不變的id屬性(流水號)
-            int index = (this.MdiParent as FrmMain).member.id;
+             MessageBox.Show(""+(this.MdiParent as FrmHomePage).member.id);
+            int index = (this.MdiParent as FrmHomePage).member.id;
             //在[Identity]資料表內，利用[登入者]的流水號找出對應的會員(m)
             tIdentity m = db.tIdentity.FirstOrDefault(x => x.id == index);
             //利用m的名稱、身分ID、性別ID、電話、地址、生日、電郵、密碼、照片檔案名稱，
@@ -75,7 +76,7 @@ namespace ProjGym
             //利用[編輯會員資料]表單的MdiParent屬性取得[主程式表單]
             //利用[主程式表單]的member屬性取得[登入者]資料
             //取得[登入者]資料中唯一不變的id屬性(流水號)
-            int index = (this.MdiParent as FrmMain).member.id;
+            int index = (this.MdiParent as FrmHomePage).member.id;
             //在[Identity]資料表內，利用[登入者]的流水號找出對應的會員欄位(m)
             tIdentity m = db.tIdentity.FirstOrDefault(x => x.id == index);
             //依照combobox_Gender所選的性別，找出對應的性別ID
