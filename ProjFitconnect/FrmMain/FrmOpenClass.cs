@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using YourNamespace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Data.Entity;
 
 namespace ProjGym
 {
@@ -19,17 +18,11 @@ namespace ProjGym
 
     public partial class FrmOpenClass : Form
     {
-        private FrmHomePage m;
         private DialogResult _isOk;
         private tclass_schedule _schedule;
-
         private int _classid;
         private int _fieldid;
         private int _timeid;
-        private tfield _field;
-        private string _Field_photo ="";
-
-
         public tclass_schedule schedule
         {
             get
@@ -42,7 +35,7 @@ namespace ProjGym
                 gymEntities gym = new gymEntities();
                 tclasses c = gym.tclasses.FirstOrDefault(x => x.class_name == this.cbClassName.Text);
                 _schedule.class_id = c.class_id;
-                _schedule.coach_id = m.identity.id;
+                _schedule.coach_id = 1;
                 tfield f = gym.tfield.FirstOrDefault(x => x.field_name == this.cbField.Text);
                 _schedule.field_id = f.field_id;
                 _schedule.course_date = this.dateTimePicker1.Value;
@@ -51,9 +44,7 @@ namespace ProjGym
                 _schedule.Max_student = Convert.ToInt32(txtMaxStudent.Text);
                 _schedule.class_payment = Convert.ToInt32(txtPrice.Text);
                 _schedule.class_status_id = 2;
-                //_field.field_photo = _Field_photo;
                 return _schedule;
-
             }
             set
             {
@@ -65,14 +56,6 @@ namespace ProjGym
                 cbTime.SelectedValue = _schedule.course_time_id.ToString();
                 txtMaxStudent.Text = _schedule.Max_student.ToString();
                 txtPrice.Text = _schedule.class_payment.ToString();
-                /*
-                _Field_photo = _field.field_photo.ToString();
-                if (!string.IsNullOrEmpty(_Field_photo))
-                {
-                    string path = Application.StartupPath + "\\fieldImages";
-                    pictureBox1.Image = new Bitmap(path + "\\" + _field.field_photo);
-                }
-                */
             }
         }
         
@@ -87,7 +70,7 @@ namespace ProjGym
     //public DialogResult result { get; set; }
 
 
-    public DialogResult isOk
+        public DialogResult isOk
         {
             get
             {
@@ -95,10 +78,9 @@ namespace ProjGym
             }
         }
 
-        public FrmOpenClass(FrmHomePage m)
+        public FrmOpenClass()
         {
             InitializeComponent();
-            this.m = m;
         }
 
         private void FrmOpenClass_Load(object sender, EventArgs e)
@@ -121,7 +103,6 @@ namespace ProjGym
         private void button1_Click(object sender, EventArgs e)
         {
             _isOk = DialogResult.OK;
-
             Close();
         }
 
@@ -133,10 +114,24 @@ namespace ProjGym
 
         private void cbField_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedImagePath = cbField.SelectedItem.ToString();
             try
             {
-                pictureBox1.Image = new Bitmap(selectedImagePath);
+                gymEntities db = new gymEntities();
+                var fieldpic = from r in db.tfield
+                               where r.field_id == cbField.SelectedIndex + 1
+                               select r;
+
+                var field = fieldpic.FirstOrDefault(); // 獲取符合條件的第一個記錄
+                if (field != null)
+                {
+                    string path = Application.StartupPath + "\\fieldImages";
+                    //string imagePath = Path.Combine(path, tfield.field_photo); // 使用 LINQ 查詢中檢索到的 field_photo
+                    //pictureBox1.Image = new Bitmap(imagePath);
+                }
+                else
+                {
+                    MessageBox.Show("No matching record found.");
+                }
             }
             catch (Exception ex)
             {

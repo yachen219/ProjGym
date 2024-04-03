@@ -1,4 +1,5 @@
 ﻿using FrmMain;
+using mid_Coonect;
 using Revised_V1._1;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace ProjGym
         {
             InitializeComponent();
             splitContainer1.SplitterWidth = 3;
+            this.找商品ToolStripMenuItem.Visible = false;
+            this.lbl_Info.Visible = false;
         }
         private void closeCurrentForm()
         {
@@ -38,18 +41,19 @@ namespace ProjGym
         private void 修改會員資料ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             closeCurrentForm();
-            lbl_Info.Visible = false;
             this.splitContainer1.Panel2.Controls.Clear();
             FrmEditMemberRegister editMemberRegister = new FrmEditMemberRegister();
+            editMemberRegister.identity = this.identity;
             editMemberRegister.afterEdit += this.showinfo;
             editMemberRegister.TopLevel = false;
             editMemberRegister.FormBorderStyle = FormBorderStyle.None;
-            this.splitContainer1.Panel2.Controls.Add(editMemberRegister);
+
+            editMemberRegister.Visible = true;
+            editMemberRegister.Dock = DockStyle.Fill;
             editMemberRegister.StartPosition = FormStartPosition.CenterParent;
             editMemberRegister.MdiParent = this;
-            MessageBox.Show("" +identity.id);
+            this.splitContainer1.Panel2.Controls.Add(editMemberRegister);
             editMemberRegister.Show();
- 
         }
 
         private void showinfo(tIdentity m)
@@ -69,9 +73,14 @@ namespace ProjGym
             this.會員中心ToolStripMenuItem.Visible = true;
             this.教練中心ToolStripMenuItem.Visible = false;
             this.管理者中心ToolStripMenuItem.Visible = false;
+            lblWecomeshow(m);
+            this.Text = "歡迎登入 ： " + m.name;
+        }
 
+        private void lblWecomeshow(tIdentity m)
+        {
             Label lblWelcome = new Label();
-            lblWelcome.Text = "歡迎，會員 " + m.name + " 登入";
+            lblWelcome.Text = "歡迎登入 ： " + m.name;
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
             lblWelcome.ForeColor = Color.Blue;
@@ -83,8 +92,6 @@ namespace ProjGym
             lblWelcome.Location = new Point(x, y);
 
             this.splitContainer1.Panel2.Controls.Add(lblWelcome);
-
-            this.Text = "歡迎登入 ： " + m.name;
         }
 
         private void info_coach(tIdentity m)
@@ -93,39 +100,17 @@ namespace ProjGym
             this.教練中心ToolStripMenuItem.Visible = true;
             this.管理者中心ToolStripMenuItem.Visible = false;
 
-            lblWelcome = new Label();
-            lblWelcome.Text = "歡迎，教練 " + m.name + " 登入";
-            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
-            lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
-            lblWelcome.ForeColor = Color.Blue;
-            lblWelcome.AutoSize = true;
-            lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
-
-            int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
-            int y = (splitContainer1.Panel2.Height - lblWelcome.Height) / 2;
-            lblWelcome.Location = new Point(x, y);
-
-            this.splitContainer1.Panel2.Controls.Add(lblWelcome);
-
+            lblWecomeshow(m);
             this.Text = "歡迎登入 ： " + m.name;
         }
 
         private void info_admin(tIdentity m)
         {
-            Label lblWelcome = new Label();
-            lblWelcome.Text = "歡迎登入： " + m.name;
-            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
-            lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
-            lblWelcome.ForeColor = Color.Blue;
-            lblWelcome.AutoSize = true;
-            lblWelcome.MaximumSize = new Size(this.splitContainer1.Panel2.Width, 0);
-
-            int x = (splitContainer1.Panel2.Width - lblWelcome.Width) / 2;
-            int y = (splitContainer1.Panel2.Height - lblWelcome.Height) / 2;
-            lblWelcome.Location = new Point(x, y);
-
-            this.splitContainer1.Panel2.Controls.Add(lblWelcome);
-
+            this.會員中心ToolStripMenuItem.Visible = true;
+            this.教練中心ToolStripMenuItem.Visible = true;
+            this.管理者中心ToolStripMenuItem.Visible = true;
+            
+            lblWecomeshow(m);
             this.Text = "歡迎登入 ： " + m.name;
         }
 
@@ -148,7 +133,6 @@ namespace ProjGym
 
         private void MainLog()
         {
-            //lbl_Info.Text = string.Empty;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.afterLogin += this.showinfo;
             frmLogin.ShowDialog();
@@ -221,6 +205,8 @@ namespace ProjGym
         {
             this.splitContainer1.Panel2.Controls.Clear();
             FrmClassReserved f = new FrmClassReserved();
+            f.MdiParent = this;
+            f.identity = this.identity;
             f.TopLevel = false;
             f.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(f);
@@ -244,7 +230,76 @@ namespace ProjGym
 
         private void 預約體驗ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frmfreetrial f = new Frmfreetrial();
+            (new Frmfreetrial()).Show();
+        }
+
+        private void 新增課程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmCoach_AddNewCourse f = new FrmCoach_AddNewCourse();
+            f.MdiParent = this;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 開課審核ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmAdmin_ClassUpdate f = new FrmAdmin_ClassUpdate();
+            f.MdiParent = this;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+        private void 訓練課程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmMember_ClassList f = new FrmMember_ClassList();
+            f.MdiParent = this;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 預約場地ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmOpenedClassCheck f = new FrmOpenedClassCheck();
+            f.MdiParent = this;
+            f.Identity = this.identity;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+        private void Identity_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            lblWecomeshow(this.identity);
+        }
+
+        private void 教練審核ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmCoachVertify f = new FrmCoachVertify();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 修改教練資料ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmEditCoachRegister f = new FrmEditCoachRegister();
+            f.TopLevel = false;
+            f.identity = this.identity;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();
         }
     }

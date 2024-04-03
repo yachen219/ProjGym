@@ -32,8 +32,6 @@ namespace ProjGym
         
         List<string> expert_text = new List<string>();
 
-        public int newexpertcount = 0;
-
         private int tabindex = 8;
         public string intro { get { return this.tb_intro.ToString(); } }
         public DialogResult result { get; set; }
@@ -100,8 +98,8 @@ namespace ProjGym
             var classes = from a in db.tclasses select a;
             classes.ToList().ForEach(a => { expert.Items.Add(a.class_name); });
             expert.Items.Add("其他");
-            //expert.SelectedIndexChanged += this.Expert_SelectedIndexChanged;
-            expert.Leave += this.Expert_Leave;
+            expert.SelectedIndexChanged += this.Expert_SelectedIndexChanged;
+            //expert.Leave += this.Expert_Leave;
             this.panel_expert.Controls.Add(expert);
         }
 
@@ -110,10 +108,7 @@ namespace ProjGym
             string s = ((ComboBox)sender).Text;
             if (s == "其他")
             {
-                TextBox expertbox = new TextBox();
-                this.panel_expert.Controls.Add(expertbox);
-                expertbox.TextChanged += Expertbox_TextChanged;
-                newexpertcount++;
+                (new FrmNewExpert()).ShowDialog();
                 addnewexpertbox();
                 return;
             }
@@ -126,10 +121,7 @@ namespace ProjGym
             string s = ((ComboBox)sender).Text;
             if (s == "其他")
             {
-                TextBox expertbox = new TextBox();
-                this.panel_expert.Controls.Add(expertbox);
-                expertbox.TextChanged += Expertbox_TextChanged;
-                newexpertcount++;
+                (new FrmNewExpert()).ShowDialog();
                 addnewexpertbox();
                 return;
             }

@@ -94,7 +94,7 @@
             // 
             this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.splitContainer1.Size = new System.Drawing.Size(1185, 740);
+            this.splitContainer1.Size = new System.Drawing.Size(1271, 740);
             this.splitContainer1.SplitterDistance = 161;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -161,10 +161,10 @@
             this.關於我們ToolStripMenuItem,
             this.管理者中心ToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 101);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 110);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1185, 60);
+            this.menuStrip1.Size = new System.Drawing.Size(1271, 51);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -237,6 +237,7 @@
             this.訓練課程ToolStripMenuItem.Name = "訓練課程ToolStripMenuItem";
             this.訓練課程ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.訓練課程ToolStripMenuItem.Text = "訓練課程";
+            this.訓練課程ToolStripMenuItem.Click += new System.EventHandler(this.訓練課程ToolStripMenuItem_Click);
             // 
             // 找商品ToolStripMenuItem
             // 
@@ -277,6 +278,7 @@
             this.會員中心ToolStripMenuItem.Name = "會員中心ToolStripMenuItem";
             this.會員中心ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
             this.會員中心ToolStripMenuItem.Text = "會員中心";
+            this.會員中心ToolStripMenuItem.Click += new System.EventHandler(this.Identity_Click);
             // 
             // 會員登出ToolStripMenuItem
             // 
@@ -311,29 +313,33 @@
             this.教練中心ToolStripMenuItem.Name = "教練中心ToolStripMenuItem";
             this.教練中心ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
             this.教練中心ToolStripMenuItem.Text = "教練中心";
+            this.教練中心ToolStripMenuItem.Click += new System.EventHandler(this.Identity_Click);
             // 
             // 修改教練資料ToolStripMenuItem
             // 
             this.修改教練資料ToolStripMenuItem.Name = "修改教練資料ToolStripMenuItem";
-            this.修改教練資料ToolStripMenuItem.Size = new System.Drawing.Size(194, 28);
+            this.修改教練資料ToolStripMenuItem.Size = new System.Drawing.Size(251, 28);
             this.修改教練資料ToolStripMenuItem.Text = "修改教練資料";
+            this.修改教練資料ToolStripMenuItem.Click += new System.EventHandler(this.修改教練資料ToolStripMenuItem_Click);
             // 
             // 新增課程ToolStripMenuItem
             // 
             this.新增課程ToolStripMenuItem.Name = "新增課程ToolStripMenuItem";
-            this.新增課程ToolStripMenuItem.Size = new System.Drawing.Size(194, 28);
-            this.新增課程ToolStripMenuItem.Text = "新增課程";
+            this.新增課程ToolStripMenuItem.Size = new System.Drawing.Size(251, 28);
+            this.新增課程ToolStripMenuItem.Text = "新增課程、預約場地";
+            this.新增課程ToolStripMenuItem.Click += new System.EventHandler(this.新增課程ToolStripMenuItem_Click);
             // 
             // 預約場地ToolStripMenuItem
             // 
             this.預約場地ToolStripMenuItem.Name = "預約場地ToolStripMenuItem";
-            this.預約場地ToolStripMenuItem.Size = new System.Drawing.Size(194, 28);
-            this.預約場地ToolStripMenuItem.Text = "預約場地";
+            this.預約場地ToolStripMenuItem.Size = new System.Drawing.Size(251, 28);
+            this.預約場地ToolStripMenuItem.Text = "查看已開課程";
+            this.預約場地ToolStripMenuItem.Click += new System.EventHandler(this.預約場地ToolStripMenuItem_Click);
             // 
             // 帳號登出ToolStripMenuItem
             // 
             this.帳號登出ToolStripMenuItem.Name = "帳號登出ToolStripMenuItem";
-            this.帳號登出ToolStripMenuItem.Size = new System.Drawing.Size(194, 28);
+            this.帳號登出ToolStripMenuItem.Size = new System.Drawing.Size(251, 28);
             this.帳號登出ToolStripMenuItem.Text = "帳號登出";
             this.帳號登出ToolStripMenuItem.Click += new System.EventHandler(this.帳號登出ToolStripMenuItem_Click);
             // 
@@ -384,6 +390,7 @@
             this.管理者中心ToolStripMenuItem.Name = "管理者中心ToolStripMenuItem";
             this.管理者中心ToolStripMenuItem.Size = new System.Drawing.Size(117, 28);
             this.管理者中心ToolStripMenuItem.Text = "管理者中心";
+            this.管理者中心ToolStripMenuItem.Click += new System.EventHandler(this.Identity_Click);
             // 
             // 會員資訊ToolStripMenuItem
             // 
@@ -396,12 +403,14 @@
             this.開課審核ToolStripMenuItem.Name = "開課審核ToolStripMenuItem";
             this.開課審核ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.開課審核ToolStripMenuItem.Text = "開課審核";
+            this.開課審核ToolStripMenuItem.Click += new System.EventHandler(this.開課審核ToolStripMenuItem_Click);
             // 
             // 教練審核ToolStripMenuItem
             // 
             this.教練審核ToolStripMenuItem.Name = "教練審核ToolStripMenuItem";
             this.教練審核ToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.教練審核ToolStripMenuItem.Text = "教練審核";
+            this.教練審核ToolStripMenuItem.Click += new System.EventHandler(this.教練審核ToolStripMenuItem_Click);
             // 
             // 付款資訊ToolStripMenuItem
             // 
@@ -420,7 +429,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 740);
+            this.ClientSize = new System.Drawing.Size(1271, 740);
             this.Controls.Add(this.splitContainer1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -438,6 +447,11 @@
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+
+        private void 會員中心ToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
