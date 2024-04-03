@@ -80,7 +80,14 @@ namespace ProjGym
         private void lblWecomeshow(tIdentity m)
         {
             Label lblWelcome = new Label();
-            lblWelcome.Text = "歡迎登入 ： " + m.name;
+            string s = "歡迎登入 ： " + m.name;
+            if (m.role_id == 1)
+                s += "\n您的身份是：會員";
+            else if (m.role_id == 2)
+                s += "\n您的身份是：教練";
+            else
+                s += "\n您的身份是：管理者";
+            lblWelcome.Text = s;
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             lblWelcome.Font = new Font("微軟正黑體", 20, FontStyle.Bold);
             lblWelcome.ForeColor = Color.Blue;
@@ -106,10 +113,10 @@ namespace ProjGym
 
         private void info_admin(tIdentity m)
         {
-            this.會員中心ToolStripMenuItem.Visible = true;
-            this.教練中心ToolStripMenuItem.Visible = true;
+            this.會員中心ToolStripMenuItem.Visible = false;
+            this.教練中心ToolStripMenuItem.Visible = false;
             this.管理者中心ToolStripMenuItem.Visible = true;
-            
+
             lblWecomeshow(m);
             this.Text = "歡迎登入 ： " + m.name;
         }
@@ -298,6 +305,21 @@ namespace ProjGym
             FrmEditCoachRegister f = new FrmEditCoachRegister();
             f.TopLevel = false;
             f.identity = this.identity;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 登出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            logoutevent();
+        }
+
+        private void 會員資訊ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmAdmin_Checkmember f = new FrmAdmin_Checkmember();
+            f.TopLevel = false;
             f.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();

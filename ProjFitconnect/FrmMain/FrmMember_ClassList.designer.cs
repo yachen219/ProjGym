@@ -40,8 +40,7 @@
             // 
             // flowLayoutPanel_ClassCategory
             // 
-            this.flowLayoutPanel_ClassCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel_ClassCategory.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel_ClassCategory.Location = new System.Drawing.Point(117, 90);
             this.flowLayoutPanel_ClassCategory.Name = "flowLayoutPanel_ClassCategory";
             this.flowLayoutPanel_ClassCategory.Size = new System.Drawing.Size(756, 35);
@@ -49,8 +48,7 @@
             // 
             // lbl_ClassCategories
             // 
-            this.lbl_ClassCategories.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_ClassCategories.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_ClassCategories.AutoSize = true;
             this.lbl_ClassCategories.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_ClassCategories.Location = new System.Drawing.Point(20, 97);
@@ -61,8 +59,7 @@
             // 
             // flowLayoutPanel_Aerobic
             // 
-            this.flowLayoutPanel_Aerobic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel_Aerobic.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel_Aerobic.Location = new System.Drawing.Point(117, 49);
             this.flowLayoutPanel_Aerobic.Name = "flowLayoutPanel_Aerobic";
             this.flowLayoutPanel_Aerobic.Size = new System.Drawing.Size(225, 35);
@@ -70,8 +67,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(12, 53);
@@ -82,8 +78,7 @@
             // 
             // dataGridView_Test
             // 
-            this.dataGridView_Test.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView_Test.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView_Test.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Test.Location = new System.Drawing.Point(16, 493);
             this.dataGridView_Test.Name = "dataGridView_Test";
@@ -93,8 +88,7 @@
             // 
             // btn_Search
             // 
-            this.btn_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Search.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Search.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Search.Location = new System.Drawing.Point(390, 53);
             this.btn_Search.Name = "btn_Search";
@@ -106,7 +100,7 @@
             // 
             // flowLayoutPanel_Course
             // 
-            this.flowLayoutPanel_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel_Course.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel_Course.AutoScroll = true;
             this.flowLayoutPanel_Course.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel_Course.Location = new System.Drawing.Point(16, 144);
@@ -128,6 +122,7 @@
             this.Controls.Add(this.flowLayoutPanel_ClassCategory);
             this.Name = "FrmMember_ClassList";
             this.Text = "Member | 課程查詢";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmClassList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Test)).EndInit();
             this.ResumeLayout(false);

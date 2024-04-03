@@ -106,6 +106,7 @@
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Save);
             this.Name = "FrmNewAdminRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewAdminRegister";
             this.ResumeLayout(false);
             this.PerformLayout();

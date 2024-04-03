@@ -100,12 +100,12 @@ namespace ProjGym
                                  介紹 = intersection.class_introduction
                              };
             //如果[有氧無氧]與[課程類型]的交集為null，就顯示全部課程
-            //if (finalQuery.ToList().Count == 0)
-            //{
-            //    var another = from alls in gymEntities.@class select alls;
-            //    this.dataGridView_Test.DataSource = another.ToList();
-            //    return;
-            //}
+            if (finalQuery.ToList().Count == 0)
+            {
+                var another = from alls in gymEntities.tclasses select alls;
+                this.dataGridView_Test.DataSource = another.ToList();
+                return;
+            }
             this.flowLayoutPanel_Course.Controls.Clear();
             foreach (var final in finalQuery)
             {
