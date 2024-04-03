@@ -88,7 +88,7 @@
     </Compile>
     <Compile Include="FieldBox.Designer.cs">
       <DependentUpon>FieldBox.cs</DependentUpon>
-
+	</Compile>
     <Compile Include="FrmAdmin_ClassUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,7 +335,7 @@
     </Compile>
     <Compile Include="tmember_status_details.cs">
       <DependentUpon>DB.tt</DependentUpon>
-
+	</Compile>
     <Compile Include="tool\reservebox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -373,7 +373,7 @@
 
     <EmbeddedResource Include="FieldBox.resx">
       <DependentUpon>FieldBox.cs</DependentUpon>
-
+	</EmbeddedResource>
     <EmbeddedResource Include="FrmClassReserved.resx">
       <DependentUpon>FrmClassReserved.cs</DependentUpon>
 
