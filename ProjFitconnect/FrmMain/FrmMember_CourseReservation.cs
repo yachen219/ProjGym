@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrmMain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,8 +26,8 @@ namespace ProjGym
         private void FrmCurriculum_Load(object sender, EventArgs e)
         {
             gymEntities gymEntities = new gymEntities();
-            var courses = from classCategory in gymEntities.@class
-                                  select classCategory;
+            var courses = from classCategory in gymEntities.tclasses
+                          select classCategory;
             courses.ToList().ForEach(course =>
             {
                 CheckBox c = new CheckBox();
@@ -64,24 +65,24 @@ namespace ProjGym
             gymEntities gymEntities = new gymEntities();
 
             //選擇課程類別
-            var classQuery = gymEntities.class_schedule
+            var classQuery = gymEntities.tclass_schedule
                             .Where(classSchedule => _Classlist.Contains((int)classSchedule.class_id));
 
             //選擇日期
-            var dateQuery = gymEntities.class_schedule.Where(classSchedule => _Preiod.Contains(classSchedule.course_date));
+            var dateQuery = gymEntities.tclass_schedule.Where(classSchedule => _Preiod.Contains(classSchedule.course_date));
 
             //找交集
             var intersections = dateQuery.Intersect(classQuery);
 
             var finalQuery = from intersection in intersections
-                             join category in gymEntities.class_sort_訓練
+                             join category in gymEntities.tclass_sort_訓練
                              on intersection.class_id equals category.class_sort2_id
                              select new
                              {
-                                 課程名稱 = intersection.@class.class_name,
-                                 教練 = intersection.Identity.name,
-                                 場地 = intersection.field.field_name,
-                                 時段 = intersection.tbl_TimePeriod.TimePeriod,
+                                 課程名稱 = intersection.tclasses.class_name,
+                                 教練 = intersection.tIdentity.name,
+                                 場地 = intersection.tfield.field_name,
+                                 時段 = intersection.ttimes_detail.time_name,
                              };
             
             this.dataGridView_Test.DataSource = finalQuery.ToList();

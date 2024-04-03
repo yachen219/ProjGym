@@ -123,6 +123,7 @@ namespace mid_Coonect
         }
         private void dbEdit(int id)
         {
+            /*
             using(var db =new gymEntities())
             {
                 var classsort = db.tclasses.FirstOrDefault(x => x.class_id == id);
@@ -143,6 +144,22 @@ namespace mid_Coonect
                 //MessageBox.Show(_imagepath);
                 db.SaveChanges();
             } 
+            */
+            gymEntities db = new gymEntities();
+            var classsort = db.tclasses.FirstOrDefault(x => x.class_id == id);
+            if (classsort == null) return; //this.clAss = classsort;
+            classsort.class_sort1_id = Convert.ToInt32(comboBox1.Text);
+            classsort.class_sort2_id = Convert.ToInt32(comboBox2.Text);
+            classsort.limited_gender = Convert.ToInt32(comboBox3.Text);
+            classsort.class_name = txtClassName.Text;
+            classsort.class_introduction = txtIntroduction.Text;
+            if (!string.IsNullOrEmpty(_imagepath))
+            {
+                string path = Application.StartupPath + "\\ClassPic";
+                pictureBox1.Image = new Bitmap(path + "\\" + _imagepath);
+            }
+            classsort.class_photo = _imagepath;
+            
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

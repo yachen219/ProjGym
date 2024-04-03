@@ -20,11 +20,11 @@ namespace ProjGym
         }
         private void queryAll()
         {
-            FrmMain frmMain = this.MdiParent as FrmMain;
+            FrmHomePage frmMain = this.MdiParent as FrmHomePage;
 
             gymEntities db = new gymEntities();
             var schedules = from s in db.tclass_schedule
-                            where s.coach_id == frmMain.member.id
+                            where s.coach_id == frmMain.identity.id
                             select new
                             {
                                 

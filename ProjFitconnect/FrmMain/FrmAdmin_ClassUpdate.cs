@@ -1,4 +1,5 @@
-﻿using ProjGym;
+﻿using FrmMain;
+using ProjGym;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,13 +18,13 @@ namespace mid_Coonect
         private DialogResult _isOK;
         public DialogResult isOK { get { return _isOK; } }
         private string _imagepath;
-        private @class _course;
+        private tclasses _course;
         int _index = 1;
-        public @class course
+        public tclasses course
         {
             get
             {
-                if (_course == null) { _course = new @class(); }
+                if (_course == null) { _course = new tclasses(); }
                 _course.class_id = Convert.ToInt32(lbl_ID.Text);
                 _course.class_sort1_id = Convert.ToInt32(cb_Sort1.Text);
                 _course.class_sort2_id = Convert.ToInt32(cb_Sort2.Text);
@@ -89,7 +90,7 @@ namespace mid_Coonect
         private void ShowdbCalss()
         {
             gymEntities db = new gymEntities();
-            var classsort = from r in db.@class
+            var classsort = from r in db.tclasses
                             select new
                             {
                                 編號 = r.class_id,
@@ -109,14 +110,14 @@ namespace mid_Coonect
         private void FrmClassUpdate_Load(object sender, EventArgs e)
         {
             gymEntities gymEntities = new gymEntities();
-            var sort1s = from sort1 in gymEntities.class_sort_有氧 select sort1;
+            var sort1s = from sort1 in gymEntities.tclass_sort_有氧 select sort1;
             foreach (var sort1 in sort1s)
                 this.cb_Sort1.Items.Add(sort1.class_sort1_id);
 
-            var sort2s = from sort2 in gymEntities.class_sort_訓練 select sort2;
+            var sort2s = from sort2 in gymEntities.tclass_sort_訓練 select sort2;
             foreach (var sort2 in sort2s)
                 this.cb_Sort2.Items.Add(sort2.class_sort2_id);
-            var limits = from limit in gymEntities.class_limit_details select limit;
+            var limits = from limit in gymEntities.tclass_limit_details select limit;
             foreach (var limit in limits)
                 this.cb_Limit.Items.Add(limit.class_limited_id);
             ShowdbCalss();
@@ -126,7 +127,7 @@ namespace mid_Coonect
         {
             gymEntities db = new gymEntities();
             pb_ClassPhoto.Image = null;
-            @class classsort = db.@class.FirstOrDefault(x => x.class_id == id);
+            tclasses classsort = db.tclasses.FirstOrDefault(x => x.class_id == id);
             if (classsort == null) return;
             this.course = classsort;
             lbl_ID.Text = classsort.class_id.ToString();
@@ -145,9 +146,10 @@ namespace mid_Coonect
         }
         private void dbEdit(int id)
         {
+            /*
             using (gymEntities db = new gymEntities())
             {
-                var classsort = db.@class.FirstOrDefault(x => x.class_id == id);
+                var classsort = db.tclasses.FirstOrDefault(x => x.class_id == id);
                 if (classsort == null) return;
                 classsort.class_sort1_id = Convert.ToInt32(cb_Sort1.Text);
                 classsort.class_sort2_id = Convert.ToInt32(cb_Sort2.Text);
@@ -164,6 +166,24 @@ namespace mid_Coonect
                 MessageBox.Show("資料儲存成功");
                 db.SaveChanges();
             }
+            */
+            gymEntities db = new gymEntities();
+            var classsort = db.tclasses.FirstOrDefault(x => x.class_id == id);
+            if (classsort == null) return;
+            classsort.class_sort1_id = Convert.ToInt32(cb_Sort1.Text);
+            classsort.class_sort2_id = Convert.ToInt32(cb_Sort2.Text);
+            classsort.limited_gender = Convert.ToInt32(cb_Limit.Text);
+            classsort.class_name = txt_ClassName.Text;
+            classsort.class_introduction = txt_Introduction.Text;
+
+            if (!string.IsNullOrEmpty(_imagepath))
+            {
+                string path = Application.StartupPath + "\\ClassPic";
+                pb_ClassPhoto.Image = new Bitmap(path + "\\" + _imagepath);
+            }
+            classsort.class_photo = _imagepath;
+            MessageBox.Show("資料儲存成功");
+            db.SaveChanges();
         }
         private void DataGridView_ClassSortList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

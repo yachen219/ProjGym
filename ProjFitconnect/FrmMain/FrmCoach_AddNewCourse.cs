@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrmMain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,19 +26,19 @@ namespace ProjGym
         private void FrmCoach_CourseReservation_Load(object sender, EventArgs e)
         {
             gymEntities gymEntities = new gymEntities();
-            var courses = from course in gymEntities.@class
+            var courses = from course in gymEntities.tclasses
                           select course;
             courses.ToList().ForEach(course => { this.cb_Class.Items.Add(course.class_name.ToString()); });
-            var fields = from field in gymEntities.field
+            var fields = from field in gymEntities.tfield
                          select field;
             fields.ToList().ForEach(field => { this.cb_Field.Items.Add($"{field.field_name} | {field.field_payment:C0}"); });
 
-            var periods = from period in gymEntities.tbl_TimePeriod
+            var periods = from period in gymEntities.ttimes_detail
                           select period;
             periods.ToList().ForEach(period =>
             {
-                this.cb_TimePeriodStart.Items.Add(period.TimePeriod.ToString());
-                this.cb_TimePeriodEnd.Items.Add(period.TimePeriod.ToString());
+                this.cb_TimePeriodStart.Items.Add(period.time_name.ToString());
+                this.cb_TimePeriodEnd.Items.Add(period.time_name.ToString());
             });
         }
 
@@ -84,7 +85,7 @@ namespace ProjGym
             {
                 for (int j = 0; j < timePeriodEndIndex - timePeriodStartIndex; j++)
                 {
-                    class_schedule schedule = new class_schedule();
+                    tclass_schedule schedule = new tclass_schedule();
                     schedule.class_id = this.cb_Class.SelectedIndex + 1;
                     schedule.field_id = this.cb_Field.SelectedIndex + 1;
                     //Todo:coach_id = 1，要改為取得登入者id
@@ -93,9 +94,9 @@ namespace ProjGym
                     schedule.Max_student = (int)this.numericUpDown_MaxStudent.Value;
                     schedule.course_date = DateTime.Parse(lb_SelectedDate.Items[i].ToString());
                     schedule.course_time_id = timePeriodStartIndex + 1 + j;
-                    var field = gymEntities.field.FirstOrDefault(x => x.field_id == schedule.field_id);
+                    var field = gymEntities.tfield.FirstOrDefault(x => x.field_id == schedule.field_id);
                     unitprice = schedule.class_payment = field.field_payment;
-                    gymEntities.class_schedule.Add(schedule);
+                    gymEntities.tclass_schedule.Add(schedule);
                 }
             }
             if (afterCourseSubmit() == 0)

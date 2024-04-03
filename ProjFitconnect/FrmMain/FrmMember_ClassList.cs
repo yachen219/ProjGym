@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrmMain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace ProjGym
         private void FrmClassList_Load(object sender, EventArgs e)
         {
             gymEntities gymEntities = new gymEntities();
-            var classCategories = from classCategory in gymEntities.class_sort_訓練
+            var classCategories = from classCategory in gymEntities.tclass_sort_訓練
                                   select classCategory;
             classCategories.ToList().ForEach(category =>
             {
@@ -34,7 +35,7 @@ namespace ProjGym
                 c.CheckedChanged += this.afterCategoryChanged;
                 this.flowLayoutPanel_ClassCategory.Controls.Add(c);
             });
-            var types = from type in gymEntities.class_sort_有氧
+            var types = from type in gymEntities.tclass_sort_有氧
                         select type;
             types.ToList().ForEach(type =>
             {
@@ -76,19 +77,19 @@ namespace ProjGym
         {
             gymEntities gymEntities = new gymEntities();
             //選擇有氧 or 無氧課程
-            var aerobicQuery = gymEntities.@class
+            var aerobicQuery = gymEntities.tclasses
                             .Where(aerobic => _Aerobiclist.Contains((int)aerobic.class_sort1_id));
 
 
             //選擇課程類別
-            var categoryQuery = gymEntities.@class
+            var categoryQuery = gymEntities.tclasses
                             .Where(category => _Categorylist.Contains((int)category.class_sort2_id));
 
             var intersections = aerobicQuery.Intersect(categoryQuery);
             var finalQuery = from intersection in intersections
-                             join aerobic in gymEntities.class_sort_有氧
+                             join aerobic in gymEntities.tclass_sort_有氧
                              on intersection.class_sort1_id equals aerobic.class_sort1_id
-                             join category in gymEntities.class_sort_訓練
+                             join category in gymEntities.tclass_sort_訓練
                              on intersection.class_sort2_id equals category.class_sort2_id
                              select new
                              {

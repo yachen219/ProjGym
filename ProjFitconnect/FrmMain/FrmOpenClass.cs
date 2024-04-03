@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using YourNamespace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.Entity;
 
 namespace ProjGym
 {
@@ -18,7 +19,7 @@ namespace ProjGym
 
     public partial class FrmOpenClass : Form
     {
-        private FrmMain m;
+        private FrmHomePage m;
         private DialogResult _isOk;
         private tclass_schedule _schedule;
 
@@ -41,7 +42,7 @@ namespace ProjGym
                 gymEntities gym = new gymEntities();
                 tclasses c = gym.tclasses.FirstOrDefault(x => x.class_name == this.cbClassName.Text);
                 _schedule.class_id = c.class_id;
-                _schedule.coach_id = m.member.id;
+                _schedule.coach_id = m.identity.id;
                 tfield f = gym.tfield.FirstOrDefault(x => x.field_name == this.cbField.Text);
                 _schedule.field_id = f.field_id;
                 _schedule.course_date = this.dateTimePicker1.Value;
@@ -50,7 +51,7 @@ namespace ProjGym
                 _schedule.Max_student = Convert.ToInt32(txtMaxStudent.Text);
                 _schedule.class_payment = Convert.ToInt32(txtPrice.Text);
                 _schedule.class_status_id = 2;
-                _field.field_photo = _Field_photo;
+                //_field.field_photo = _Field_photo;
                 return _schedule;
 
             }
@@ -64,12 +65,14 @@ namespace ProjGym
                 cbTime.SelectedValue = _schedule.course_time_id.ToString();
                 txtMaxStudent.Text = _schedule.Max_student.ToString();
                 txtPrice.Text = _schedule.class_payment.ToString();
+                /*
                 _Field_photo = _field.field_photo.ToString();
                 if (!string.IsNullOrEmpty(_Field_photo))
                 {
                     string path = Application.StartupPath + "\\fieldImages";
                     pictureBox1.Image = new Bitmap(path + "\\" + _field.field_photo);
                 }
+                */
             }
         }
         
@@ -92,7 +95,7 @@ namespace ProjGym
             }
         }
 
-        public FrmOpenClass(FrmMain m)
+        public FrmOpenClass(FrmHomePage m)
         {
             InitializeComponent();
             this.m = m;
