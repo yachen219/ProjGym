@@ -230,12 +230,6 @@
     <Compile Include="tool\CoachBox.designer.cs">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmClassUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmClassUpdate.designer.cs">
-      <DependentUpon>FrmClassUpdate.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmCoachScheduleView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,9 +354,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tool\FieldBox.resx">
       <DependentUpon>FieldBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmClassUpdate.resx">
-      <DependentUpon>FrmClassUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCoachScheduleView.resx">
       <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
