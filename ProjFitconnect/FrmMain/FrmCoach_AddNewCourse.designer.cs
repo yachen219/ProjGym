@@ -63,6 +63,8 @@
             // 
             // cb_Class
             // 
+            this.cb_Class.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Class.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Class.FormattingEnabled = true;
             this.cb_Class.Location = new System.Drawing.Point(21, 52);
@@ -73,6 +75,8 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(21, 27);
@@ -83,6 +87,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.Location = new System.Drawing.Point(221, 27);
@@ -93,6 +99,8 @@
             // 
             // cb_Field
             // 
+            this.cb_Field.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Field.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Field.FormattingEnabled = true;
             this.cb_Field.Location = new System.Drawing.Point(221, 52);
@@ -103,6 +111,9 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.Location = new System.Drawing.Point(303, 122);
@@ -113,6 +124,9 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.Location = new System.Drawing.Point(51, 395);
@@ -123,6 +137,9 @@
             // 
             // cb_TimePeriodStart
             // 
+            this.cb_TimePeriodStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_TimePeriodStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_TimePeriodStart.FormattingEnabled = true;
             this.cb_TimePeriodStart.Location = new System.Drawing.Point(139, 392);
@@ -133,6 +150,9 @@
             // 
             // cb_TimePeriodEnd
             // 
+            this.cb_TimePeriodEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_TimePeriodEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_TimePeriodEnd.FormattingEnabled = true;
             this.cb_TimePeriodEnd.Location = new System.Drawing.Point(407, 392);
@@ -143,6 +163,9 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.Location = new System.Drawing.Point(319, 395);
@@ -153,6 +176,9 @@
             // 
             // monthCalendar_Course
             // 
+            this.monthCalendar_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar_Course.Location = new System.Drawing.Point(24, 152);
             this.monthCalendar_Course.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.monthCalendar_Course.Name = "monthCalendar_Course";
@@ -161,6 +187,9 @@
             // 
             // lb_SelectedDate
             // 
+            this.lb_SelectedDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_SelectedDate.BackColor = System.Drawing.SystemColors.Control;
             this.lb_SelectedDate.FormattingEnabled = true;
             this.lb_SelectedDate.ItemHeight = 18;
@@ -171,6 +200,9 @@
             // 
             // btn_ClearSelectedDate
             // 
+            this.btn_ClearSelectedDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ClearSelectedDate.Location = new System.Drawing.Point(499, 279);
             this.btn_ClearSelectedDate.Name = "btn_ClearSelectedDate";
             this.btn_ClearSelectedDate.Size = new System.Drawing.Size(70, 35);
@@ -181,6 +213,8 @@
             // 
             // btn_SubmitCourse
             // 
+            this.btn_SubmitCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SubmitCourse.Location = new System.Drawing.Point(344, 551);
             this.btn_SubmitCourse.Name = "btn_SubmitCourse";
             this.btn_SubmitCourse.Size = new System.Drawing.Size(89, 39);
@@ -191,6 +225,8 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label6.Location = new System.Drawing.Point(479, 27);
@@ -201,6 +237,8 @@
             // 
             // numericUpDown_MaxStudent
             // 
+            this.numericUpDown_MaxStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown_MaxStudent.Location = new System.Drawing.Point(479, 52);
             this.numericUpDown_MaxStudent.Name = "numericUpDown_MaxStudent";
             this.numericUpDown_MaxStudent.Size = new System.Drawing.Size(78, 26);
@@ -208,6 +246,8 @@
             // 
             // lbl_Course
             // 
+            this.lbl_Course.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Course.AutoSize = true;
             this.lbl_Course.ForeColor = System.Drawing.Color.Red;
             this.lbl_Course.Location = new System.Drawing.Point(21, 81);
@@ -217,6 +257,8 @@
             // 
             // lbl_Field
             // 
+            this.lbl_Field.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Field.AutoSize = true;
             this.lbl_Field.ForeColor = System.Drawing.Color.Red;
             this.lbl_Field.Location = new System.Drawing.Point(221, 81);
@@ -226,6 +268,9 @@
             // 
             // lbl_Start
             // 
+            this.lbl_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Start.AutoSize = true;
             this.lbl_Start.ForeColor = System.Drawing.Color.Red;
             this.lbl_Start.Location = new System.Drawing.Point(51, 422);
@@ -235,6 +280,9 @@
             // 
             // lbl_End
             // 
+            this.lbl_End.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_End.AutoSize = true;
             this.lbl_End.ForeColor = System.Drawing.Color.Red;
             this.lbl_End.Location = new System.Drawing.Point(319, 422);
@@ -244,6 +292,8 @@
             // 
             // lbl_MaxMember
             // 
+            this.lbl_MaxMember.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_MaxMember.AutoSize = true;
             this.lbl_MaxMember.ForeColor = System.Drawing.Color.Red;
             this.lbl_MaxMember.Location = new System.Drawing.Point(479, 81);
@@ -253,6 +303,9 @@
             // 
             // lbl_SelectedDate
             // 
+            this.lbl_SelectedDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_SelectedDate.AutoSize = true;
             this.lbl_SelectedDate.ForeColor = System.Drawing.Color.Red;
             this.lbl_SelectedDate.Location = new System.Drawing.Point(400, 123);
@@ -262,6 +315,9 @@
             // 
             // lbl_HoursPerCourse
             // 
+            this.lbl_HoursPerCourse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_HoursPerCourse.AutoSize = true;
             this.lbl_HoursPerCourse.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_HoursPerCourse.ForeColor = System.Drawing.SystemColors.MenuHighlight;
@@ -273,6 +329,9 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Location = new System.Drawing.Point(24, 364);
             this.label7.Name = "label7";
@@ -281,6 +340,8 @@
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Cancel.Location = new System.Drawing.Point(129, 551);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(89, 39);
@@ -291,6 +352,8 @@
             // 
             // lbl_Devider
             // 
+            this.lbl_Devider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Devider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_Devider.Location = new System.Drawing.Point(21, 527);
             this.lbl_Devider.Name = "lbl_Devider";
@@ -299,6 +362,9 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label8.ForeColor = System.Drawing.SystemColors.GrayText;
@@ -310,6 +376,9 @@
             // 
             // lbl_Days
             // 
+            this.lbl_Days.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Days.AutoSize = true;
             this.lbl_Days.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_Days.ForeColor = System.Drawing.SystemColors.MenuHighlight;
@@ -321,6 +390,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(38, 122);
             this.pictureBox1.Name = "pictureBox1";

@@ -43,126 +43,138 @@
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(40, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(30, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 25);
+            this.label1.Size = new System.Drawing.Size(78, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "課程名稱:";
             // 
             // cbClassName
             // 
+            this.cbClassName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbClassName.FormattingEnabled = true;
-            this.cbClassName.Location = new System.Drawing.Point(180, 60);
-            this.cbClassName.Margin = new System.Windows.Forms.Padding(4);
+            this.cbClassName.Location = new System.Drawing.Point(135, 48);
             this.cbClassName.Name = "cbClassName";
-            this.cbClassName.Size = new System.Drawing.Size(160, 23);
+            this.cbClassName.Size = new System.Drawing.Size(121, 20);
             this.cbClassName.TabIndex = 1;
             // 
             // cbField
             // 
+            this.cbField.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbField.FormattingEnabled = true;
-            this.cbField.Location = new System.Drawing.Point(180, 116);
-            this.cbField.Margin = new System.Windows.Forms.Padding(4);
+            this.cbField.Location = new System.Drawing.Point(135, 93);
             this.cbField.Name = "cbField";
-            this.cbField.Size = new System.Drawing.Size(160, 23);
+            this.cbField.Size = new System.Drawing.Size(121, 20);
             this.cbField.TabIndex = 3;
             this.cbField.SelectedIndexChanged += new System.EventHandler(this.cbField_SelectedIndexChanged);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(40, 118);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(30, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 25);
+            this.label2.Size = new System.Drawing.Size(46, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "地點:";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(40, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(30, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 25);
+            this.label3.Size = new System.Drawing.Size(78, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "上課日期:";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(180, 172);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(135, 138);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // cbTime
             // 
+            this.cbTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTime.FormattingEnabled = true;
-            this.cbTime.Location = new System.Drawing.Point(180, 231);
-            this.cbTime.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTime.Location = new System.Drawing.Point(135, 185);
             this.cbTime.Name = "cbTime";
-            this.cbTime.Size = new System.Drawing.Size(160, 23);
+            this.cbTime.Size = new System.Drawing.Size(121, 20);
             this.cbTime.TabIndex = 7;
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(40, 232);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(30, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 25);
+            this.label4.Size = new System.Drawing.Size(78, 21);
             this.label4.TabIndex = 6;
             this.label4.Text = "上課時段:";
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.Location = new System.Drawing.Point(40, 290);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(30, 232);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 25);
+            this.label5.Size = new System.Drawing.Size(78, 21);
             this.label5.TabIndex = 8;
             this.label5.Text = "學員上限:";
             // 
             // txtMaxStudent
             // 
-            this.txtMaxStudent.Location = new System.Drawing.Point(180, 288);
-            this.txtMaxStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaxStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaxStudent.Location = new System.Drawing.Point(135, 230);
             this.txtMaxStudent.Name = "txtMaxStudent";
-            this.txtMaxStudent.Size = new System.Drawing.Size(132, 25);
+            this.txtMaxStudent.Size = new System.Drawing.Size(100, 22);
             this.txtMaxStudent.TabIndex = 9;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(180, 346);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrice.Location = new System.Drawing.Point(135, 277);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(132, 25);
+            this.txtPrice.Size = new System.Drawing.Size(100, 22);
             this.txtPrice.TabIndex = 11;
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(40, 348);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(30, 278);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 25);
+            this.label6.Size = new System.Drawing.Size(46, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "價格:";
             // 
@@ -176,11 +188,12 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(271, 450);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(203, 360);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 68);
+            this.button1.Size = new System.Drawing.Size(88, 54);
             this.button1.TabIndex = 12;
             this.button1.Text = "確定";
             this.button1.UseVisualStyleBackColor = true;
@@ -188,34 +201,39 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(85, 450);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(64, 360);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 68);
+            this.button2.Size = new System.Drawing.Size(88, 54);
             this.button2.TabIndex = 13;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(385, 231);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 200);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(289, 185);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 160);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmOpenClass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 562);
+            this.ClientSize = new System.Drawing.Size(489, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -231,7 +249,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbClassName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmOpenClass";
             this.Text = "FrmCreateClass";
             this.Load += new System.EventHandler(this.FrmOpenClass_Load);

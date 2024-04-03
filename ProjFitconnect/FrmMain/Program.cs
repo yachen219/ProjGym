@@ -1,3 +1,5 @@
+using Gym;
+using mid_Coonect;
 using ProjGym;
 using Revised_V1._1;
 using System;
@@ -18,7 +20,6 @@ namespace FrmMain
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
 
             Application.Run(new FrmHomePage());
 

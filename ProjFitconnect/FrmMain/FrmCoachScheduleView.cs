@@ -13,7 +13,6 @@ namespace ProjGym
 {
     public partial class FrmCoachScheduleView : Form
     {
-        
         public FrmCoachScheduleView()
         {
             InitializeComponent();
@@ -27,20 +26,16 @@ namespace ProjGym
                             where s.coach_id == frmMain.identity.id
                             select new
                             {
-                                
                                 ClassName = s.tclasses.class_name,
-                                Field =s.tfield.field_name,
-                                Date =s.course_date,
-                                Time =s.ttimes_detail.time_name,
+                                Field = s.tfield.field_name,
+                                Date = s.course_date,
+                                Time = s.ttimes_detail.time_name,
                                 MaxStudent = s.Max_student,
-                                ClassStatus =s.tclass_status_detail.class_status_discribe,
-                                Payment =s.class_payment
-
+                                ClassStatus = s.tclass_status_detail.class_status_discribe,
+                                Payment = s.class_payment
                             };
-            dataGridView1.DataSource = schedules.ToList();
+            this.dataGridView1.DataSource = schedules.ToList();
             resetGridStyle();
-
-
         }
         private void resetGridStyle()
         {
@@ -68,7 +63,6 @@ namespace ProjGym
                     r.DefaultCellStyle.BackColor = Color.White;
                 r.DefaultCellStyle.Font = new Font("微軟正黑體", 12);
             }
-
         }
 
         private void FrmCoachScheduleEdit_Load(object sender, EventArgs e)
