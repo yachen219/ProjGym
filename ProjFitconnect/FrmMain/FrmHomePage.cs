@@ -113,12 +113,9 @@ namespace ProjGym
 
         private void info_admin(tIdentity m)
         {
-            this.會員中心ToolStripMenuItem.Visible = true;
-            this.教練中心ToolStripMenuItem.Visible = true;
+            this.會員中心ToolStripMenuItem.Visible = false;
+            this.教練中心ToolStripMenuItem.Visible = false;
             this.管理者中心ToolStripMenuItem.Visible = true;
-            this.修改教練資料ToolStripMenuItem.Visible = false;
-            this.修改會員資料ToolStripMenuItem.Visible = false;
-            this.會員登出ToolStripMenuItem.Visible = false;
 
             lblWecomeshow(m);
             this.Text = "歡迎登入 ： " + m.name;
@@ -308,6 +305,21 @@ namespace ProjGym
             FrmEditCoachRegister f = new FrmEditCoachRegister();
             f.TopLevel = false;
             f.identity = this.identity;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
+        }
+
+        private void 登出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            logoutevent();
+        }
+
+        private void 會員資訊ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmAdmin_Checkmember f = new FrmAdmin_Checkmember();
+            f.TopLevel = false;
             f.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();

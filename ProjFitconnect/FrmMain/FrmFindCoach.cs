@@ -39,6 +39,8 @@ namespace Revised_V1._1
                 cb.Identity = item.Identity;
                 cb.cid = item.CoachInfo;
                 cb.cst = item.Expertise;
+                cb.showmember += this.ShowMember;
+                if (flowLayoutPanel1.Controls.Equals(cb)) return;
                 flowLayoutPanel1.Controls.Add(cb);
             }
         }
@@ -63,6 +65,7 @@ namespace Revised_V1._1
                 cb.cid = item.CoachInfo;
                 cb.cst = item.Expertise;
                 cb.learnMore += this.LearnMore;
+                cb.showmember += this.ShowMember;
                 if (flowLayoutPanel1.Controls.Equals(cb)) return;
                 flowLayoutPanel1.Controls.Add(cb);
             }
@@ -80,6 +83,11 @@ namespace Revised_V1._1
             FrmCoachInfo f = new FrmCoachInfo
             {pid = pid, cid = cid, cl = cl,}; 
             f.Show();
+        }
+
+        private void ShowMember(CoachBox p)
+        {
+
         }
 
         private void UndoGender(int g)
@@ -145,6 +153,8 @@ namespace Revised_V1._1
                     cb.Identity = item.Identity;
                     cb.cid = item.CoachInfo;
                     cb.cst = item.Expertise;
+                    cb.showmember += this.ShowMember;
+                    if (flowLayoutPanel1.Controls.Equals(cb)) return;
                     flowLayoutPanel1.Controls.Add(cb);
                 }
             }

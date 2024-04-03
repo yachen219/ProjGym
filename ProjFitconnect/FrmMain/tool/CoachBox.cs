@@ -16,6 +16,7 @@ namespace mid_Coonect.Tools
     public partial class CoachBox : UserControl
     {
         public event DMore learnMore;
+        public event DMore showmember;
         private tclasses _cst;
         private tcoach_info_id _cid;
         private tIdentity _identity;
@@ -47,7 +48,14 @@ namespace mid_Coonect.Tools
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.learnMore != null) this.learnMore(this);
+            if (this.learnMore != null)
+                this.learnMore(this);
         }
-}
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (this.showmember != null)
+                this.showmember(this);
+        }
+    }
 }

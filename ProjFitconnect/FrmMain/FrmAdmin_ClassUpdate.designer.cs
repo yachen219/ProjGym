@@ -60,9 +60,7 @@ namespace mid_Coonect
             // 
             // pb_ClassPhoto
             // 
-            this.pb_ClassPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb_ClassPhoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pb_ClassPhoto.BackColor = System.Drawing.SystemColors.Window;
             this.pb_ClassPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_ClassPhoto.Location = new System.Drawing.Point(647, 399);
@@ -76,6 +74,7 @@ namespace mid_Coonect
             // 
             // lbl_Divider
             // 
+            this.lbl_Divider.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_Divider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_Divider.Location = new System.Drawing.Point(632, 585);
             this.lbl_Divider.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -86,7 +85,7 @@ namespace mid_Coonect
             // 
             // btn_Save
             // 
-            this.btn_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Save.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Save.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Save.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Save.Location = new System.Drawing.Point(919, 596);
@@ -100,7 +99,7 @@ namespace mid_Coonect
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Cancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Cancel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Cancel.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Cancel.Location = new System.Drawing.Point(764, 596);
@@ -118,6 +117,7 @@ namespace mid_Coonect
             // 
             // lbl_IDTitle
             // 
+            this.lbl_IDTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_IDTitle.AutoSize = true;
             this.lbl_IDTitle.Location = new System.Drawing.Point(644, 48);
             this.lbl_IDTitle.Name = "lbl_IDTitle";
@@ -127,6 +127,7 @@ namespace mid_Coonect
             // 
             // lbl_ID
             // 
+            this.lbl_ID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_ID.AutoSize = true;
             this.lbl_ID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_ID.ForeColor = System.Drawing.Color.Black;
@@ -138,6 +139,7 @@ namespace mid_Coonect
             // 
             // lbl_Sort1Title
             // 
+            this.lbl_Sort1Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_Sort1Title.AutoSize = true;
             this.lbl_Sort1Title.Location = new System.Drawing.Point(784, 50);
             this.lbl_Sort1Title.Name = "lbl_Sort1Title";
@@ -147,6 +149,7 @@ namespace mid_Coonect
             // 
             // cb_Sort1
             // 
+            this.cb_Sort1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cb_Sort1.FormattingEnabled = true;
             this.cb_Sort1.Location = new System.Drawing.Point(874, 47);
             this.cb_Sort1.Name = "cb_Sort1";
@@ -156,6 +159,7 @@ namespace mid_Coonect
             // 
             // lbl_Sort2Title
             // 
+            this.lbl_Sort2Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_Sort2Title.AutoSize = true;
             this.lbl_Sort2Title.Location = new System.Drawing.Point(956, 50);
             this.lbl_Sort2Title.Name = "lbl_Sort2Title";
@@ -165,6 +169,7 @@ namespace mid_Coonect
             // 
             // cb_Sort2
             // 
+            this.cb_Sort2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cb_Sort2.FormattingEnabled = true;
             this.cb_Sort2.Location = new System.Drawing.Point(1056, 47);
             this.cb_Sort2.Name = "cb_Sort2";
@@ -174,6 +179,7 @@ namespace mid_Coonect
             // 
             // lbl_ClassNameTitle
             // 
+            this.lbl_ClassNameTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_ClassNameTitle.AutoSize = true;
             this.lbl_ClassNameTitle.Location = new System.Drawing.Point(643, 147);
             this.lbl_ClassNameTitle.Name = "lbl_ClassNameTitle";
@@ -183,6 +189,7 @@ namespace mid_Coonect
             // 
             // txt_ClassName
             // 
+            this.txt_ClassName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_ClassName.Location = new System.Drawing.Point(647, 169);
             this.txt_ClassName.Name = "txt_ClassName";
             this.txt_ClassName.Size = new System.Drawing.Size(472, 27);
@@ -190,6 +197,7 @@ namespace mid_Coonect
             // 
             // txt_Introduction
             // 
+            this.txt_Introduction.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_Introduction.Location = new System.Drawing.Point(647, 241);
             this.txt_Introduction.Multiline = true;
             this.txt_Introduction.Name = "txt_Introduction";
@@ -198,6 +206,7 @@ namespace mid_Coonect
             // 
             // lbl_IntroductionTitle
             // 
+            this.lbl_IntroductionTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_IntroductionTitle.AutoSize = true;
             this.lbl_IntroductionTitle.Location = new System.Drawing.Point(643, 219);
             this.lbl_IntroductionTitle.Name = "lbl_IntroductionTitle";
@@ -207,6 +216,7 @@ namespace mid_Coonect
             // 
             // cb_Limit
             // 
+            this.cb_Limit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cb_Limit.FormattingEnabled = true;
             this.cb_Limit.Location = new System.Drawing.Point(874, 91);
             this.cb_Limit.Name = "cb_Limit";
@@ -216,6 +226,7 @@ namespace mid_Coonect
             // 
             // lbl_LimitTitle
             // 
+            this.lbl_LimitTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_LimitTitle.AutoSize = true;
             this.lbl_LimitTitle.Location = new System.Drawing.Point(784, 94);
             this.lbl_LimitTitle.Name = "lbl_LimitTitle";
@@ -225,6 +236,7 @@ namespace mid_Coonect
             // 
             // btn_Begin
             // 
+            this.btn_Begin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Begin.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Begin.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Begin.Location = new System.Drawing.Point(73, 597);
@@ -238,6 +250,7 @@ namespace mid_Coonect
             // 
             // dataGridView_ClassSortList
             // 
+            this.dataGridView_ClassSortList.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView_ClassSortList.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView_ClassSortList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ClassSortList.Location = new System.Drawing.Point(12, 60);
@@ -250,6 +263,7 @@ namespace mid_Coonect
             // 
             // lbl_PhotoTitle
             // 
+            this.lbl_PhotoTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_PhotoTitle.AutoSize = true;
             this.lbl_PhotoTitle.Location = new System.Drawing.Point(643, 375);
             this.lbl_PhotoTitle.Name = "lbl_PhotoTitle";
@@ -259,6 +273,7 @@ namespace mid_Coonect
             // 
             // btn_Previous
             // 
+            this.btn_Previous.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Previous.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Previous.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Previous.Location = new System.Drawing.Point(140, 597);
@@ -272,6 +287,7 @@ namespace mid_Coonect
             // 
             // btn_End
             // 
+            this.btn_End.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_End.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_End.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_End.Location = new System.Drawing.Point(351, 597);
@@ -285,6 +301,7 @@ namespace mid_Coonect
             // 
             // btn_Next
             // 
+            this.btn_Next.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Next.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Next.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Next.Location = new System.Drawing.Point(284, 597);
@@ -298,6 +315,7 @@ namespace mid_Coonect
             // 
             // lbl_CurrentIndex
             // 
+            this.lbl_CurrentIndex.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_CurrentIndex.AutoSize = true;
             this.lbl_CurrentIndex.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_CurrentIndex.Location = new System.Drawing.Point(226, 607);
@@ -340,6 +358,7 @@ namespace mid_Coonect
             this.Name = "FrmAdmin_ClassUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin | 課程管理";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmClassUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_ClassPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ClassSortList)).EndInit();

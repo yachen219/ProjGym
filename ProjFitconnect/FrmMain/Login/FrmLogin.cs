@@ -182,6 +182,7 @@ namespace ProjGym
             coach.e_mail = frm.mail;
             coach.password = frm.password;
             coach.photo = frm.file;
+            coach.activated = false;
             //將新會員資料新增至[gym資料庫實體]
             db.tIdentity.Add(coach);
             

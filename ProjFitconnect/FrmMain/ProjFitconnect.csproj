@@ -71,6 +71,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="FrmAdmin_Checkmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin_Checkmember.Designer.cs">
+      <DependentUpon>FrmAdmin_Checkmember.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClassReserved.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,12 +236,6 @@
     <Compile Include="tool\CoachBox.designer.cs">
       <DependentUpon>CoachBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCoachScheduleView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCoachScheduleView.designer.cs">
-      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmFAQ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +304,9 @@
     <Compile Include="ttimes_detail.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAdmin_Checkmember.resx">
+      <DependentUpon>FrmAdmin_Checkmember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmClassReserved.resx">
       <DependentUpon>FrmClassReserved.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,9 +357,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tool\FieldBox.resx">
       <DependentUpon>FieldBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCoachScheduleView.resx">
-      <DependentUpon>FrmCoachScheduleView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFAQ.resx">
       <DependentUpon>FrmFAQ.cs</DependentUpon>
