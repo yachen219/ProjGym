@@ -183,6 +183,18 @@ namespace ProjGym
             coach.birthday = DateTime.Parse(frm.birth);
             coach.address = frm.address;
             coach.gender_id = g.gender_id;
+
+            if (DateTime.Now - DateTime.Parse(frm.birth) < TimeSpan.FromDays(365 * 14 + 3))
+            {
+                MessageBox.Show("小朋友 你還太小了");
+                return;
+            }
+            if (DateTime.Now - DateTime.Parse(frm.birth) < TimeSpan.FromDays(365 * 18 + 4))
+            {
+                MessageBox.Show("未成年請監護人陪同\n至現場辦理加入會員");
+                return;
+            }
+
             coach.activated = false;
 
             //將新資料新增至[gym資料庫實體]
