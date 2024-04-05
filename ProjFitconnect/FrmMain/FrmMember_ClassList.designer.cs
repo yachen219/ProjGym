@@ -41,9 +41,10 @@
             // flowLayoutPanel_ClassCategory
             // 
             this.flowLayoutPanel_ClassCategory.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.flowLayoutPanel_ClassCategory.Location = new System.Drawing.Point(117, 90);
+            this.flowLayoutPanel_ClassCategory.Location = new System.Drawing.Point(156, 112);
+            this.flowLayoutPanel_ClassCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel_ClassCategory.Name = "flowLayoutPanel_ClassCategory";
-            this.flowLayoutPanel_ClassCategory.Size = new System.Drawing.Size(756, 35);
+            this.flowLayoutPanel_ClassCategory.Size = new System.Drawing.Size(1008, 44);
             this.flowLayoutPanel_ClassCategory.TabIndex = 0;
             // 
             // lbl_ClassCategories
@@ -51,18 +52,20 @@
             this.lbl_ClassCategories.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_ClassCategories.AutoSize = true;
             this.lbl_ClassCategories.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbl_ClassCategories.Location = new System.Drawing.Point(20, 97);
+            this.lbl_ClassCategories.Location = new System.Drawing.Point(27, 121);
+            this.lbl_ClassCategories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ClassCategories.Name = "lbl_ClassCategories";
-            this.lbl_ClassCategories.Size = new System.Drawing.Size(91, 24);
+            this.lbl_ClassCategories.Size = new System.Drawing.Size(116, 31);
             this.lbl_ClassCategories.TabIndex = 1;
             this.lbl_ClassCategories.Text = "課程類型:";
             // 
             // flowLayoutPanel_Aerobic
             // 
             this.flowLayoutPanel_Aerobic.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.flowLayoutPanel_Aerobic.Location = new System.Drawing.Point(117, 49);
+            this.flowLayoutPanel_Aerobic.Location = new System.Drawing.Point(156, 61);
+            this.flowLayoutPanel_Aerobic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel_Aerobic.Name = "flowLayoutPanel_Aerobic";
-            this.flowLayoutPanel_Aerobic.Size = new System.Drawing.Size(225, 35);
+            this.flowLayoutPanel_Aerobic.Size = new System.Drawing.Size(300, 44);
             this.flowLayoutPanel_Aerobic.TabIndex = 0;
             // 
             // label1
@@ -70,9 +73,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(12, 53);
+            this.label1.Location = new System.Drawing.Point(16, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 24);
+            this.label1.Size = new System.Drawing.Size(127, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "有氧/無氧:";
             // 
@@ -80,19 +84,22 @@
             // 
             this.dataGridView_Test.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView_Test.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Test.Location = new System.Drawing.Point(16, 493);
+            this.dataGridView_Test.Location = new System.Drawing.Point(21, 616);
+            this.dataGridView_Test.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView_Test.Name = "dataGridView_Test";
+            this.dataGridView_Test.RowHeadersWidth = 51;
             this.dataGridView_Test.RowTemplate.Height = 24;
-            this.dataGridView_Test.Size = new System.Drawing.Size(857, 223);
+            this.dataGridView_Test.Size = new System.Drawing.Size(1143, 279);
             this.dataGridView_Test.TabIndex = 2;
             // 
             // btn_Search
             // 
             this.btn_Search.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Search.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn_Search.Location = new System.Drawing.Point(390, 53);
+            this.btn_Search.Location = new System.Drawing.Point(520, 66);
+            this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(70, 26);
+            this.btn_Search.Size = new System.Drawing.Size(93, 32);
             this.btn_Search.TabIndex = 3;
             this.btn_Search.Text = "查詢";
             this.btn_Search.UseVisualStyleBackColor = true;
@@ -103,16 +110,18 @@
             this.flowLayoutPanel_Course.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel_Course.AutoScroll = true;
             this.flowLayoutPanel_Course.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel_Course.Location = new System.Drawing.Point(16, 144);
+            this.flowLayoutPanel_Course.Location = new System.Drawing.Point(21, 180);
+            this.flowLayoutPanel_Course.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel_Course.Name = "flowLayoutPanel_Course";
-            this.flowLayoutPanel_Course.Size = new System.Drawing.Size(857, 343);
+            this.flowLayoutPanel_Course.Size = new System.Drawing.Size(1142, 428);
             this.flowLayoutPanel_Course.TabIndex = 4;
             // 
             // FrmMember_ClassList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 728);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1212, 910);
             this.Controls.Add(this.flowLayoutPanel_Course);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.dataGridView_Test);
@@ -120,7 +129,9 @@
             this.Controls.Add(this.flowLayoutPanel_Aerobic);
             this.Controls.Add(this.lbl_ClassCategories);
             this.Controls.Add(this.flowLayoutPanel_ClassCategory);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMember_ClassList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member | 課程查詢";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmClassList_Load);

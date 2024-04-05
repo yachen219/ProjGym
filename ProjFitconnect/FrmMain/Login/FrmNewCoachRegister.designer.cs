@@ -58,7 +58,7 @@
             this.cb_GenderList.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cb_GenderList.FormattingEnabled = true;
             this.cb_GenderList.Location = new System.Drawing.Point(175, 115);
-            this.cb_GenderList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_GenderList.Margin = new System.Windows.Forms.Padding(4);
             this.cb_GenderList.Name = "cb_GenderList";
             this.cb_GenderList.Size = new System.Drawing.Size(160, 27);
             this.cb_GenderList.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.pb_Photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_Photo.Location = new System.Drawing.Point(655, 59);
-            this.pb_Photo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb_Photo.Margin = new System.Windows.Forms.Padding(4);
             this.pb_Photo.Name = "pb_Photo";
             this.pb_Photo.Size = new System.Drawing.Size(351, 352);
             this.pb_Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +88,7 @@
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Cancel.Location = new System.Drawing.Point(705, 759);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(123, 52);
             this.btn_Cancel.TabIndex = 22;
@@ -100,7 +100,7 @@
             // 
             this.btn_Save.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Save.Location = new System.Drawing.Point(868, 759);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(123, 52);
             this.btn_Save.TabIndex = 21;
@@ -112,7 +112,7 @@
             // 
             this.tb_Password.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Password.Location = new System.Drawing.Point(175, 452);
-            this.tb_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(432, 27);
             this.tb_Password.TabIndex = 7;
@@ -132,7 +132,7 @@
             // 
             this.tb_Address.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Address.Location = new System.Drawing.Point(175, 318);
-            this.tb_Address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Address.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(432, 27);
             this.tb_Address.TabIndex = 5;
@@ -152,7 +152,7 @@
             // 
             this.tb_Mail.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Mail.Location = new System.Drawing.Point(175, 384);
-            this.tb_Mail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Mail.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Mail.Name = "tb_Mail";
             this.tb_Mail.Size = new System.Drawing.Size(432, 27);
             this.tb_Mail.TabIndex = 6;
@@ -183,7 +183,7 @@
             // 
             this.tb_Phone.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Phone.Location = new System.Drawing.Point(175, 185);
-            this.tb_Phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Phone.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(432, 27);
             this.tb_Phone.TabIndex = 3;
@@ -214,7 +214,7 @@
             // 
             this.tb_Name.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Name.Location = new System.Drawing.Point(175, 52);
-            this.tb_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(432, 27);
             this.tb_Name.TabIndex = 1;
@@ -255,7 +255,7 @@
             // tb_intro
             // 
             this.tb_intro.Location = new System.Drawing.Point(175, 622);
-            this.tb_intro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_intro.Margin = new System.Windows.Forms.Padding(4);
             this.tb_intro.Name = "tb_intro";
             this.tb_intro.Size = new System.Drawing.Size(831, 119);
             this.tb_intro.TabIndex = 20;
@@ -264,7 +264,7 @@
             // panel_expert
             // 
             this.panel_expert.Location = new System.Drawing.Point(175, 508);
-            this.panel_expert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_expert.Margin = new System.Windows.Forms.Padding(4);
             this.panel_expert.Name = "panel_expert";
             this.panel_expert.Size = new System.Drawing.Size(831, 101);
             this.panel_expert.TabIndex = 54;
@@ -277,6 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1072, 826);
             this.Controls.Add(this.panel_expert);
             this.Controls.Add(this.tb_intro);
@@ -299,7 +300,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmNewCoachRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewCoachRegister";

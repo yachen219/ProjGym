@@ -57,9 +57,10 @@
             this.cbSort1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbSort1.FormattingEnabled = true;
-            this.cbSort1.Location = new System.Drawing.Point(90, 125);
+            this.cbSort1.Location = new System.Drawing.Point(120, 156);
+            this.cbSort1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSort1.Name = "cbSort1";
-            this.cbSort1.Size = new System.Drawing.Size(247, 20);
+            this.cbSort1.Size = new System.Drawing.Size(328, 23);
             this.cbSort1.TabIndex = 0;
             // 
             // cbSort2
@@ -67,9 +68,10 @@
             this.cbSort2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbSort2.FormattingEnabled = true;
-            this.cbSort2.Location = new System.Drawing.Point(90, 211);
+            this.cbSort2.Location = new System.Drawing.Point(120, 264);
+            this.cbSort2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSort2.Name = "cbSort2";
-            this.cbSort2.Size = new System.Drawing.Size(247, 20);
+            this.cbSort2.Size = new System.Drawing.Size(328, 23);
             this.cbSort2.TabIndex = 1;
             // 
             // lbl_Name
@@ -77,9 +79,10 @@
             this.lbl_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Location = new System.Drawing.Point(88, 34);
+            this.lbl_Name.Location = new System.Drawing.Point(117, 42);
+            this.lbl_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(33, 12);
+            this.lbl_Name.Size = new System.Drawing.Size(41, 15);
             this.lbl_Name.TabIndex = 2;
             this.lbl_Name.Text = "label1";
             // 
@@ -88,9 +91,10 @@
             this.lbl_sr1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_sr1.AutoSize = true;
-            this.lbl_sr1.Location = new System.Drawing.Point(88, 110);
+            this.lbl_sr1.Location = new System.Drawing.Point(117, 138);
+            this.lbl_sr1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sr1.Name = "lbl_sr1";
-            this.lbl_sr1.Size = new System.Drawing.Size(33, 12);
+            this.lbl_sr1.Size = new System.Drawing.Size(41, 15);
             this.lbl_sr1.TabIndex = 3;
             this.lbl_sr1.Text = "label2";
             // 
@@ -99,9 +103,10 @@
             this.lbl_sr2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_sr2.AutoSize = true;
-            this.lbl_sr2.Location = new System.Drawing.Point(88, 196);
+            this.lbl_sr2.Location = new System.Drawing.Point(117, 245);
+            this.lbl_sr2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sr2.Name = "lbl_sr2";
-            this.lbl_sr2.Size = new System.Drawing.Size(33, 12);
+            this.lbl_sr2.Size = new System.Drawing.Size(41, 15);
             this.lbl_sr2.TabIndex = 5;
             this.lbl_sr2.Text = "label3";
             // 
@@ -110,18 +115,20 @@
             this.cbLm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbLm.FormattingEnabled = true;
-            this.cbLm.Location = new System.Drawing.Point(90, 297);
+            this.cbLm.Location = new System.Drawing.Point(120, 371);
+            this.cbLm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbLm.Name = "cbLm";
-            this.cbLm.Size = new System.Drawing.Size(247, 20);
+            this.cbLm.Size = new System.Drawing.Size(328, 23);
             this.cbLm.TabIndex = 4;
             // 
             // txtInfo
             // 
             this.txtInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInfo.Location = new System.Drawing.Point(52, 366);
+            this.txtInfo.Location = new System.Drawing.Point(69, 458);
+            this.txtInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(543, 168);
+            this.txtInfo.Size = new System.Drawing.Size(723, 209);
             this.txtInfo.TabIndex = 6;
             this.txtInfo.Text = "";
             // 
@@ -129,9 +136,10 @@
             // 
             this.txtClassName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtClassName.Location = new System.Drawing.Point(90, 49);
+            this.txtClassName.Location = new System.Drawing.Point(120, 61);
+            this.txtClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClassName.Name = "txtClassName";
-            this.txtClassName.Size = new System.Drawing.Size(100, 22);
+            this.txtClassName.Size = new System.Drawing.Size(132, 25);
             this.txtClassName.TabIndex = 7;
             // 
             // lbl_limit
@@ -139,9 +147,10 @@
             this.lbl_limit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_limit.AutoSize = true;
-            this.lbl_limit.Location = new System.Drawing.Point(88, 284);
+            this.lbl_limit.Location = new System.Drawing.Point(117, 355);
+            this.lbl_limit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_limit.Name = "lbl_limit";
-            this.lbl_limit.Size = new System.Drawing.Size(33, 12);
+            this.lbl_limit.Size = new System.Drawing.Size(41, 15);
             this.lbl_limit.TabIndex = 8;
             this.lbl_limit.Text = "label4";
             // 
@@ -150,9 +159,10 @@
             this.lbl_disc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_disc.AutoSize = true;
-            this.lbl_disc.Location = new System.Drawing.Point(62, 344);
+            this.lbl_disc.Location = new System.Drawing.Point(83, 430);
+            this.lbl_disc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_disc.Name = "lbl_disc";
-            this.lbl_disc.Size = new System.Drawing.Size(33, 12);
+            this.lbl_disc.Size = new System.Drawing.Size(41, 15);
             this.lbl_disc.TabIndex = 9;
             this.lbl_disc.Text = "label5";
             // 
@@ -160,9 +170,10 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(430, 560);
+            this.button1.Location = new System.Drawing.Point(573, 700);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 10;
             this.button1.Text = "確定";
             this.button1.UseVisualStyleBackColor = true;
@@ -172,9 +183,10 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(552, 560);
+            this.button2.Location = new System.Drawing.Point(736, 700);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 11;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -193,9 +205,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(88, 72);
+            this.label1.Location = new System.Drawing.Point(117, 90);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 18);
+            this.label1.Size = new System.Drawing.Size(0, 22);
             this.label1.TabIndex = 12;
             // 
             // label2
@@ -205,9 +218,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(88, 146);
+            this.label2.Location = new System.Drawing.Point(117, 182);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 18);
+            this.label2.Size = new System.Drawing.Size(0, 22);
             this.label2.TabIndex = 13;
             // 
             // label3
@@ -217,9 +231,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(88, 233);
+            this.label3.Location = new System.Drawing.Point(117, 291);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 18);
+            this.label3.Size = new System.Drawing.Size(0, 22);
             this.label3.TabIndex = 14;
             // 
             // label4
@@ -229,9 +244,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(88, 318);
+            this.label4.Location = new System.Drawing.Point(117, 398);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 18);
+            this.label4.Size = new System.Drawing.Size(0, 22);
             this.label4.TabIndex = 15;
             // 
             // label5
@@ -241,9 +257,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(179, 344);
+            this.label5.Location = new System.Drawing.Point(239, 430);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 18);
+            this.label5.Size = new System.Drawing.Size(0, 22);
             this.label5.TabIndex = 16;
             // 
             // label6
@@ -253,9 +270,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(88, 72);
+            this.label6.Location = new System.Drawing.Point(117, 90);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 18);
+            this.label6.Size = new System.Drawing.Size(0, 22);
             this.label6.TabIndex = 12;
             // 
             // label7
@@ -265,9 +283,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(88, 146);
+            this.label7.Location = new System.Drawing.Point(117, 182);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 18);
+            this.label7.Size = new System.Drawing.Size(0, 22);
             this.label7.TabIndex = 13;
             // 
             // label8
@@ -277,16 +296,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(88, 233);
+            this.label8.Location = new System.Drawing.Point(117, 291);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 18);
+            this.label8.Size = new System.Drawing.Size(0, 22);
             this.label8.TabIndex = 14;
             // 
             // FrmNewExpert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 595);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(852, 744);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
@@ -307,6 +328,7 @@
             this.Controls.Add(this.lbl_Name);
             this.Controls.Add(this.cbSort2);
             this.Controls.Add(this.cbSort1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNewExpert";
             this.Text = "FrmNewExpert";
             this.Load += new System.EventHandler(this.FrmNewExpert_Load);

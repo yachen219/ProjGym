@@ -53,7 +53,7 @@
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Cancel.Location = new System.Drawing.Point(664, 470);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(123, 52);
             this.btn_Cancel.TabIndex = 8;
@@ -65,7 +65,7 @@
             // 
             this.btn_Save.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Save.Location = new System.Drawing.Point(827, 470);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(123, 52);
             this.btn_Save.TabIndex = 9;
@@ -77,7 +77,7 @@
             // 
             this.tb_Password.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Password.Location = new System.Drawing.Point(177, 446);
-            this.tb_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(432, 27);
             this.tb_Password.TabIndex = 7;
@@ -97,7 +97,7 @@
             // 
             this.tb_Mail.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Mail.Location = new System.Drawing.Point(177, 378);
-            this.tb_Mail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Mail.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Mail.Name = "tb_Mail";
             this.tb_Mail.Size = new System.Drawing.Size(432, 27);
             this.tb_Mail.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             this.tb_Phone.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Phone.Location = new System.Drawing.Point(177, 179);
-            this.tb_Phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Phone.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(432, 27);
             this.tb_Phone.TabIndex = 3;
@@ -159,7 +159,7 @@
             // 
             this.tb_Name.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Name.Location = new System.Drawing.Point(177, 46);
-            this.tb_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(432, 27);
             this.tb_Name.TabIndex = 1;
@@ -203,7 +203,7 @@
             // 
             this.tb_Address.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Address.Location = new System.Drawing.Point(177, 311);
-            this.tb_Address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Address.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(432, 27);
             this.tb_Address.TabIndex = 5;
@@ -213,7 +213,7 @@
             this.cb_GenderList.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cb_GenderList.FormattingEnabled = true;
             this.cb_GenderList.Location = new System.Drawing.Point(177, 109);
-            this.cb_GenderList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_GenderList.Margin = new System.Windows.Forms.Padding(4);
             this.cb_GenderList.Name = "cb_GenderList";
             this.cb_GenderList.Size = new System.Drawing.Size(160, 27);
             this.cb_GenderList.TabIndex = 2;
@@ -222,7 +222,7 @@
             // 
             this.pb_Photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_Photo.Location = new System.Drawing.Point(657, 52);
-            this.pb_Photo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb_Photo.Margin = new System.Windows.Forms.Padding(4);
             this.pb_Photo.Name = "pb_Photo";
             this.pb_Photo.Size = new System.Drawing.Size(351, 352);
             this.pb_Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -234,6 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.cb_GenderList);
             this.Controls.Add(this.dateTimePicker_Birth);
@@ -252,7 +253,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmNewMemberRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewRegister";

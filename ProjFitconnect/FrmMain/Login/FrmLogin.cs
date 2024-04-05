@@ -142,10 +142,13 @@ namespace ProjGym
             member.gender_id = g.gender_id;
             member.phone = frm.phone;
             member.address = frm.address;
+            if (DateTime.Now- DateTime.Parse(frm.birth)< TimeSpan.FromDays(365*14+3)) {MessageBox.Show("小朋友 你還太小了"); return; }
+            if (DateTime.Now - DateTime.Parse(frm.birth) < TimeSpan.FromDays(365 * 18 + 4)) { MessageBox.Show("未成年請監護人陪同\n至現場辦理加入會員"); return; }
             member.birthday = DateTime.Parse(frm.birth);
             member.e_mail = frm.mail;
             member.password = frm.password;
             member.photo = frm.file;
+            member.activated = true;
             //將新會員資料新增至[gym資料庫實體]
             db.tIdentity.Add(member);
             //存回資料庫
