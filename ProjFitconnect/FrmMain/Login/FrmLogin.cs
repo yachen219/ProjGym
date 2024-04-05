@@ -36,7 +36,8 @@ namespace ProjGym
             SetRoundButton(btn_Login, 55);
             SetRoundButton(btn_Register, 55);
 
-            lbl_ErrorLogin.Text = string.Empty;
+            lbl_ErrorLogin.Text = string.Empty; 
+            tb_Password.PasswordChar = '●';
         }
         private void SetRoundButton(Button btn, int radius)
         {
@@ -202,6 +203,24 @@ namespace ProjGym
             //存回資料庫
             db.SaveChanges();
             MessageBox.Show("註冊教練成功，請使用電話/信箱 + 密碼登入\n" + "若要開課，請等待管理員審核");
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked) { tb_Password.PasswordChar = '\0'; }
+            else { tb_Password.PasswordChar = '●'; }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tb_UserName.Text = "Duke@gmail.com";
+            tb_Password.Text = "azsx";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tb_UserName.Text = "martin@gmail.com";
+            tb_Password.Text = "Y7nk";
         }
     }
 }

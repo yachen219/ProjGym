@@ -118,6 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAa1JREFUWEft1b1KXEEchvENMYn4AYE0aqdoSmOTL+9A8SbUQhsRxSI3EG2NXkDI
+        B4m2QUUr70PttNdCMYGIPk9yBoaTOZvdle3mhR/szpn/nNmZOWdrOTk5OS1kAFOYx7uCn23zWlvyHGs4
+        we1/HMO+1tw7Q9jGDcINrrGOl+gqvMIH/EToZ80WBtF0HmAJVwgD6hSjMONYRMefb3/zAvaJaxzDfo7Z
+        UDrxDfEg8pd786fYL9oOUY6TiFci+ALHrpvH2EO5WC67CTfXgQ2JuB1xbbCDR6jMV6QK5Z677HHbOZ6h
+        nNeI+8U+IZlZpAqCbqyU2uSKxJN4iB6U+8Wm8U9mkOocOGhqArqA2+GZ8MD1ItUvSE7AfEaqQG7B21Jb
+        istfbws+ojIekF2kCj1YpuqQykNmNpC6/gN1D6HxUUkdRh8tHzEfw9QkvbnXxvCraIu5uk/QUHxpuJeX
+        iAfxJeMkzBssF3wTGm9+hrjGMRbQUnyNfsdvhAFdCbfDffbJkJPZRPzLrbG2pVdxOSNYhX804QZVjvAe
+        w2hL+jGJOYS/Yz9PoA85OTk5TaRWuwO5Dt9RPOfUdAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYa

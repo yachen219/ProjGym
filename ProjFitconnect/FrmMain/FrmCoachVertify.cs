@@ -28,12 +28,24 @@ namespace FrmMain
             if(lbID==null)return;
             try
             {
-                int i = Convert.ToInt32(lbID.Text);
-                tIdentity TT = db.tIdentity.FirstOrDefault(x => x.id == i);
-                db.tIdentity.Remove(TT);
-                db.SaveChanges();
+                using (var transaction = db.Database.BeginTransaction())
+                {
+                    int i = Convert.ToInt32(lbID.Text);
+                    tcoach_expert EE = db.tcoach_expert.FirstOrDefault(z => z.coach_id == i);
+                    db.tcoach_expert.Remove(EE);
+                    db.SaveChanges(); 
+
+                    tcoach_info_id CC = db.tcoach_info_id.FirstOrDefault(y => y.coach_id == i); 
+                    db.tcoach_info_id.Remove(CC);
+                    db.SaveChanges();
+
+                    tIdentity TT = db.tIdentity.FirstOrDefault(x => x.id == i);
+                    db.tIdentity.Remove(TT);
+                    db.SaveChanges();
+                    transaction.Commit();
+                }
             }
-            catch (Exception ex) { }
+            catch (Exception ex) { /*MessageBox.Show("" + ex);*/ }
             finally { ShowCoachUnvertify(); }
         }
 
@@ -67,7 +79,9 @@ namespace FrmMain
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         } 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        { 
+            if (e.RowIndex <0) return;
+            if(pb_Photo.Image!=null)this.pb_Photo.Image=null;  
             int id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             //MessageBox.Show("" + id);
             dbSelect(id);
@@ -105,7 +119,7 @@ namespace FrmMain
             {
                 var firstResult = contents.First();
                 this.tb_Expert.Text = firstResult.ExpertName;
-                this.tb_intro.Text = firstResult.CoachIntro;
+                this.tb_intro.Text = firstResult.CoachIntro; 
             }
             else
             {

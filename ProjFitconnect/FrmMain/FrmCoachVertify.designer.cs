@@ -63,18 +63,20 @@
             this.label8.Location = new System.Drawing.Point(53, 289);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 28);
+            this.label8.Size = new System.Drawing.Size(68, 31);
             this.label8.TabIndex = 72;
             this.label8.Text = "專長:";
             // 
             // tb_Address
             // 
             this.tb_Address.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Address.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Address.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Address.Location = new System.Drawing.Point(145, 406);
             this.tb_Address.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Address.Name = "tb_Address";
-            this.tb_Address.Size = new System.Drawing.Size(498, 29);
+            this.tb_Address.ReadOnly = true;
+            this.tb_Address.Size = new System.Drawing.Size(498, 31);
             this.tb_Address.TabIndex = 71;
             // 
             // label7
@@ -85,7 +87,7 @@
             this.label7.Location = new System.Drawing.Point(53, 407);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 28);
+            this.label7.Size = new System.Drawing.Size(68, 31);
             this.label7.TabIndex = 70;
             this.label7.Text = "地址:";
             // 
@@ -96,17 +98,19 @@
             this.dateTimePicker_Birth.Location = new System.Drawing.Point(145, 111);
             this.dateTimePicker_Birth.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
-            this.dateTimePicker_Birth.Size = new System.Drawing.Size(275, 29);
+            this.dateTimePicker_Birth.Size = new System.Drawing.Size(275, 31);
             this.dateTimePicker_Birth.TabIndex = 69;
             // 
             // tb_Password
             // 
             this.tb_Password.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Password.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Password.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Password.Location = new System.Drawing.Point(145, 229);
             this.tb_Password.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Password.Name = "tb_Password";
-            this.tb_Password.Size = new System.Drawing.Size(275, 29);
+            this.tb_Password.ReadOnly = true;
+            this.tb_Password.Size = new System.Drawing.Size(275, 31);
             this.tb_Password.TabIndex = 67;
             // 
             // label6
@@ -117,18 +121,20 @@
             this.label6.Location = new System.Drawing.Point(53, 230);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 28);
+            this.label6.Size = new System.Drawing.Size(68, 31);
             this.label6.TabIndex = 66;
             this.label6.Text = "密碼:";
             // 
             // tb_Mail
             // 
             this.tb_Mail.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Mail.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Mail.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Mail.Location = new System.Drawing.Point(145, 347);
             this.tb_Mail.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Mail.Name = "tb_Mail";
-            this.tb_Mail.Size = new System.Drawing.Size(498, 29);
+            this.tb_Mail.ReadOnly = true;
+            this.tb_Mail.Size = new System.Drawing.Size(498, 31);
             this.tb_Mail.TabIndex = 65;
             // 
             // label5
@@ -139,7 +145,7 @@
             this.label5.Location = new System.Drawing.Point(53, 345);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 28);
+            this.label5.Size = new System.Drawing.Size(68, 31);
             this.label5.TabIndex = 64;
             this.label5.Text = "電郵:";
             // 
@@ -151,18 +157,20 @@
             this.label4.Location = new System.Drawing.Point(53, 112);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 28);
+            this.label4.Size = new System.Drawing.Size(68, 31);
             this.label4.TabIndex = 63;
             this.label4.Text = "生日:";
             // 
             // tb_Phone
             // 
             this.tb_Phone.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Phone.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Phone.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Phone.Location = new System.Drawing.Point(145, 170);
             this.tb_Phone.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Phone.Name = "tb_Phone";
-            this.tb_Phone.Size = new System.Drawing.Size(275, 29);
+            this.tb_Phone.ReadOnly = true;
+            this.tb_Phone.Size = new System.Drawing.Size(275, 31);
             this.tb_Phone.TabIndex = 62;
             // 
             // label3
@@ -173,7 +181,7 @@
             this.label3.Location = new System.Drawing.Point(53, 171);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 28);
+            this.label3.Size = new System.Drawing.Size(68, 31);
             this.label3.TabIndex = 61;
             this.label3.Text = "電話:";
             // 
@@ -185,18 +193,20 @@
             this.label1.Location = new System.Drawing.Point(263, 55);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 28);
+            this.label1.Size = new System.Drawing.Size(68, 31);
             this.label1.TabIndex = 60;
             this.label1.Text = "性別:";
             // 
             // tb_Name
             // 
             this.tb_Name.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Name.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Name.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Name.Location = new System.Drawing.Point(145, 58);
             this.tb_Name.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(84, 29);
+            this.tb_Name.ReadOnly = true;
+            this.tb_Name.Size = new System.Drawing.Size(84, 31);
             this.tb_Name.TabIndex = 59;
             // 
             // label2
@@ -207,28 +217,32 @@
             this.label2.Location = new System.Drawing.Point(53, 53);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 28);
+            this.label2.Size = new System.Drawing.Size(68, 31);
             this.label2.TabIndex = 58;
             this.label2.Text = "姓名:";
             // 
             // tb_Gender
             // 
             this.tb_Gender.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Gender.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Gender.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Gender.Location = new System.Drawing.Point(336, 58);
             this.tb_Gender.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Gender.Name = "tb_Gender";
-            this.tb_Gender.Size = new System.Drawing.Size(84, 29);
+            this.tb_Gender.ReadOnly = true;
+            this.tb_Gender.Size = new System.Drawing.Size(84, 31);
             this.tb_Gender.TabIndex = 73;
             // 
             // tb_Expert
             // 
             this.tb_Expert.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_Expert.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Expert.Font = new System.Drawing.Font("微軟正黑體", 10.76635F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tb_Expert.Location = new System.Drawing.Point(145, 288);
             this.tb_Expert.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_Expert.Name = "tb_Expert";
-            this.tb_Expert.Size = new System.Drawing.Size(275, 29);
+            this.tb_Expert.ReadOnly = true;
+            this.tb_Expert.Size = new System.Drawing.Size(275, 31);
             this.tb_Expert.TabIndex = 74;
             // 
             // pb_Photo
@@ -246,10 +260,12 @@
             // tb_intro
             // 
             this.tb_intro.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_intro.BackColor = System.Drawing.SystemColors.Window;
             this.tb_intro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_intro.Location = new System.Drawing.Point(145, 466);
             this.tb_intro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tb_intro.Name = "tb_intro";
+            this.tb_intro.ReadOnly = true;
             this.tb_intro.Size = new System.Drawing.Size(498, 117);
             this.tb_intro.TabIndex = 77;
             this.tb_intro.Text = "";
@@ -262,7 +278,7 @@
             this.label9.Location = new System.Drawing.Point(53, 466);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 28);
+            this.label9.Size = new System.Drawing.Size(68, 31);
             this.label9.TabIndex = 76;
             this.label9.Text = "簡介:";
             // 
@@ -277,7 +293,9 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(517, 236);
             this.dataGridView1.TabIndex = 78;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btReject
             // 
@@ -310,13 +328,13 @@
             this.lbID.Location = new System.Drawing.Point(54, 23);
             this.lbID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(26, 20);
+            this.lbID.Size = new System.Drawing.Size(29, 23);
             this.lbID.TabIndex = 80;
             this.lbID.Text = "ID";
             // 
             // FrmCoachVertify
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1344, 693);
@@ -344,7 +362,7 @@
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("微軟正黑體", 12.11215F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmCoachVertify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCoachVertify";
