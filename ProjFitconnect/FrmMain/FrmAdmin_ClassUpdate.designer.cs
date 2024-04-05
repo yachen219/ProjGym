@@ -121,7 +121,7 @@ namespace mid_Coonect
             this.lbl_IDTitle.AutoSize = true;
             this.lbl_IDTitle.Location = new System.Drawing.Point(644, 48);
             this.lbl_IDTitle.Name = "lbl_IDTitle";
-            this.lbl_IDTitle.Size = new System.Drawing.Size(69, 19);
+            this.lbl_IDTitle.Size = new System.Drawing.Size(82, 23);
             this.lbl_IDTitle.TabIndex = 8;
             this.lbl_IDTitle.Text = "課程編號";
             // 
@@ -133,7 +133,7 @@ namespace mid_Coonect
             this.lbl_ID.ForeColor = System.Drawing.Color.Black;
             this.lbl_ID.Location = new System.Drawing.Point(720, 47);
             this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(24, 21);
+            this.lbl_ID.Size = new System.Drawing.Size(31, 25);
             this.lbl_ID.TabIndex = 9;
             this.lbl_ID.Text = "id";
             // 
@@ -143,7 +143,7 @@ namespace mid_Coonect
             this.lbl_Sort1Title.AutoSize = true;
             this.lbl_Sort1Title.Location = new System.Drawing.Point(784, 50);
             this.lbl_Sort1Title.Name = "lbl_Sort1Title";
-            this.lbl_Sort1Title.Size = new System.Drawing.Size(69, 19);
+            this.lbl_Sort1Title.Size = new System.Drawing.Size(82, 23);
             this.lbl_Sort1Title.TabIndex = 10;
             this.lbl_Sort1Title.Text = "類型編號";
             // 
@@ -153,7 +153,7 @@ namespace mid_Coonect
             this.cb_Sort1.FormattingEnabled = true;
             this.cb_Sort1.Location = new System.Drawing.Point(874, 47);
             this.cb_Sort1.Name = "cb_Sort1";
-            this.cb_Sort1.Size = new System.Drawing.Size(63, 26);
+            this.cb_Sort1.Size = new System.Drawing.Size(63, 31);
             this.cb_Sort1.TabIndex = 11;
             this.cb_Sort1.Text = "--";
             // 
@@ -163,7 +163,7 @@ namespace mid_Coonect
             this.lbl_Sort2Title.AutoSize = true;
             this.lbl_Sort2Title.Location = new System.Drawing.Point(956, 50);
             this.lbl_Sort2Title.Name = "lbl_Sort2Title";
-            this.lbl_Sort2Title.Size = new System.Drawing.Size(69, 19);
+            this.lbl_Sort2Title.Size = new System.Drawing.Size(82, 23);
             this.lbl_Sort2Title.TabIndex = 10;
             this.lbl_Sort2Title.Text = "分類編號";
             // 
@@ -173,7 +173,7 @@ namespace mid_Coonect
             this.cb_Sort2.FormattingEnabled = true;
             this.cb_Sort2.Location = new System.Drawing.Point(1056, 47);
             this.cb_Sort2.Name = "cb_Sort2";
-            this.cb_Sort2.Size = new System.Drawing.Size(63, 26);
+            this.cb_Sort2.Size = new System.Drawing.Size(63, 31);
             this.cb_Sort2.TabIndex = 11;
             this.cb_Sort2.Text = "--";
             // 
@@ -183,7 +183,7 @@ namespace mid_Coonect
             this.lbl_ClassNameTitle.AutoSize = true;
             this.lbl_ClassNameTitle.Location = new System.Drawing.Point(643, 147);
             this.lbl_ClassNameTitle.Name = "lbl_ClassNameTitle";
-            this.lbl_ClassNameTitle.Size = new System.Drawing.Size(69, 19);
+            this.lbl_ClassNameTitle.Size = new System.Drawing.Size(82, 23);
             this.lbl_ClassNameTitle.TabIndex = 12;
             this.lbl_ClassNameTitle.Text = "課程名稱";
             // 
@@ -192,7 +192,7 @@ namespace mid_Coonect
             this.txt_ClassName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_ClassName.Location = new System.Drawing.Point(647, 169);
             this.txt_ClassName.Name = "txt_ClassName";
-            this.txt_ClassName.Size = new System.Drawing.Size(472, 27);
+            this.txt_ClassName.Size = new System.Drawing.Size(472, 31);
             this.txt_ClassName.TabIndex = 13;
             // 
             // txt_Introduction
@@ -210,7 +210,7 @@ namespace mid_Coonect
             this.lbl_IntroductionTitle.AutoSize = true;
             this.lbl_IntroductionTitle.Location = new System.Drawing.Point(643, 219);
             this.lbl_IntroductionTitle.Name = "lbl_IntroductionTitle";
-            this.lbl_IntroductionTitle.Size = new System.Drawing.Size(39, 19);
+            this.lbl_IntroductionTitle.Size = new System.Drawing.Size(46, 23);
             this.lbl_IntroductionTitle.TabIndex = 14;
             this.lbl_IntroductionTitle.Text = "介紹";
             // 
@@ -220,7 +220,7 @@ namespace mid_Coonect
             this.cb_Limit.FormattingEnabled = true;
             this.cb_Limit.Location = new System.Drawing.Point(874, 91);
             this.cb_Limit.Name = "cb_Limit";
-            this.cb_Limit.Size = new System.Drawing.Size(63, 26);
+            this.cb_Limit.Size = new System.Drawing.Size(63, 31);
             this.cb_Limit.TabIndex = 17;
             this.cb_Limit.Text = "--";
             // 
@@ -230,7 +230,7 @@ namespace mid_Coonect
             this.lbl_LimitTitle.AutoSize = true;
             this.lbl_LimitTitle.Location = new System.Drawing.Point(784, 94);
             this.lbl_LimitTitle.Name = "lbl_LimitTitle";
-            this.lbl_LimitTitle.Size = new System.Drawing.Size(69, 19);
+            this.lbl_LimitTitle.Size = new System.Drawing.Size(82, 23);
             this.lbl_LimitTitle.TabIndex = 16;
             this.lbl_LimitTitle.Text = "性別限制";
             // 
@@ -267,7 +267,7 @@ namespace mid_Coonect
             this.lbl_PhotoTitle.AutoSize = true;
             this.lbl_PhotoTitle.Location = new System.Drawing.Point(643, 375);
             this.lbl_PhotoTitle.Name = "lbl_PhotoTitle";
-            this.lbl_PhotoTitle.Size = new System.Drawing.Size(39, 19);
+            this.lbl_PhotoTitle.Size = new System.Drawing.Size(46, 23);
             this.lbl_PhotoTitle.TabIndex = 14;
             this.lbl_PhotoTitle.Text = "照片";
             // 
@@ -320,15 +320,15 @@ namespace mid_Coonect
             this.lbl_CurrentIndex.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbl_CurrentIndex.Location = new System.Drawing.Point(226, 607);
             this.lbl_CurrentIndex.Name = "lbl_CurrentIndex";
-            this.lbl_CurrentIndex.Size = new System.Drawing.Size(32, 19);
+            this.lbl_CurrentIndex.Size = new System.Drawing.Size(38, 24);
             this.lbl_CurrentIndex.TabIndex = 26;
             this.lbl_CurrentIndex.Text = "../..";
             // 
             // FrmAdmin_ClassUpdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1166, 690);
             this.Controls.Add(this.lbl_CurrentIndex);
             this.Controls.Add(this.btn_End);

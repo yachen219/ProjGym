@@ -47,7 +47,7 @@
             this.dateTimePicker_Start.Location = new System.Drawing.Point(206, 29);
             this.dateTimePicker_Start.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_Start.Name = "dateTimePicker_Start";
-            this.dateTimePicker_Start.Size = new System.Drawing.Size(249, 26);
+            this.dateTimePicker_Start.Size = new System.Drawing.Size(249, 30);
             this.dateTimePicker_Start.TabIndex = 1;
             // 
             // dateTimePicker_End
@@ -58,7 +58,7 @@
             this.dateTimePicker_End.Location = new System.Drawing.Point(511, 29);
             this.dateTimePicker_End.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_End.Name = "dateTimePicker_End";
-            this.dateTimePicker_End.Size = new System.Drawing.Size(249, 26);
+            this.dateTimePicker_End.Size = new System.Drawing.Size(249, 30);
             this.dateTimePicker_End.TabIndex = 1;
             // 
             // label1
@@ -70,7 +70,7 @@
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(84, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 24);
+            this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "課程起訖:";
             // 
@@ -109,7 +109,7 @@
             this.lbl_ClassCategories.Location = new System.Drawing.Point(84, 96);
             this.lbl_ClassCategories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ClassCategories.Name = "lbl_ClassCategories";
-            this.lbl_ClassCategories.Size = new System.Drawing.Size(91, 24);
+            this.lbl_ClassCategories.Size = new System.Drawing.Size(116, 31);
             this.lbl_ClassCategories.TabIndex = 3;
             this.lbl_ClassCategories.Text = "課程類型:";
             // 
@@ -122,7 +122,7 @@
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.Location = new System.Drawing.Point(470, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 24);
+            this.label3.Size = new System.Drawing.Size(38, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "～";
             // 
@@ -141,8 +141,9 @@
             // 
             // FrmMember_CourseReservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1265, 703);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_ClassCategories);

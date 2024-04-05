@@ -140,13 +140,11 @@ namespace ProjGym
             member.role_id = 1;
             member.name = frm.name;
             member.phone = frm.phone;
+            member.address = frm.address;
+            member.birthday = DateTime.Parse(frm.birth);
             member.e_mail = frm.mail;
             member.password = frm.password;
             member.photo = frm.file;
-            member.birthday = DateTime.Parse(frm.birth);
-            member.address = frm.address;
-            member.gender_id = g.gender_id;
-            member.activated = true;
             //將新會員資料新增至[gym資料庫實體]
             db.tIdentity.Add(member);
             //存回資料庫
