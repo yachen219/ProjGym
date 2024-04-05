@@ -44,6 +44,7 @@
             // 
             // btnFollow
             // 
+            this.btnFollow.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnFollow.Font = new System.Drawing.Font("新細明體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnFollow.Location = new System.Drawing.Point(12, 74);
             this.btnFollow.Name = "btnFollow";
@@ -55,6 +56,7 @@
             // 
             // btnBlack
             // 
+            this.btnBlack.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBlack.Font = new System.Drawing.Font("新細明體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBlack.Location = new System.Drawing.Point(12, 117);
             this.btnBlack.Name = "btnBlack";
@@ -66,6 +68,7 @@
             // 
             // btnRate
             // 
+            this.btnRate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRate.Font = new System.Drawing.Font("新細明體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnRate.Location = new System.Drawing.Point(12, 160);
             this.btnRate.Name = "btnRate";
@@ -77,6 +80,7 @@
             // 
             // cbCoach
             // 
+            this.cbCoach.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbCoach.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cbCoach.FormattingEnabled = true;
             this.cbCoach.Location = new System.Drawing.Point(12, 40);
@@ -87,7 +91,7 @@
             // 
             // txtRate
             // 
-            this.txtRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRate.Location = new System.Drawing.Point(212, 40);
             this.txtRate.Multiline = true;
             this.txtRate.Name = "txtRate";
@@ -97,7 +101,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSave.Font = new System.Drawing.Font("新細明體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSave.Location = new System.Drawing.Point(12, 405);
             this.btnSave.Name = "btnSave";
@@ -110,6 +114,7 @@
             // 
             // cbStar
             // 
+            this.cbStar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbStar.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cbStar.FormattingEnabled = true;
             this.cbStar.Location = new System.Drawing.Point(12, 203);
@@ -120,6 +125,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
@@ -131,6 +137,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.Color.Red;
@@ -141,6 +148,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.Red;
@@ -151,6 +159,7 @@
             // 
             // lblRate
             // 
+            this.lblRate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRate.AutoSize = true;
             this.lblRate.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblRate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -163,6 +172,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.Red;
@@ -175,6 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(644, 454);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblRate);
@@ -189,7 +200,9 @@
             this.Controls.Add(this.btnBlack);
             this.Controls.Add(this.btnFollow);
             this.Name = "FrmFollow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFollow";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.FrmFollow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

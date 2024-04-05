@@ -42,7 +42,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(357, 17);
             this.pictureBox1.Name = "pictureBox1";
@@ -54,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button1.Location = new System.Drawing.Point(527, 400);
             this.button1.Name = "button1";
@@ -66,7 +66,7 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button2.Location = new System.Drawing.Point(667, 400);
             this.button2.Name = "button2";
@@ -82,6 +82,7 @@
             // 
             // lblfID
             // 
+            this.lblfID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblfID.AutoSize = true;
             this.lblfID.Location = new System.Drawing.Point(277, 34);
             this.lblfID.Name = "lblfID";
@@ -92,8 +93,7 @@
             // 
             // fbFieldPayment
             // 
-            this.fbFieldPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fbFieldPayment.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fbFieldPayment.fieldName = "費用";
             this.fbFieldPayment.fieldValue = "";
             this.fbFieldPayment.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -105,8 +105,7 @@
             // 
             // fbFieldName
             // 
-            this.fbFieldName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fbFieldName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fbFieldName.fieldName = "場地名";
             this.fbFieldName.fieldValue = "";
             this.fbFieldName.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -118,8 +117,7 @@
             // 
             // fbFieldFloor
             // 
-            this.fbFieldFloor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fbFieldFloor.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fbFieldFloor.fieldName = "樓層";
             this.fbFieldFloor.fieldValue = "";
             this.fbFieldFloor.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -131,8 +129,7 @@
             // 
             // fbregion
             // 
-            this.fbregion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fbregion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fbregion.fieldName = "region";
             this.fbregion.fieldValue = "";
             this.fbregion.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
