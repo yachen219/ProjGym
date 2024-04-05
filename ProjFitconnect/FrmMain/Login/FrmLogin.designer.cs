@@ -235,11 +235,11 @@
             this.Controls.Add(this.tb_UserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCustomerLogin";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCustomerLogin_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

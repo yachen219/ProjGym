@@ -23,8 +23,24 @@ namespace ProjGym
         {
             InitializeComponent();
             splitContainer1.SplitterWidth = 3;
-            this.找商品ToolStripMenuItem.Visible = false;
+            this.管理者中心ToolStripMenuItem.Visible = false;
             this.lbl_Info.Visible = false;
+        }
+
+        private void FrmHomePage_Load_1(object sender, EventArgs e)
+        { 
+            //MainLog();
+            //showinfo(this.identity);
+            this.identity = null;
+            showmain();
+        }
+
+        private void MainLog()
+        {
+            FrmLogin f = new FrmLogin();
+            f.afterLogin += this.showinfo;
+            f.ShowDialog();
+            if (f.isOK != DialogResult.OK) return; 
         }
         private void closeCurrentForm()
         {
@@ -59,6 +75,7 @@ namespace ProjGym
 
         private void showinfo(tIdentity m)
         {
+            if (m == null) return;
             this.identity = m;
 
             if (m.role_id == 1)
@@ -80,6 +97,7 @@ namespace ProjGym
 
         private void lblWecomeshow(tIdentity m)
         {
+            if (identity == null) return;
             Label lblWelcome = new Label();
             string s = "歡迎登入 ： " + m.name;
             if (m.role_id == 1)
@@ -132,22 +150,6 @@ namespace ProjGym
             f.Show();
         }
 
-        private void FrmHomePage_Load_1(object sender, EventArgs e)
-        {
-            this.Visible = false; 
-            MainLog();
-            showinfo(this.identity);
-        }
-
-        private void MainLog()
-        {
-            FrmLogin f = new FrmLogin();
-            f.afterLogin += this.showinfo;
-            f.ShowDialog();
-            if (f.isOK != DialogResult.OK) return;
-            this.Visible = true;
-        }
-
         private void 新增管理者ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmNewAdminRegister frm = new FrmNewAdminRegister();
@@ -179,25 +181,14 @@ namespace ProjGym
             MessageBox.Show("新增管理員完成");
         }
 
-        private void 會員登出ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            logoutevent();
-        }
-
-        private void 帳號登出ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            logoutevent();
-        }
 
         private void logoutevent()
         {
             DialogResult Logout = MessageBox.Show("確定要登出？", "", MessageBoxButtons.OKCancel);
-            if (Logout != DialogResult.OK)
-                return;
+            if (Logout != DialogResult.OK) return;
             this.identity = null;
             this.lblWelcome = null;
-            showmain();
-            MainLog();
+            showmain(); 
         }
 
         private void showmain()
@@ -287,8 +278,12 @@ namespace ProjGym
         }
         private void Identity_Click(object sender, EventArgs e)
         {
-            this.splitContainer1.Panel2.Controls.Clear();
-            lblWecomeshow(this.identity);
+            if (identity == null) {MessageBox.Show("請登入會員"); MainLog(); }
+            else
+            {
+                this.splitContainer1.Panel2.Controls.Clear();
+                lblWecomeshow(this.identity);
+            }
         }
 
         private void 教練審核ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -310,12 +305,7 @@ namespace ProjGym
             f.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();
-        }
-
-        private void 登出ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            logoutevent();
-        }
+        } 
 
         private void 會員資訊ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -329,6 +319,11 @@ namespace ProjGym
 
         private void 登出ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            if (identity == null) return;
+            this.Text = "Fitnessconnect 健身媒合平台";
+            this.會員中心ToolStripMenuItem.Visible = true;
+            this.教練中心ToolStripMenuItem.Visible = true;
+            this.管理者中心ToolStripMenuItem.Visible = false;
             logoutevent();
         }
 
