@@ -50,6 +50,8 @@
             this.會員中心ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.已預約課程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.評分ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.對課程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.對教練ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改會員資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.會員登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.教練中心ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,8 +72,6 @@
             this.登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.登出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.登入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.對課程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.對教練ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -313,6 +313,19 @@
             this.評分ToolStripMenuItem.Size = new System.Drawing.Size(244, 34);
             this.評分ToolStripMenuItem.Text = "評分";
             // 
+            // 對課程ToolStripMenuItem
+            // 
+            this.對課程ToolStripMenuItem.Name = "對課程ToolStripMenuItem";
+            this.對課程ToolStripMenuItem.Size = new System.Drawing.Size(172, 34);
+            this.對課程ToolStripMenuItem.Text = "對課程";
+            // 
+            // 對教練ToolStripMenuItem
+            // 
+            this.對教練ToolStripMenuItem.Name = "對教練ToolStripMenuItem";
+            this.對教練ToolStripMenuItem.Size = new System.Drawing.Size(172, 34);
+            this.對教練ToolStripMenuItem.Text = "對教練";
+            this.對教練ToolStripMenuItem.Click += new System.EventHandler(this.對教練ToolStripMenuItem_Click);
+            // 
             // 修改會員資料ToolStripMenuItem
             // 
             this.修改會員資料ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
@@ -500,19 +513,6 @@
             this.登入ToolStripMenuItem.Text = "登入";
             this.登入ToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.登入ToolStripMenuItem.Click += new System.EventHandler(this.登入ToolStripMenuItem_Click);
-            // 
-            // 對課程ToolStripMenuItem
-            // 
-            this.對課程ToolStripMenuItem.Name = "對課程ToolStripMenuItem";
-            this.對課程ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.對課程ToolStripMenuItem.Text = "對課程";
-            // 
-            // 對教練ToolStripMenuItem
-            // 
-            this.對教練ToolStripMenuItem.Name = "對教練ToolStripMenuItem";
-            this.對教練ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.對教練ToolStripMenuItem.Text = "對教練";
-            this.對教練ToolStripMenuItem.Click += new System.EventHandler(this.對教練ToolStripMenuItem_Click);
             // 
             // FrmHomePage
             // 
