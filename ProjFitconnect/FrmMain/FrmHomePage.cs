@@ -1,4 +1,5 @@
 ﻿using FrmMain;
+using Gym;
 using mid_Coonect;
 using Revised_V1._1;
 using System;
@@ -42,18 +43,18 @@ namespace ProjGym
         {
             closeCurrentForm();
             this.splitContainer1.Panel2.Controls.Clear();
-            FrmEditMemberRegister editMemberRegister = new FrmEditMemberRegister();
-            editMemberRegister.identity = this.identity;
-            editMemberRegister.afterEdit += this.showinfo;
-            editMemberRegister.TopLevel = false;
-            editMemberRegister.FormBorderStyle = FormBorderStyle.None;
+            FrmEditMemberRegister f = new FrmEditMemberRegister();
+            f.identity = this.identity;
+            f.afterEdit += this.showinfo;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
 
-            editMemberRegister.Visible = true;
-            editMemberRegister.Dock = DockStyle.Fill;
-            editMemberRegister.StartPosition = FormStartPosition.CenterParent;
-            editMemberRegister.MdiParent = this;
-            this.splitContainer1.Panel2.Controls.Add(editMemberRegister);
-            editMemberRegister.Show();
+            f.Visible = true;
+            f.Dock = DockStyle.Fill;
+            f.StartPosition = FormStartPosition.CenterParent;
+            f.MdiParent = this;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
         }
 
         private void showinfo(tIdentity m)
@@ -124,11 +125,11 @@ namespace ProjGym
         private void 常見問題ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.splitContainer1.Panel2.Controls.Clear();
-            FrmFAQ fAQ = new FrmFAQ();
-            fAQ.TopLevel = false;
-            fAQ.FormBorderStyle = FormBorderStyle.None;
-            this.splitContainer1.Panel2.Controls.Add(fAQ);
-            fAQ.Show();
+            FrmFAQ f = new FrmFAQ();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
         }
 
         private void FrmHomePage_Load_1(object sender, EventArgs e)
@@ -140,10 +141,10 @@ namespace ProjGym
 
         private void MainLog()
         {
-            FrmLogin frmLogin = new FrmLogin();
-            frmLogin.afterLogin += this.showinfo;
-            frmLogin.ShowDialog();
-            if (frmLogin.isOK != DialogResult.OK) return;
+            FrmLogin f = new FrmLogin();
+            f.afterLogin += this.showinfo;
+            f.ShowDialog();
+            if (f.isOK != DialogResult.OK) return;
             this.Visible = true;
         }
 
@@ -171,6 +172,7 @@ namespace ProjGym
             admin.birthday = DateTime.Now;
             admin.address = "x";
             admin.gender_id = 3;
+            admin.activated = true;
             db.tIdentity.Add(admin);
             db.SaveChanges();
 
@@ -334,6 +336,18 @@ namespace ProjGym
         {
             MainLog();
             showinfo(this.identity);
+        }
+
+        private void 對教練ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            FrmFollow f = new FrmFollow();
+            f.MdiParent = this;
+            f.identity = this.identity;
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            this.splitContainer1.Panel2.Controls.Add(f);
+            f.Show();
         }
     }
 }

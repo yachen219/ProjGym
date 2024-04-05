@@ -107,6 +107,12 @@
     <Compile Include="FrmEditMemberRegister.designer.cs">
       <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFollow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFollow.Designer.cs">
+      <DependentUpon>FrmFollow.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNewExpert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditMemberRegister.resx">
       <DependentUpon>FrmEditMemberRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFollow.resx">
+      <DependentUpon>FrmFollow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frmfreetrial.resx">
       <DependentUpon>Frmfreetrial.cs</DependentUpon>

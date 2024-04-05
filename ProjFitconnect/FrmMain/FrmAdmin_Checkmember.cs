@@ -114,13 +114,9 @@ namespace FrmMain
                          {
                              編號 = a.id,
                              名稱 = a.name,
-                             電話 = a.phone,
-                             email = a.e_mail,
                              密碼 = a.password,
-                             照片 = a.photo,
-                             生日 = a.birthday,
-                             地址 = a.address,
-                             性別 = b.gender_text
+                             創建日期 = a.birthday,
+                             是否啟用 = a.activated,
                          }; ;
             this.dataGridView1.DataSource = admins.ToList();
         }

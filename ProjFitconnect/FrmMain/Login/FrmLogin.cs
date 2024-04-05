@@ -136,16 +136,17 @@ namespace ProjGym
             //將frm的性別名稱轉換為性別ID
             tgender_Table g = db.tgender_Table.FirstOrDefault(x => x.gender_text.Equals(frm.gender));
             //設定新會員資料(名稱、身分ID、性別ID、電話、地址、生日、電郵、密碼、照片檔案名稱)
-            member.name = frm.name;
             //因為此為[新增會員資料]表單，因此身分ID必為1(會員)
             member.role_id = 1;
-            member.gender_id = g.gender_id;
+            member.name = frm.name;
             member.phone = frm.phone;
-            member.address = frm.address;
-            member.birthday = DateTime.Parse(frm.birth);
             member.e_mail = frm.mail;
             member.password = frm.password;
             member.photo = frm.file;
+            member.birthday = DateTime.Parse(frm.birth);
+            member.address = frm.address;
+            member.gender_id = g.gender_id;
+            member.activated = true;
             //將新會員資料新增至[gym資料庫實體]
             db.tIdentity.Add(member);
             //存回資料庫
@@ -172,19 +173,19 @@ namespace ProjGym
             
             //將frm的性別名稱轉換為性別ID
             tgender_Table g = db.tgender_Table.FirstOrDefault(x => x.gender_text.Equals(frm.gender));
-            //設定新會員資料(名稱、身分ID、性別ID、電話、地址、生日、電郵、密碼、照片檔案名稱)
-            coach.name = frm.name;
-            //因為此為[新增會員資料]表單，因此身分ID必為1(會員)
+
             coach.role_id = 2;
-            coach.gender_id = g.gender_id;
+            coach.name = frm.name;
             coach.phone = frm.phone;
-            coach.address = frm.address;
-            coach.birthday = DateTime.Parse(frm.birth);
             coach.e_mail = frm.mail;
             coach.password = frm.password;
             coach.photo = frm.file;
+            coach.birthday = DateTime.Parse(frm.birth);
+            coach.address = frm.address;
+            coach.gender_id = g.gender_id;
             coach.activated = false;
-            //將新會員資料新增至[gym資料庫實體]
+
+            //將新資料新增至[gym資料庫實體]
             db.tIdentity.Add(coach);
             
             tcoach_info_id coach_i = new tcoach_info_id();
