@@ -33,7 +33,7 @@ namespace ProjGym
         List<string> expert_text = new List<string>();
 
         private int tabindex = 8;
-        public string intro { get { return this.tb_intro.ToString(); } }
+        public string intro { get { return this.tb_intro.Text; } }
         public DialogResult result { get; set; }
         public FrmNewCoachRegister()
         {

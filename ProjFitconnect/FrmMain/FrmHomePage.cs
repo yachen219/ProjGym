@@ -324,5 +324,16 @@ namespace ProjGym
             this.splitContainer1.Panel2.Controls.Add(f);
             f.Show();
         }
+
+        private void 登出ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            logoutevent();
+        }
+
+        private void 登入ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainLog();
+            showinfo(this.identity);
+        }
     }
 }
