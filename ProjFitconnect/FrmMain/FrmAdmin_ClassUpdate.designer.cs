@@ -328,6 +328,7 @@ namespace mid_Coonect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1166, 690);
             this.Controls.Add(this.lbl_CurrentIndex);
