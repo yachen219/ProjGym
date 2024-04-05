@@ -22,11 +22,11 @@ namespace mid_Coonect.Tools
         private tIdentity _identity;
         public tclasses cst { get { return _cst; } set {
                 _cst=value;
-                labelCourse.Text="開課課程: "+_cst.class_name;
+                labelCourse.Text=_cst.class_name;
             } }
         public tcoach_info_id cid { get { return _cid; } set { 
                 _cid = value; 
-                labelCoachinfo.Text ="簡介: "+ _cid.coach_intro;
+                labelCoachinfo.Text =_cid.coach_intro;
             } }
         public tIdentity Identity { get { return _identity; } set {
                 _identity = value;

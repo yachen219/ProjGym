@@ -39,6 +39,7 @@ namespace Revised_V1._1
                 cb.Identity = item.Identity;
                 cb.cid = item.CoachInfo;
                 cb.cst = item.Expertise;
+                cb.learnMore += this.LearnMore;
                 cb.showmember += this.ShowMember;
                 if (flowLayoutPanel1.Controls.Equals(cb)) return;
                 flowLayoutPanel1.Controls.Add(cb);
@@ -153,6 +154,7 @@ namespace Revised_V1._1
                     cb.Identity = item.Identity;
                     cb.cid = item.CoachInfo;
                     cb.cst = item.Expertise;
+                    cb.learnMore += this.LearnMore;
                     cb.showmember += this.ShowMember;
                     if (flowLayoutPanel1.Controls.Equals(cb)) return;
                     flowLayoutPanel1.Controls.Add(cb);
@@ -185,11 +187,14 @@ namespace Revised_V1._1
             foreach (var item in query)
             {
                 CoachBox cb = new CoachBox();
-                cb.Width = flowLayoutPanel1.Width / 2;
-                cb.Height = 200;
+                cb.Width = flowLayoutPanel1.Width *3/4;
+                cb.Height = 180;
                 cb.Identity = item.Identity;
                 cb.cid = item.CoachInfo;
                 cb.cst = item.Expertise;
+                cb.learnMore += this.LearnMore;
+                cb.showmember += this.ShowMember;
+                if (flowLayoutPanel1.Controls.Equals(cb)) return;
                 flowLayoutPanel1.Controls.Add(cb);
             } 
         }
