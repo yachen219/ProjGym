@@ -22,7 +22,6 @@ namespace FrmMain
             Application.SetCompatibleTextRenderingDefault(false); 
 
             Application.Run(new FrmHomePage());
-
         }
     }
 }
