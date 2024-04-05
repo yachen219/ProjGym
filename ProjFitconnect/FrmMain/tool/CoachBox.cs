@@ -44,6 +44,7 @@ namespace mid_Coonect.Tools
         public CoachBox()
         {
             InitializeComponent();
+            this.button1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
