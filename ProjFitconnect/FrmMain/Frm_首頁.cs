@@ -17,10 +17,16 @@ namespace ProjGym
         private Timer Timer_ann;
         private int currentPosition = 0;
         private string announcementText = "歡迎來到FitConnect，您可以在首頁查看最新消息以及相關優惠訊息";
+        private Timer imageTimer;
+        private int currentImageIndex = 0;
+        private Image[] images = new Image[]
+        {FrmMain.Properties.Resources.gym1, FrmMain.Properties.Resources.gym2, FrmMain.Properties.Resources.gym3, FrmMain.Properties.Resources.gym4, FrmMain.Properties.Resources.gymm};
+        public tIdentity identity { get; set; }
         public Frm_首頁()
         {
             InitializeComponent();
             Run_announcementText();
+            InitializeImageTimer();
             splitContainer1.SplitterWidth = 3;
             SetRoundButton(button1, 40);
             SetRoundButton(button2, 40);
@@ -102,23 +108,40 @@ namespace ProjGym
             btn.Region = new Region(path);
         }
 
-        
+        private void InitializeImageTimer()
+        {
+            imageTimer = new Timer();
+            imageTimer.Interval =4980;
+            imageTimer.Tick += ImageTimer_Tick;
+            imageTimer.Start();
+        }
+
+        private void ImageTimer_Tick(object sender, EventArgs e)
+        {
+            currentImageIndex++;
+
+            if (currentImageIndex >= images.Length)
+            {
+                currentImageIndex = 0;
+            }
+            pictureBox_field.Image= images[currentImageIndex]; 
+        }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            //pictureBox_field.Image = System.Properties.Resources.gym1;
+            pictureBox_field.Image = FrmMain.Properties.Resources.gym1;
         }
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
-            //pictureBox_field.Image = Properties.Resources.gym3;
+            pictureBox_field.Image = FrmMain.Properties.Resources.gym2;
         }
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            //pictureBox_field.Image = Properties.Resources.gym4;
+            pictureBox_field.Image = FrmMain.Properties.Resources.gym3;
         }
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
-            //pictureBox_field.Image = Properties.Resources.gymm;
+            pictureBox_field.Image = FrmMain.Properties.Resources.gym4;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -135,6 +158,7 @@ namespace ProjGym
         private void button2_Click(object sender, EventArgs e)
         {
             Frmfreetrial f = new Frmfreetrial();
+            f.identity=this.identity;
             f.Show();
         }
     }

@@ -53,12 +53,10 @@
             this.對課程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.對教練ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改會員資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.會員登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.教練中心ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改教練資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增課程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.預約場地ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帳號登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.關於我們ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fACEBOOKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iNSTAGRAMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +67,6 @@
             this.教練審核ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.付款資訊ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增管理者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.登出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.登入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -196,7 +193,7 @@
             // 
             this.預約體驗ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.預約體驗ToolStripMenuItem.Name = "預約體驗ToolStripMenuItem";
-            this.預約體驗ToolStripMenuItem.Size = new System.Drawing.Size(196, 34);
+            this.預約體驗ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.預約體驗ToolStripMenuItem.Text = "預約體驗";
             this.預約體驗ToolStripMenuItem.Click += new System.EventHandler(this.預約體驗ToolStripMenuItem_Click);
             // 
@@ -204,7 +201,7 @@
             // 
             this.常見問題ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.常見問題ToolStripMenuItem.Name = "常見問題ToolStripMenuItem";
-            this.常見問題ToolStripMenuItem.Size = new System.Drawing.Size(196, 34);
+            this.常見問題ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.常見問題ToolStripMenuItem.Text = "常見問題";
             this.常見問題ToolStripMenuItem.Click += new System.EventHandler(this.常見問題ToolStripMenuItem_Click);
             // 
@@ -260,6 +257,7 @@
             this.找商品ToolStripMenuItem.Name = "找商品ToolStripMenuItem";
             this.找商品ToolStripMenuItem.Size = new System.Drawing.Size(99, 34);
             this.找商品ToolStripMenuItem.Text = "找商品";
+            this.找商品ToolStripMenuItem.Visible = false;
             // 
             // 商城ToolStripMenuItem
             // 
@@ -287,8 +285,7 @@
             this.會員中心ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.已預約課程ToolStripMenuItem,
             this.評分ToolStripMenuItem,
-            this.修改會員資料ToolStripMenuItem,
-            this.會員登出ToolStripMenuItem});
+            this.修改會員資料ToolStripMenuItem});
             this.會員中心ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.會員中心ToolStripMenuItem.Name = "會員中心ToolStripMenuItem";
             this.會員中心ToolStripMenuItem.Size = new System.Drawing.Size(123, 34);
@@ -334,21 +331,12 @@
             this.修改會員資料ToolStripMenuItem.Text = "修改會員資料";
             this.修改會員資料ToolStripMenuItem.Click += new System.EventHandler(this.修改會員資料ToolStripMenuItem_Click);
             // 
-            // 會員登出ToolStripMenuItem
-            // 
-            this.會員登出ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
-            this.會員登出ToolStripMenuItem.Name = "會員登出ToolStripMenuItem";
-            this.會員登出ToolStripMenuItem.Size = new System.Drawing.Size(244, 34);
-            this.會員登出ToolStripMenuItem.Text = "會員登出";
-            this.會員登出ToolStripMenuItem.Click += new System.EventHandler(this.會員登出ToolStripMenuItem_Click);
-            // 
             // 教練中心ToolStripMenuItem
             // 
             this.教練中心ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.修改教練資料ToolStripMenuItem,
             this.新增課程ToolStripMenuItem,
-            this.預約場地ToolStripMenuItem,
-            this.帳號登出ToolStripMenuItem});
+            this.預約場地ToolStripMenuItem});
             this.教練中心ToolStripMenuItem.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.教練中心ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.教練中心ToolStripMenuItem.Name = "教練中心ToolStripMenuItem";
@@ -379,14 +367,6 @@
             this.預約場地ToolStripMenuItem.Size = new System.Drawing.Size(316, 34);
             this.預約場地ToolStripMenuItem.Text = "查看已開課程";
             this.預約場地ToolStripMenuItem.Click += new System.EventHandler(this.預約場地ToolStripMenuItem_Click);
-            // 
-            // 帳號登出ToolStripMenuItem
-            // 
-            this.帳號登出ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
-            this.帳號登出ToolStripMenuItem.Name = "帳號登出ToolStripMenuItem";
-            this.帳號登出ToolStripMenuItem.Size = new System.Drawing.Size(316, 34);
-            this.帳號登出ToolStripMenuItem.Text = "帳號登出";
-            this.帳號登出ToolStripMenuItem.Click += new System.EventHandler(this.帳號登出ToolStripMenuItem_Click);
             // 
             // 關於我們ToolStripMenuItem
             // 
@@ -437,8 +417,7 @@
             this.開課審核ToolStripMenuItem,
             this.教練審核ToolStripMenuItem,
             this.付款資訊ToolStripMenuItem,
-            this.新增管理者ToolStripMenuItem,
-            this.登出ToolStripMenuItem});
+            this.新增管理者ToolStripMenuItem});
             this.管理者中心ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.管理者中心ToolStripMenuItem.Name = "管理者中心ToolStripMenuItem";
             this.管理者中心ToolStripMenuItem.Size = new System.Drawing.Size(147, 34);
@@ -484,14 +463,6 @@
             this.新增管理者ToolStripMenuItem.Text = "新增管理者";
             this.新增管理者ToolStripMenuItem.Click += new System.EventHandler(this.新增管理者ToolStripMenuItem_Click);
             // 
-            // 登出ToolStripMenuItem
-            // 
-            this.登出ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
-            this.登出ToolStripMenuItem.Name = "登出ToolStripMenuItem";
-            this.登出ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
-            this.登出ToolStripMenuItem.Text = "登出";
-            this.登出ToolStripMenuItem.Click += new System.EventHandler(this.登出ToolStripMenuItem_Click);
-            // 
             // 登出ToolStripMenuItem1
             // 
             this.登出ToolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -525,7 +496,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMain_2";
+            this.Text = "Fitnessconnect 健身媒合平台";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmHomePage_Load_1);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -580,13 +551,10 @@
         private System.Windows.Forms.Label lbl_Info;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem 帳號登出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 已預約課程ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 登出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 登出ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 登入ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 評分ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 會員登出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 對課程ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 對教練ToolStripMenuItem;
     }

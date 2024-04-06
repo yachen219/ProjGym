@@ -38,6 +38,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sparklingLabel
@@ -147,6 +148,19 @@
             this.comboBox3.Size = new System.Drawing.Size(183, 30);
             this.comboBox3.TabIndex = 44;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Wheat;
+            this.button1.Font = new System.Drawing.Font("新細明體", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.Location = new System.Drawing.Point(483, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(20, 20);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frmfreetrial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -155,6 +169,7 @@
             this.BackgroundImage = global::FrmMain.Properties.Resources.gym4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(505, 508);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -190,5 +205,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
