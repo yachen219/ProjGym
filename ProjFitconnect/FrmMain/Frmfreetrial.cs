@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace FrmMain
 {
     public partial class Frmfreetrial : Form
-    {
+    { 
         private Timer sparkleTimer;
         private Timer Timer_ann;
         private int currentPosition = 0;
@@ -20,6 +20,7 @@ namespace FrmMain
         private Image[] images = new Image[]
         {Properties.Resources.gym1, Properties.Resources.gym2, Properties.Resources.gym3, Properties.Resources.gym4, Properties.Resources.gymm};
         private string announcementText = "歡迎來到FitConnect，您可以在首頁查看最新消息以及相關優惠訊息";
+        public tIdentity identity { get; set; }
         private tclass_schedule _cs;
         public tclass_schedule cs { get { return _cs; }set { _cs = value; } }
         public Frmfreetrial()
@@ -83,6 +84,9 @@ namespace FrmMain
 
         private void label2_Click(object sender, EventArgs e)
         {
+            if (this.identity == null) { MessageBox.Show("請登入會員"); return; }
+            //MessageBox.Show(""+identity);
+            gymEntities db=new gymEntities();
             if (comboBox1.Text == "" || comboBox2.Text == "" || comboBox3.Text == "")
                 MessageBox.Show("預約失敗");
             else MessageBox.Show("預約成功");
@@ -103,6 +107,11 @@ namespace FrmMain
                 comboBox2.Items.Add(s.classDate);
                 comboBox3.Items.Add(s.classTime);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

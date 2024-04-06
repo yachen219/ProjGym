@@ -1,6 +1,6 @@
 ﻿namespace FrmMain
 {
-    partial class FrmCoachVertify
+    partial class FrmCoachVerify
     {
         /// <summary>
         /// Required designer variable.

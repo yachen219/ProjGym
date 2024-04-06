@@ -89,11 +89,11 @@
     <Compile Include="FrmCoachInfo.designer.cs">
       <DependentUpon>FrmCoachInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCoachVertify.cs">
+    <Compile Include="FrmCoachVerify.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCoachVertify.designer.cs">
-      <DependentUpon>FrmCoachVertify.cs</DependentUpon>
+    <Compile Include="FrmCoachVerify.designer.cs">
+      <DependentUpon>FrmCoachVerify.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditCoachRegister.cs">
       <SubType>Form</SubType>
@@ -319,8 +319,8 @@
     <EmbeddedResource Include="FrmCoachInfo.resx">
       <DependentUpon>FrmCoachInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCoachVertify.resx">
-      <DependentUpon>FrmCoachVertify.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCoachVerify.resx">
+      <DependentUpon>FrmCoachVerify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditCoachRegister.resx">
       <DependentUpon>FrmEditCoachRegister.cs</DependentUpon>

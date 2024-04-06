@@ -12,12 +12,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FrmMain
 {
-    public partial class FrmCoachVertify : Form
+    public partial class FrmCoachVerify : Form
     {
         private string _imagepath;
         private tIdentity _identity;
         public tIdentity Identity { get; set; }
-        public FrmCoachVertify()
+        public FrmCoachVerify()
         {
             InitializeComponent();
         }

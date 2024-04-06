@@ -195,6 +195,7 @@ namespace ProjGym
         {
             this.splitContainer1.Panel2.Controls.Clear();
             Frm_首頁 mm = new Frm_首頁();
+            mm.identity = this.identity;
             mm.TopLevel = false;
             mm.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(mm);
@@ -230,7 +231,9 @@ namespace ProjGym
 
         private void 預約體驗ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            (new Frmfreetrial()).Show();
+            Frmfreetrial f = new Frmfreetrial();
+            f.identity = this.identity;
+            f.Show(); 
         }
 
         private void 新增課程ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -289,7 +292,7 @@ namespace ProjGym
         private void 教練審核ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.splitContainer1.Panel2.Controls.Clear();
-            FrmCoachVertify f = new FrmCoachVertify();
+            FrmCoachVerify f = new FrmCoachVerify();
             f.TopLevel = false;
             f.FormBorderStyle = FormBorderStyle.None;
             this.splitContainer1.Panel2.Controls.Add(f);

@@ -18,8 +18,7 @@ namespace ProjGym
     public partial class FrmLogin : Form
     {
         private DialogResult _isOK;
-        public DialogResult isOK{ get { return _isOK; } set { _isOK = value; } } 
-        bool _isClosed = true; 
+        public DialogResult isOK{ get { return _isOK; } set { _isOK = value; } }  
         int loginTimes = 0; 
         public event Dlogin afterLogin;
         public tIdentity auth { get; set; }

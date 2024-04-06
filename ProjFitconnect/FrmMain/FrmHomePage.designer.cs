@@ -229,21 +229,21 @@
             // 
             this.課程介紹ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.課程介紹ToolStripMenuItem.Name = "課程介紹ToolStripMenuItem";
-            this.課程介紹ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.課程介紹ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.課程介紹ToolStripMenuItem.Text = "課程介紹";
             // 
             // 以教練搜尋ToolStripMenuItem
             // 
             this.以教練搜尋ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.以教練搜尋ToolStripMenuItem.Name = "以教練搜尋ToolStripMenuItem";
-            this.以教練搜尋ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.以教練搜尋ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.以教練搜尋ToolStripMenuItem.Text = "以教練搜尋";
             // 
             // 訓練課程ToolStripMenuItem
             // 
             this.訓練課程ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.訓練課程ToolStripMenuItem.Name = "訓練課程ToolStripMenuItem";
-            this.訓練課程ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.訓練課程ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.訓練課程ToolStripMenuItem.Text = "訓練課程";
             this.訓練課程ToolStripMenuItem.Click += new System.EventHandler(this.訓練課程ToolStripMenuItem_Click);
             // 
@@ -263,21 +263,21 @@
             // 
             this.商城ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.商城ToolStripMenuItem.Name = "商城ToolStripMenuItem";
-            this.商城ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.商城ToolStripMenuItem.Size = new System.Drawing.Size(196, 34);
             this.商城ToolStripMenuItem.Text = "商城";
             // 
             // 保健食品ToolStripMenuItem
             // 
             this.保健食品ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.保健食品ToolStripMenuItem.Name = "保健食品ToolStripMenuItem";
-            this.保健食品ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.保健食品ToolStripMenuItem.Size = new System.Drawing.Size(196, 34);
             this.保健食品ToolStripMenuItem.Text = "保健食品";
             // 
             // 運動器材ToolStripMenuItem
             // 
             this.運動器材ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.運動器材ToolStripMenuItem.Name = "運動器材ToolStripMenuItem";
-            this.運動器材ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.運動器材ToolStripMenuItem.Size = new System.Drawing.Size(196, 34);
             this.運動器材ToolStripMenuItem.Text = "運動器材";
             // 
             // 會員中心ToolStripMenuItem
@@ -428,7 +428,7 @@
             // 
             this.會員資訊ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.會員資訊ToolStripMenuItem.Name = "會員資訊ToolStripMenuItem";
-            this.會員資訊ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.會員資訊ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.會員資訊ToolStripMenuItem.Text = "會員資訊";
             this.會員資訊ToolStripMenuItem.Click += new System.EventHandler(this.會員資訊ToolStripMenuItem_Click);
             // 
@@ -436,7 +436,7 @@
             // 
             this.開課審核ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.開課審核ToolStripMenuItem.Name = "開課審核ToolStripMenuItem";
-            this.開課審核ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.開課審核ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.開課審核ToolStripMenuItem.Text = "開課審核";
             this.開課審核ToolStripMenuItem.Click += new System.EventHandler(this.開課審核ToolStripMenuItem_Click);
             // 
@@ -444,7 +444,7 @@
             // 
             this.教練審核ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.教練審核ToolStripMenuItem.Name = "教練審核ToolStripMenuItem";
-            this.教練審核ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.教練審核ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.教練審核ToolStripMenuItem.Text = "教練審核";
             this.教練審核ToolStripMenuItem.Click += new System.EventHandler(this.教練審核ToolStripMenuItem_Click);
             // 
@@ -452,14 +452,14 @@
             // 
             this.付款資訊ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.付款資訊ToolStripMenuItem.Name = "付款資訊ToolStripMenuItem";
-            this.付款資訊ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.付款資訊ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.付款資訊ToolStripMenuItem.Text = "付款資訊";
             // 
             // 新增管理者ToolStripMenuItem
             // 
             this.新增管理者ToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.新增管理者ToolStripMenuItem.Name = "新增管理者ToolStripMenuItem";
-            this.新增管理者ToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.新增管理者ToolStripMenuItem.Size = new System.Drawing.Size(220, 34);
             this.新增管理者ToolStripMenuItem.Text = "新增管理者";
             this.新增管理者ToolStripMenuItem.Click += new System.EventHandler(this.新增管理者ToolStripMenuItem_Click);
             // 
